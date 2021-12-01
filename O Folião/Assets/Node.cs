@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
+    private INodeBehaviour nodeEvent;
+
+    private void Awake()
+    {
+        nodeEvent = GetComponent<INodeBehaviour>();
+    }
+
     [SerializeField]
     private GameObject option1;
 
@@ -18,10 +25,7 @@ public class Node : MonoBehaviour
 
     public string type { get; set; }
 
-    public Node()
-    {
-        //normalNode = new NormalEvent();
-    }
+    
 
 
 }
