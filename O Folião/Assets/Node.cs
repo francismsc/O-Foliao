@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
+
     private INodeBehaviour nodeEvent;
 
     private void Awake()
@@ -23,7 +24,6 @@ public class Node : MonoBehaviour
     [SerializeField]
     public GameObject option4;
 
-    public string type { get; set; }
 
     
 
