@@ -5,24 +5,24 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private int MaxAlcool = 100;
+    private int MaxAlcool;
     [SerializeField]
-    private int MaxFun = 100;
+    private int MaxFun;
     [SerializeField]
-    private int MaxHunger = 100;
+    private int MaxHunger;
     [SerializeField]
-    private int MaxSocial = 100;
+    private int MaxSocial;
 
     [SerializeField]
-    private int alcool= 100;
+    private int alcool;
     [SerializeField]
-    private int fun = 100;
+    private int fun;
     [SerializeField]
-    private int hunger = 100;
+    private int hunger;
     [SerializeField]
-    private int social = 100;
+    private int social;
     [SerializeField]
-    private int money = 100;
+    private int money;
     [SerializeField]
     private GameObject position;
 

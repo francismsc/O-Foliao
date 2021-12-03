@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
+    [SerializeField]
+    private Material normal;
+    [SerializeField]
+    private Material highLight;
+
+
+    [SerializeField]
+    List<GameObject> Options;
+
+
 
     private INodeBehaviour nodeEvent;
 
@@ -12,20 +22,26 @@ public class Node : MonoBehaviour
         nodeEvent = GetComponent<INodeBehaviour>();
     }
 
-    [SerializeField]
-    private GameObject option1;
+    public List<GameObject> GetOptions()
+    {
+       return this.Options;
+    }
+        
 
-    [SerializeField]
-    public GameObject option2;
 
-    [SerializeField]
-    public GameObject option3;
+    public void HighLight()
+    {
+        gameObject.GetComponentInParent<Renderer>().material = highLight;
+    }
 
-    [SerializeField]
-    public GameObject option4;
+    public void BacktoNormal()
+    {
+        gameObject.GetComponentInParent<Renderer>().material = normal;
+    }
 
 
     
+
 
 
 }

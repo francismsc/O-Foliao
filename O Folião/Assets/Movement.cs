@@ -2,32 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement
+public class Movement: MonoBehaviour
 {
-    public void Move(Player player)
+
+    public void Move(Player player,GameObject nextpoint)
     {
-       
+        player.ChangePosition(nextpoint);   
     }
 
-    public bool Clicked()
-    {
-        if (Input.GetMouseButtonUp(0))
-        {
-            // Create a ray from the current mouse position
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
-            {
-                // If the raycast hits any of the Tiles from the map
-                if (hit.transform.tag == "Point") ;
-                {
-                    Debug.Log("Ya");
-                    return false;
-                }
-            }
-
-        }
-        return true;
-    }
+    
 
 }
