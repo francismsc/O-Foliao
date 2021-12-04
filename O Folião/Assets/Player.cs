@@ -26,6 +26,11 @@ public class Player : MonoBehaviour
     [SerializeField]
     private GameObject position;
 
+    public void GetAllStats()
+    {
+
+    }
+
     public void ChangeStats(int alcool = 0, int fun = 0, int hunger = 0, int social = 0, int money = 0)
     {
         this.alcool += alcool;

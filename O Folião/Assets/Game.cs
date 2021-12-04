@@ -6,6 +6,10 @@ public class Game : MonoBehaviour
 {
     public Player player;
     public Movement move;
+    private Node node;
+
+    public List<Decisions> decisions;
+    public List<Events> events;
 
     void Awake()
     {
@@ -17,6 +21,10 @@ public class Game : MonoBehaviour
         if (move.Movingtime() == true)
         {
             GetComponent<Movement>().enabled = true;
+        }
+        if(move.Movingtime() == false)
+        {
+            node.Event(player);
         }
         if (Input.GetMouseButtonUp(1))
         {
