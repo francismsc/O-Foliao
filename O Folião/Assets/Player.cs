@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     private int MaxHunger;
     [SerializeField]
     private int MaxSocial;
+    [SerializeField]
+    private int MaxEnergy;
 
     [SerializeField]
     private int alcool;
@@ -21,6 +23,9 @@ public class Player : MonoBehaviour
     private int hunger;
     [SerializeField]
     private int social;
+    [SerializeField]
+    private int energy;
+
     [SerializeField]
     private int money;
     [SerializeField]
@@ -34,7 +39,8 @@ public class Player : MonoBehaviour
         fun = MaxFun;
         hunger = MaxHunger;
         social = MaxSocial;
-        bars.SetMaxAllBars(MaxAlcool, MaxFun, MaxHunger, MaxSocial);
+        energy = MaxEnergy;
+        bars.SetMaxAllBars(MaxAlcool, MaxFun, MaxHunger, MaxSocial, MaxEnergy);
 
 
     }
@@ -46,13 +52,14 @@ public class Player : MonoBehaviour
     }
 
 
-    public void ChangeStats(Player player, int alcool = 0, int fun = 0, int hunger = 0, int social = 0, int money = 0)
+    public void ChangeStats(Player player, int alcool = 0, int fun = 0, int hunger = 0, int social = 0, int money = 0, int energy = 0)
     {
         player.alcool += alcool;
         player.fun += fun;
         player.hunger += hunger;
         player.social += social;
         player.money += money;
+        player.energy += energy;
 
         if(player.alcool > MaxAlcool)
         {
@@ -69,6 +76,10 @@ public class Player : MonoBehaviour
         if(player.social > MaxSocial)
         { 
             player.social = MaxSocial;
+        }
+        if(player.energy > MaxEnergy)
+        {
+            player.energy = MaxEnergy;
         }
 
         if (player.alcool < 0)
@@ -87,13 +98,18 @@ public class Player : MonoBehaviour
         {
             player.social = 0;
         }
+        if (player.energy < 0)
+        {
+            player.energy = 0;
+        }
 
         Debug.Log("Alcool " + player.alcool);
         Debug.Log("Fun " + player.fun);
         Debug.Log("Hunger " + player.hunger);
         Debug.Log("Social " + player.social);
+        Debug.Log("Energy " + player.energy);
 
-        bars.SetValueAllBars(player.alcool, player.fun, player.hunger, player.social);
+        bars.SetValueAllBars(player.alcool, player.fun, player.hunger, player.social, player.energy);
     }
 
     public void ChangePosition(GameObject position)

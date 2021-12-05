@@ -29,6 +29,9 @@ using System;
         [SerializeField] private int _moneyD;
         public int moneyD { get { return _moneyD; } }
 
+        [SerializeField] private int _energyD;
+        public int energyD { get { return _energyD; } }
+
 }
 [CreateAssetMenu(fileName = "New Event", menuName = "Events/new Event")]
     public class Events : ScriptableObject

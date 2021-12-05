@@ -63,7 +63,7 @@ public class Game : MonoBehaviour
             Debug.Log(decision.hungerD);
             Debug.Log(decision.socialD);
             Debug.Log(decision.moneyD);
-            player.ChangeStats(player, decision.alcoolD, decision.funD, decision.hungerD, decision.socialD, decision.moneyD);   
+            player.ChangeStats(player, decision.alcoolD, decision.funD, decision.hungerD, decision.socialD, decision.moneyD, decision.energyD);   
         }
     }
 

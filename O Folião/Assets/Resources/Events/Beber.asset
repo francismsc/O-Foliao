@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Beber
   m_EditorClassIdentifier: 
   _event: Someone offers you a drink
-  _background: {fileID: 0}
+  _background: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   _decisions:
   - _stringI: Drink
     _stringF: You start feeling sleepy
