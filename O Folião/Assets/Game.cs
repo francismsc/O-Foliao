@@ -24,24 +24,16 @@ public class Game : MonoBehaviour
 
     private void Update()
     {
-        rnd = Random.Range(1, 254);
-        //Debug.Log(Events[0].decisions[0].stringI);
-
         if (move.Movingtime() == true)
         {
             GetComponent<Movement>().enabled = true;
         }
         if (move.Movingtime() == false)
         {
-            if (number == 1)
-            {
-                number++;
+
                 ChooseRandomEvent();
-            }
-        }
-        if (Input.GetMouseButtonUp(1))
-        {
-            move.TimetoMove();
+                move.TimetoMove();
+            
         }
     }
 
@@ -71,6 +63,12 @@ public class Game : MonoBehaviour
             Debug.Log(decision.hungerD);
             Debug.Log(decision.socialD);
             Debug.Log(decision.moneyD);
+            player.ChangeStats(player, decision.alcoolD, decision.funD, decision.hungerD, decision.socialD, decision.moneyD);   
         }
+    }
+
+    void SpawnEvent()
+    {
+
     }
 }

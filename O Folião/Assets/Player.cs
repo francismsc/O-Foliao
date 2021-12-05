@@ -26,36 +26,74 @@ public class Player : MonoBehaviour
     [SerializeField]
     private GameObject position;
 
+    public barsUI bars;
+
+    private void Start()
+    {
+        alcool = MaxAlcool;
+        fun = MaxFun;
+        hunger = MaxHunger;
+        social = MaxSocial;
+        bars.SetMaxAllBars(MaxAlcool, MaxFun, MaxHunger, MaxSocial);
+
+
+    }
+
+
     public void GetAllStats()
     {
 
     }
 
-    public void ChangeStats(int alcool = 0, int fun = 0, int hunger = 0, int social = 0, int money = 0)
+
+    public void ChangeStats(Player player, int alcool = 0, int fun = 0, int hunger = 0, int social = 0, int money = 0)
     {
-        this.alcool += alcool;
-        this.fun += fun;
-        this.hunger += hunger;
-        this.social += social;
-        this.money += money;
+        player.alcool += alcool;
+        player.fun += fun;
+        player.hunger += hunger;
+        player.social += social;
+        player.money += money;
 
-        if(this.alcool > 100 || this.fun > 100 || this.hunger > 100 || this.social > 100)
+        if(player.alcool > MaxAlcool)
         {
-            this.alcool = 100;
-            this.fun = 100;
-            this.hunger = 100;
-            this.social = 100;
+            player.alcool = MaxAlcool;
+        }
+        if (player.fun > MaxFun)
+        {
+            player.fun = MaxFun;
+        }
+        if (player.hunger > MaxHunger)
+        {
+            player.hunger = MaxHunger;
+        }
+        if(player.social > MaxSocial)
+        { 
+            player.social = MaxSocial;
         }
 
-        if (this.alcool < 0 || this.fun < 0 || this.hunger < 0 || this.social < 0)
+        if (player.alcool < 0)
         {
-            this.alcool = 0;
-            this.fun = 0;
-            this.hunger = 0;
-            this.social = 0;
+            player.alcool = 0;
+        }
+        if (player.fun < 0)
+        {
+            player.fun = 0;
+        }
+        if (player.hunger < 0)
+        {
+            player.hunger = 0;
+        }
+        if (player.social < 0)
+        {
+            player.social = 0;
         }
 
+        Debug.Log("Alcool " + player.alcool);
+        Debug.Log("Fun " + player.fun);
+        Debug.Log("Hunger " + player.hunger);
+        Debug.Log("Social " + player.social);
 
+        bars.SetValueAllBars(player.alcool, player.fun, player.hunger, player.social);
     }
 
     public void ChangePosition(GameObject position)
