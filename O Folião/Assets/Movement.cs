@@ -67,11 +67,12 @@ public class Movement: MonoBehaviour
                 }
             }
 
+
             if (moving == true && player.gameObject.transform.position != child.transform.position)
             {
                 player.gameObject.transform.position = Vector3.MoveTowards(player.gameObject.transform.position, child.transform.position, 5 * Time.deltaTime);
             }
-            else if (player.gameObject.transform.position == null || (player.gameObject.transform.position == child.transform.position && choice == false))
+            else if (child == null || (player.gameObject.transform.position == child.transform.position && choice == false))
             {
                 moving = false;
             }
@@ -81,6 +82,7 @@ public class Movement: MonoBehaviour
                 moving = false;
                 timetomove = false;
             }
+            
 
 
 

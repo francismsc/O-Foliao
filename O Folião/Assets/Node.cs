@@ -13,13 +13,12 @@ public class Node : MonoBehaviour
     [SerializeField]
     private Material highLight;
 
+
     public Node node;
 
 
     [SerializeField]
     List<GameObject> Options;
-
-
 
 
 

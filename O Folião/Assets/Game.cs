@@ -2,37 +2,75 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Game : MonoBehaviour
 {
     public Player player;
     public Movement move;
     private Node node;
+    private int rnd;
+    public int number = 1;
 
-    public List<Decisions> decisions;
-    public List<Events> events;
+    //public List<Decisions> decisions;
+    //public List<Events> events;
 
+    private Events[] _events = null;
+    public Events[] Events { get { return _events; } }
     void Awake()
     {
-        
+        rnd = Random.Range(1, 254);
+        LoadEvents();
     }
 
     private void Update()
     {
+        rnd = Random.Range(1, 254);
+        //Debug.Log(Events[0].decisions[0].stringI);
+
         if (move.Movingtime() == true)
         {
             GetComponent<Movement>().enabled = true;
         }
-        if(move.Movingtime() == false)
+        if (move.Movingtime() == false)
         {
-            node.Event(player);
+            if (number == 1)
+            {
+                number++;
+                ChooseRandomEvent();
+            }
         }
         if (Input.GetMouseButtonUp(1))
         {
             move.TimetoMove();
         }
     }
-    private void Start()
-    {
 
+
+
+    void LoadEvents()
+    {
+        Object[] objs = Resources.LoadAll("Events", typeof(Events));
+        _events = new Events[objs.Length];
+        for (int i = 0; i < objs.Length; i++)
+        {
+            _events[i] = (Events)objs[i];
+        }
+
+    }
+
+    void ChooseRandomEvent()
+    {
+        rnd = Random.Range(0, Events.Length);
+        Debug.Log(Events[rnd].Event);
+        foreach(Decisions decision in Events[rnd].decisions)
+        {
+            Debug.Log(decision.stringI);
+            Debug.Log(decision.stringF);
+            Debug.Log(decision.alcoolD);
+            Debug.Log(decision.funD);
+            Debug.Log(decision.hungerD);
+            Debug.Log(decision.socialD);
+            Debug.Log(decision.moneyD);
+        }
     }
 }

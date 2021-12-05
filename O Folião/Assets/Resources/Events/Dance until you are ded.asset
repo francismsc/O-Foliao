@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Dance until you are ded
+  m_EditorClassIdentifier: 
+  _event: You at the disco dance dance?
+  _background: {fileID: 0}
+  _decisions:
+  - _stringI: Dance dance
+    _stringF: You feel amazing dancing
+    _alcoolD: 0
+    _funD: 40
+    _hungerD: 0
+    _socialD: 20
+    _moneyD: 0
+  - _stringI: Go away
+    _stringF: You felt like it was a lost oportunity
+    _alcoolD: 0
+    _funD: -15
+    _hungerD: 0
+    _socialD: -10
+    _moneyD: 0

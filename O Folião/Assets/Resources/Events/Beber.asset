@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Beber
+  m_EditorClassIdentifier: 
+  _event: Someone offers you a drink
+  _background: {fileID: 0}
+  _decisions:
+  - _stringI: Drink
+    _stringF: You start feeling sleepy
+    _alcoolD: 20
+    _funD: 0
+    _hungerD: 0
+    _socialD: 0
+    _moneyD: -20
+  - _stringI: Dont drink
+    _stringF: 'You walk away '
+    _alcoolD: -5
+    _funD: 0
+    _hungerD: 0
+    _socialD: 0
+    _moneyD: 5
