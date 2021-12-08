@@ -16,11 +16,46 @@ public class CameraPan : MonoBehaviour
     private Vector3 dragOrigin;
     private bool pan = true;
 
+    [SerializeField]
+    private SpriteRenderer map;
+
+    private float mapMinX, mapMaxX, mapMinY, mapMaxY;
+
 
     // Update is called once per frame
     private void Update()
     {
         if(pan) PanCamera();
+    }
+
+
+    /// <summary>
+    /// Responsible for limiting the cam movement according to the size of the 
+    /// map sprite.
+    /// </summary>
+    private void Awake()
+    {
+        mapMinX = map.transform.position.x - map.bounds.size.x / 2f;
+        mapMaxX = map.transform.position.x + map.bounds.size.x / 2f;
+
+        mapMinY = map.transform.position.y - map.bounds.size.y / 2f;
+        mapMaxY = map.transform.position.y + map.bounds.size.y / 2f;
+    }
+
+    private Vector3 ClampCamera(Vector3 targetPosition)
+    {
+        float camHeight = cam.orthographicSize;
+        float camWidht = cam.orthographicSize * cam.aspect;
+
+        float minX = mapMinX + camWidht;
+        float maxX = mapMaxX - camWidht;
+        float minY = mapMinY + camHeight;
+        float maxY = mapMaxY - camHeight;
+
+        float newX = Mathf.Clamp(targetPosition.x, minX, maxX);
+        float newY = Mathf.Clamp(targetPosition.y, minY, maxY);
+
+        return new Vector3(newX, newY, targetPosition.z);
     }
 
     /// <summary>
@@ -40,7 +75,8 @@ public class CameraPan : MonoBehaviour
         {
             // Updates camera position according to mouse movement
             Vector3 difference = dragOrigin - cam.ScreenToWorldPoint(Input.mousePosition);
-            cam.transform.position += difference;
+
+            cam.transform.position = ClampCamera(cam.transform.position + difference);
         }
     }
     /// <summary>
@@ -52,6 +88,8 @@ public class CameraPan : MonoBehaviour
         else pan = true;
     }
 
+
+    /*
     /// <summary>
     /// Function responsible for zooming in the camera.
     /// Zooms in the camera by 10%
@@ -68,4 +106,5 @@ public class CameraPan : MonoBehaviour
     {
         cam.orthographicSize = cam.orthographicSize * 1.1f;
     }
+    */
 }

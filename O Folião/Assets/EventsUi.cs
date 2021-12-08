@@ -56,7 +56,7 @@ public class EventsUi : MonoBehaviour
     public void choice2()
     {
         player.ChangeStats(player, evenaux.decisions[1].alcoolD, evenaux.decisions[1].funD, evenaux.decisions[1].hungerD, evenaux.decisions[1].socialD, evenaux.decisions[1].moneyD, evenaux.decisions[1].energyD);
-        choices3.active = false;
+        choices2.active = false;
     }
 
     
