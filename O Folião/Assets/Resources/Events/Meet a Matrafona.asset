@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Meet a Matrafona
   m_EditorClassIdentifier: 
   _event: Encontraste uma matrafona
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 5f6add5d14e831e4b99acf0e847735f9, type: 3}
   _decisions:
   - _stringI: Tentar engatar
     _stringF: "A matrafona ficou chateada e mandou-te uma das mamas \xE0 cara"

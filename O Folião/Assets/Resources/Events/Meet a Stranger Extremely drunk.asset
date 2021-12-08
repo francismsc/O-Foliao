@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Meet a Stranger Extremely drunk
   m_EditorClassIdentifier: 
   _event: "Encontraste uma pessoa extremamente b\xEAbada"
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 212097017645f1c448da15976322cc2c, type: 3}
   _decisions:
   - _stringI: Ajudar a encontrar os amigos
     _stringF: "Demorou um bocado mas l\xE1 os conseguiste encontrar"

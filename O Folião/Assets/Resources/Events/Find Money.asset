@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Find Money
   m_EditorClassIdentifier: 
   _event: Dinheiro!
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 212097017645f1c448da15976322cc2c, type: 3}
   _decisions:
   - _stringI: "Apanhar dinheiro do ch\xE3o"
     _stringF: "Est\xE1s rico"
