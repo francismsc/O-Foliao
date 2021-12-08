@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        
+        alcool = 99;
         fun = MaxFun;
         social = MaxSocial;
         energy = MaxEnergy;
@@ -104,6 +104,7 @@ public class Player : MonoBehaviour
         bars.SetValueAllBars(player.alcool, player.fun, player.social, player.energy, player.money);
         if (player.alcool == 100 || player.energy == 0)
         {
+            Debug.Log("DIE");
             scene.die();
         }
 
