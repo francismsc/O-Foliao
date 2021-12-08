@@ -12,6 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: Meet a Stranger Drinking
   m_EditorClassIdentifier: 
-  _event: 
+  _event: Encontras-te uma pessoa a beber sozinha
   _background: {fileID: 0}
-  _decisions: []
+  _decisions:
+  - _stringI: Beber com a pessoa
+    _stringF: 
+    _alcoolD: 5
+    _funD: 5
+    _hungerD: 0
+    _socialD: 0
+    _moneyD: -5
+    _energyD: -5
+  - _stringI: Pedir para te oferecer uma bebida
+    _stringF: "N\xE3o "
+    _alcoolD: 0
+    _funD: 0
+    _hungerD: 0
+    _socialD: 0
+    _moneyD: 0
+    _energyD: 0
+  - _stringI: Ignorar
+    _stringF: 
+    _alcoolD: 0
+    _funD: 0
+    _hungerD: 0
+    _socialD: 0
+    _moneyD: 0
+    _energyD: 0
