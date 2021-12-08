@@ -57,13 +57,6 @@ public class Game : MonoBehaviour
         Debug.Log(Events[rnd].Event);
         foreach (Decisions decision in Events[rnd].decisions)
         {
-            Debug.Log(decision.stringI);
-            Debug.Log(decision.stringF);
-            Debug.Log(decision.alcoolD);
-            Debug.Log(decision.funD);
-            Debug.Log(decision.hungerD);
-            Debug.Log(decision.socialD);
-            Debug.Log(decision.moneyD);
             eventsUi.eventUi(Events[rnd]);
         } 
     }

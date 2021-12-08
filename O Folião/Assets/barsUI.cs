@@ -20,13 +20,6 @@ public class barsUI : MonoBehaviour
     public Image funFill;
 
     [SerializeField]
-    public Slider hungerSlider;
-    [SerializeField]
-    public Gradient hungerGradient;
-    [SerializeField]
-    public Image hungerFill;
-
-    [SerializeField]
     public Slider socialSlider;
     [SerializeField]
     public Gradient socialGradient;
@@ -44,7 +37,7 @@ public class barsUI : MonoBehaviour
 
 
 
-    public void SetMaxAllBars(int alcool, int fun, int hunger, int social, int energy, int money)
+    public void SetMaxAllBars(int alcool, int fun, int social, int energy, int money)
     {
         alcoolSlider.maxValue = alcool;
         alcoolSlider.value = alcool;
@@ -53,10 +46,6 @@ public class barsUI : MonoBehaviour
         funSlider.maxValue = fun;
         funSlider.value = fun;
         funFill.color = funGradient.Evaluate(1f);
-
-        hungerSlider.maxValue = hunger;
-        hungerSlider.value = hunger;
-        hungerFill.color = hungerGradient.Evaluate(1f);
 
         socialSlider.maxValue = social;
         socialSlider.value = social;
@@ -73,16 +62,13 @@ public class barsUI : MonoBehaviour
 
     }
 
-    public void SetValueAllBars(int alcool, int fun, int hunger, int social, int energy, int money)
+    public void SetValueAllBars(int alcool, int fun, int social, int energy, int money)
     {
         alcoolSlider.value = alcool;
         alcoolFill.color = alcoolGradient.Evaluate(alcoolSlider.value);
 
         funSlider.value = fun;
         funFill.color = funGradient.Evaluate(funSlider.value);
-
-        hungerSlider.value = hunger;
-        hungerFill.color = hungerGradient.Evaluate(hungerSlider.value);
 
         socialSlider.value = social;
         socialFill.color = socialGradient.Evaluate(socialSlider.value);

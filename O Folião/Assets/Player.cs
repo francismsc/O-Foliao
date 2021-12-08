@@ -9,8 +9,6 @@ public class Player : MonoBehaviour
     [SerializeField]
     private int MaxFun;
     [SerializeField]
-    private int MaxHunger;
-    [SerializeField]
     private int MaxSocial;
     [SerializeField]
     private int MaxEnergy;
@@ -20,8 +18,6 @@ public class Player : MonoBehaviour
     [SerializeField]
     private int fun;
     [SerializeField]
-    private int hunger;
-    [SerializeField]
     private int social;
     [SerializeField]
     private int energy;
@@ -30,21 +26,24 @@ public class Player : MonoBehaviour
     private int money;
     [SerializeField]
     private GameObject position;
+    [SerializeField]
+    public SceneChanger scene;
 
     public barsUI bars;
 
+
     private void Start()
     {
-        alcool = MaxAlcool;
+        
         fun = MaxFun;
-        hunger = MaxHunger;
         social = MaxSocial;
         energy = MaxEnergy;
-        bars.SetMaxAllBars(MaxAlcool, MaxFun, MaxHunger, MaxSocial, MaxEnergy,  money);
+        bars.SetMaxAllBars(MaxAlcool, MaxFun, MaxSocial, MaxEnergy,  money);
 
 
 
     }
+
 
 
     public void GetAllStats()
@@ -53,11 +52,10 @@ public class Player : MonoBehaviour
     }
 
 
-    public void ChangeStats(Player player, int alcool = 0, int fun = 0, int hunger = 0, int social = 0, int money = 0, int energy = 0)
+    public void ChangeStats(Player player, int alcool = 0, int fun = 0, int social = 0, int money = 0, int energy = 0)
     {
         player.alcool += alcool;
         player.fun += fun;
-        player.hunger += hunger;
         player.social += social;
         player.money += money;
         player.energy += energy;
@@ -69,10 +67,6 @@ public class Player : MonoBehaviour
         if (player.fun > MaxFun)
         {
             player.fun = MaxFun;
-        }
-        if (player.hunger > MaxHunger)
-        {
-            player.hunger = MaxHunger;
         }
         if(player.social > MaxSocial)
         { 
@@ -91,10 +85,6 @@ public class Player : MonoBehaviour
         {
             player.fun = 0;
         }
-        if (player.hunger < 0)
-        {
-            player.hunger = 0;
-        }
         if (player.social < 0)
         {
             player.social = 0;
@@ -104,13 +94,19 @@ public class Player : MonoBehaviour
             player.energy = 0;
         }
 
+
+
         Debug.Log("Alcool " + player.alcool);
         Debug.Log("Fun " + player.fun);
-        Debug.Log("Hunger " + player.hunger);
         Debug.Log("Social " + player.social);
         Debug.Log("Energy " + player.energy);
 
-        bars.SetValueAllBars(player.alcool, player.fun, player.hunger, player.social, player.energy, player.money);
+        bars.SetValueAllBars(player.alcool, player.fun, player.social, player.energy, player.money);
+        if (player.alcool == 100 || player.energy == 0)
+        {
+            scene.die();
+        }
+
     }
 
     public void ChangePosition(GameObject position)
