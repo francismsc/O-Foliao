@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
-  m_Name: Losing money
+  m_Name: Same Costume
   m_EditorClassIdentifier: 
-  _event: "Uma pessoa que n\xE3o conheces pede-te uma bebida"
-  _background: {fileID: 21300000, guid: 212097017645f1c448da15976322cc2c, type: 3}
+  _event: "Encontraste uma pessoa com uma m\xE1scara igual \xE0 tua"
+  _background: {fileID: 21300000, guid: 25cd164b6b0ccdc46a5b6e62a2b01e6f, type: 3}
   _decisions:
-  - _stringI: Pagar-lhe um copo
-    _stringF: A pessoa ficou agradecida
-    _alcoolD: 5
+  - _stringI: Tirar uma foto com a pessoa
+    _stringF: "Meteste no Insta e tiveste bu\xE9 likes"
+    _alcoolD: 0
     _funD: 10
     _hungerD: 0
-    _socialD: 10
-    _moneyD: -5
-    _energyD: 0
-  - _stringI: "N\xE3o"
-    _stringF: Mandaste a pessoa dar uma volta
-    _alcoolD: 0
-    _funD: 5
-    _hungerD: 0
-    _socialD: -5
+    _socialD: 5
     _moneyD: 0
-    _energyD: 0
+    _energyD: -5
+  - _stringI: "Gritar e dan\xE7ar com o teu novo melhor amigo"
+    _stringF: 
+    _alcoolD: 0
+    _funD: 15
+    _hungerD: 0
+    _socialD: 10
+    _moneyD: 0
+    _energyD: -10
