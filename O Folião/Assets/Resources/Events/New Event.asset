@@ -31,11 +31,3 @@ MonoBehaviour:
     _socialD: 0
     _moneyD: 0
     _energyD: -200
-  - _stringI: Choke me daddy
-    _stringF: 
-    _alcoolD: 0
-    _funD: 0
-    _hungerD: 0
-    _socialD: 50
-    _moneyD: 0
-    _energyD: 0
