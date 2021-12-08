@@ -34,14 +34,13 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        alcool = 99;
-        fun = MaxFun;
-        social = MaxSocial;
+        alcool = 0;
+        fun = 50;
+        social = 50;
         energy = MaxEnergy;
         bars.SetMaxAllBars(MaxAlcool, MaxFun, MaxSocial, MaxEnergy,  money);
 
-
-
+        bars.SetValueAllBars(alcool, fun, social, MaxEnergy, money);
     }
 
 
