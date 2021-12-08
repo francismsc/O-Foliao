@@ -11,6 +11,7 @@ public class Movement: MonoBehaviour
     bool moving = false;
     GameObject child;
     bool choice = false;
+    bool stillmoving = false;
     public void Move(Player player,GameObject nextpoint)
     {
         
@@ -36,7 +37,7 @@ public class Movement: MonoBehaviour
             {
                 nodes.GetComponent<Node>().HighLight();
             }
-            if (Input.GetMouseButtonUp(0))
+            if (Input.GetMouseButtonUp(0) && stillmoving == false)
             {
 
                 // Create a ray from the current mouse position
@@ -59,7 +60,8 @@ public class Movement: MonoBehaviour
                                 Move(player, child);
                                 moving = true;
                                 choice = true;
-
+                                
+                                
                             }
                         }
 
@@ -71,6 +73,8 @@ public class Movement: MonoBehaviour
             if (moving == true && player.gameObject.transform.position != child.transform.position)
             {
                 player.gameObject.transform.position = Vector3.MoveTowards(player.gameObject.transform.position, child.transform.position, 150 * Time.deltaTime);
+                stillmoving = true;
+
             }
             else if (child == null || (player.gameObject.transform.position == child.transform.position && choice == false))
             {
@@ -78,9 +82,11 @@ public class Movement: MonoBehaviour
             }
             else if (player.gameObject.transform.position == child.transform.position && choice == true)
             {
+                Debug.Log("YA");
                 choice = false;
                 moving = false;
                 timetomove = false;
+                stillmoving = false;
             }
             
 
@@ -89,6 +95,12 @@ public class Movement: MonoBehaviour
 
 
         }
+    }
+
+    IEnumerator StillMoving(Player player,GameObject child)
+    {
+        Debug.Log("Rola");
+        yield return new WaitWhile(() => player.gameObject.transform.position != child.transform.position);
     }
 
 

@@ -31,9 +31,9 @@ public class Game : MonoBehaviour
         }
         if (move.Movingtime() == false)
         {
-
-                ChooseRandomEvent();
-                move.TimetoMove();
+            GetComponent<Movement>().enabled = false;
+            ChooseRandomEvent();
+            move.TimetoMove();
             
         }
     }
