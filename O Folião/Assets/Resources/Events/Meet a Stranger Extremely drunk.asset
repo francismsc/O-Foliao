@@ -10,32 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
-  m_Name: Meet a Stranger Drinking
+  m_Name: Meet a Stranger Extremely drunk
   m_EditorClassIdentifier: 
-  _event: Encontras-te uma pessoa a beber sozinha
+  _event: "Encontraste uma pessoa extremamente b\xEAbada"
   _background: {fileID: 0}
   _decisions:
-  - _stringI: Beber com a pessoa
-    _stringF: 
-    _alcoolD: 5
+  - _stringI: Ajudar a encontrar os amigos
+    _stringF: "Demorou um bocado mas l\xE1 os conseguiste encontrar"
+    _alcoolD: -10
     _funD: 5
-    _hungerD: -2
+    _hungerD: 0
     _socialD: 10
-    _moneyD: -2
-    _energyD: -5
-  - _stringI: Pedir para te oferecer uma bebida
-    _stringF: "N\xE3o "
-    _alcoolD: 5
-    _funD: 5
-    _hungerD: -2
-    _socialD: 5
+    _moneyD: 0
+    _energyD: -10
+  - _stringI: "Levar ao posto m\xE9dico"
+    _stringF: A pessoa ficou a salvo
+    _alcoolD: -10
+    _funD: -5
+    _hungerD: 0
+    _socialD: 10
     _moneyD: 0
     _energyD: -5
   - _stringI: Ignorar
-    _stringF: 
-    _alcoolD: -5
-    _funD: -5
-    _hungerD: -5
+    _stringF: "Continuas em frente e deixas a pessoa no meio do ch\xE3o"
+    _alcoolD: 0
+    _funD: 0
+    _hungerD: 0
     _socialD: -5
     _moneyD: 0
     _energyD: 0
