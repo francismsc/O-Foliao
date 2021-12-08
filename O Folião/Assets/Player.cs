@@ -40,7 +40,8 @@ public class Player : MonoBehaviour
         hunger = MaxHunger;
         social = MaxSocial;
         energy = MaxEnergy;
-        bars.SetMaxAllBars(MaxAlcool, MaxFun, MaxHunger, MaxSocial, MaxEnergy);
+        bars.SetMaxAllBars(MaxAlcool, MaxFun, MaxHunger, MaxSocial, MaxEnergy,  money);
+
 
 
     }
@@ -109,7 +110,7 @@ public class Player : MonoBehaviour
         Debug.Log("Social " + player.social);
         Debug.Log("Energy " + player.energy);
 
-        bars.SetValueAllBars(player.alcool, player.fun, player.hunger, player.social, player.energy);
+        bars.SetValueAllBars(player.alcool, player.fun, player.hunger, player.social, player.energy, player.money);
     }
 
     public void ChangePosition(GameObject position)

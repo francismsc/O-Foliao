@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dance until you are ded
   m_EditorClassIdentifier: 
   _event: You at the disco dance dance?
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 5f6add5d14e831e4b99acf0e847735f9, type: 3}
   _decisions:
   - _stringI: Dance dance
     _stringF: You feel amazing dancing
@@ -22,6 +22,7 @@ MonoBehaviour:
     _hungerD: 0
     _socialD: 20
     _moneyD: 0
+    _energyD: 0
   - _stringI: Go away
     _stringF: You felt like it was a lost oportunity
     _alcoolD: 0
@@ -29,3 +30,4 @@ MonoBehaviour:
     _hungerD: 0
     _socialD: -10
     _moneyD: 0
+    _energyD: 0

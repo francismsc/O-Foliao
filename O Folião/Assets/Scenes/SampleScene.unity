@@ -209,6 +209,7 @@ GameObject:
   - component: {fileID: 60811731}
   - component: {fileID: 60811733}
   - component: {fileID: 60811732}
+  - component: {fileID: 60811734}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -259,7 +260,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1592390869}
   move: {fileID: 60811732}
+  eventsUi: {fileID: 60811734}
   number: 1
+--- !u!114 &60811734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60811730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de6bfb43a7be5fa4dab11f36a0a611c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  choices2: {fileID: 97581438}
+  background2: {fileID: 2058699455}
+  choice0button0: {fileID: 264293542}
+  choice0button1: {fileID: 1377752082}
+  description1: {fileID: 980111629}
+  choices3: {fileID: 2045546134}
+  background3: {fileID: 4472506}
+  choice1button0: {fileID: 549545084}
+  choice1button1: {fileID: 1185391555}
+  choice1button2: {fileID: 231556963}
+  description2: {fileID: 2040538904}
+  evenaux: {fileID: 0}
+  player: {fileID: 1592390869}
 --- !u!1 &61069692
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,7 +851,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 264293545}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 60811734}
+        m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
+        m_MethodName: choice1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &264293545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4694,7 +4733,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1377752085}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 60811734}
+        m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
+        m_MethodName: choice2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1377752085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5425,6 +5476,7 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   energyFill: {fileID: 1154548912}
+  text: {fileID: 866341163}
 --- !u!224 &1634068293
 RectTransform:
   m_ObjectHideFlags: 0

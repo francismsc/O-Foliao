@@ -8,6 +8,7 @@ public class Game : MonoBehaviour
     public Player player;
     public Movement move;
     private Node node;
+    public EventsUi eventsUi;
     private int rnd;
     public int number = 1;
 
@@ -54,7 +55,7 @@ public class Game : MonoBehaviour
     {
         rnd = Random.Range(0, Events.Length);
         Debug.Log(Events[rnd].Event);
-        foreach(Decisions decision in Events[rnd].decisions)
+        foreach (Decisions decision in Events[rnd].decisions)
         {
             Debug.Log(decision.stringI);
             Debug.Log(decision.stringF);
@@ -63,8 +64,8 @@ public class Game : MonoBehaviour
             Debug.Log(decision.hungerD);
             Debug.Log(decision.socialD);
             Debug.Log(decision.moneyD);
-            player.ChangeStats(player, decision.alcoolD, decision.funD, decision.hungerD, decision.socialD, decision.moneyD, decision.energyD);   
-        }
+            eventsUi.eventUi(Events[rnd]);
+        } 
     }
 
     void SpawnEvent()

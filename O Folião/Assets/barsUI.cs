@@ -40,9 +40,11 @@ public class barsUI : MonoBehaviour
     [SerializeField]
     public Image energyFill;
 
+    public Text text;
 
 
-    public void SetMaxAllBars(int alcool, int fun, int hunger, int social, int energy)
+
+    public void SetMaxAllBars(int alcool, int fun, int hunger, int social, int energy, int money)
     {
         alcoolSlider.maxValue = alcool;
         alcoolSlider.value = alcool;
@@ -64,9 +66,14 @@ public class barsUI : MonoBehaviour
         energySlider.value = energy;
         energyFill.color = energyGradient.Evaluate(1f);
 
+        text.text = money.ToString();
+
+
+
+
     }
 
-    public void SetValueAllBars(int alcool, int fun, int hunger, int social, int energy)
+    public void SetValueAllBars(int alcool, int fun, int hunger, int social, int energy, int money)
     {
         alcoolSlider.value = alcool;
         alcoolFill.color = alcoolGradient.Evaluate(alcoolSlider.value);
@@ -82,5 +89,7 @@ public class barsUI : MonoBehaviour
 
         energySlider.value = energy;
         energyFill.color = energyGradient.Evaluate(energySlider.value);
+
+        text.text = money.ToString();
     }
 }
