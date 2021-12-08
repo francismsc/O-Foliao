@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Meet a Friend drunk
+  m_EditorClassIdentifier: 
+  _event: Encontraste uns amigos
+  _background: {fileID: 0}
+  _decisions:
+  - _stringI: "Abra\xE7a-los e fazer ganda festa"
+    _stringF: "Ficaram a dan\xE7ar e a beber durante imenso tempo"
+    _alcoolD: 10
+    _funD: 15
+    _hungerD: 0
+    _socialD: 15
+    _moneyD: 0
+    _energyD: -5
+  - _stringI: "Dizer ol\xE1"
+    _stringF: "Eles disseram ol\xE1 tamb\xE9m"
+    _alcoolD: 0
+    _funD: 0
+    _hungerD: 0
+    _socialD: 5
+    _moneyD: 0
+    _energyD: 0
+  - _stringI: Ignorar
+    _stringF: Os teus amigos ficaram chateados
+    _alcoolD: 0
+    _funD: 0
+    _hungerD: 0
+    _socialD: -10
+    _moneyD: 0
+    _energyD: 0
