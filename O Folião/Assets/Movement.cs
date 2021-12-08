@@ -70,7 +70,7 @@ public class Movement: MonoBehaviour
 
             if (moving == true && player.gameObject.transform.position != child.transform.position)
             {
-                player.gameObject.transform.position = Vector3.MoveTowards(player.gameObject.transform.position, child.transform.position, 5 * Time.deltaTime);
+                player.gameObject.transform.position = Vector3.MoveTowards(player.gameObject.transform.position, child.transform.position, 50 * Time.deltaTime);
             }
             else if (child == null || (player.gameObject.transform.position == child.transform.position && choice == false))
             {
