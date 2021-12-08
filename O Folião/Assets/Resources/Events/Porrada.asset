@@ -12,22 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: Porrada
   m_EditorClassIdentifier: 
-  _event: Alguem te bateu na festa
+  _event: Levaste um murro
   _background: {fileID: 21300000, guid: 5f6add5d14e831e4b99acf0e847735f9, type: 3}
   _decisions:
-  - _stringI: Bates nele de volta
-    _stringF: You win
-    _alcoolD: -20
-    _funD: -30
+  - _stringI: Mandar um murro de volta
+    _stringF: Deixaste a pessoa K.O
+    _alcoolD: 0
+    _funD: 5
     _hungerD: 0
-    _socialD: 30
-    _moneyD: 15
-    _energyD: 0
-  - _stringI: Corres se olhar para tras
-    _stringF: vives
-    _alcoolD: 20
-    _funD: 10
-    _hungerD: 40
-    _socialD: 10
-    _moneyD: 2
-    _energyD: 0
+    _socialD: 5
+    _moneyD: 0
+    _energyD: -10
+  - _stringI: "Corres sem olhar para tr\xE1s"
+    _stringF: Conseguiste fugir
+    _alcoolD: -5
+    _funD: -5
+    _hungerD: 0
+    _socialD: 0
+    _moneyD: 0
+    _energyD: -5

@@ -12,22 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: Dance until you are ded
   m_EditorClassIdentifier: 
-  _event: You at the disco dance dance?
+  _event: "Est\xE1 a dar boa m\xFAsica"
   _background: {fileID: 21300000, guid: 5f6add5d14e831e4b99acf0e847735f9, type: 3}
   _decisions:
-  - _stringI: Dance dance
-    _stringF: You feel amazing dancing
+  - _stringI: "Ficar e dan\xE7ar"
+    _stringF: Cansativo mas muito divertido
     _alcoolD: 0
-    _funD: 40
+    _funD: 15
     _hungerD: 0
-    _socialD: 20
+    _socialD: 10
     _moneyD: 0
-    _energyD: 0
-  - _stringI: Go away
-    _stringF: You felt like it was a lost oportunity
+    _energyD: -10
+  - _stringI: Ignorar
+    _stringF: "Perdeste a oportunidade de dan\xE7ar ao som das tuas m\xFAsicas favoritas"
     _alcoolD: 0
     _funD: -15
     _hungerD: 0
     _socialD: -10
     _moneyD: 0
-    _energyD: 0
+    _energyD: 5
