@@ -30,7 +30,7 @@ public class EventsUi : MonoBehaviour
             choice0button0.GetComponentInChildren<Text>().text = even.decisions[0].stringI;
             choice0button1.GetComponentInChildren<Text>().text = even.decisions[1].stringI;
             description1.GetComponentInChildren<Text>().text = even.Event;
-            choices2.active = true;
+            choices2.SetActive(true);
 
         }
         if (even.decisions.Length == 3)
@@ -41,7 +41,7 @@ public class EventsUi : MonoBehaviour
             choice1button1.GetComponentInChildren<Text>().text = even.decisions[1].stringI;
             choice1button2.GetComponentInChildren<Text>().text = even.decisions[2].stringI;
             description2.GetComponentInChildren<Text>().text = even.Event;
-            choices3.active = true;
+            choices3.SetActive(true);
 
         }
 
@@ -50,29 +50,29 @@ public class EventsUi : MonoBehaviour
     public void choice11()
     {
         player.ChangeStats(player, evenaux.decisions[0].alcoolD, evenaux.decisions[0].funD, evenaux.decisions[0].socialD, evenaux.decisions[0].moneyD, evenaux.decisions[0].energyD);
-        choices2.active = false;
+        choices2.SetActive(false);
     }
 
     public void choice12()
     {
         player.ChangeStats(player, evenaux.decisions[1].alcoolD, evenaux.decisions[1].funD, evenaux.decisions[1].socialD, evenaux.decisions[1].moneyD, evenaux.decisions[1].energyD);
-        choices2.active = false;
+        choices2.SetActive(false);
     }
 
     public void choice31()
     {
         player.ChangeStats(player, evenaux.decisions[0].alcoolD, evenaux.decisions[0].funD, evenaux.decisions[0].socialD, evenaux.decisions[0].moneyD, evenaux.decisions[0].energyD);
-        choices3.active = false;
+        choices3.SetActive(false);
     }
     public void choice32()
     {
         player.ChangeStats(player, evenaux.decisions[1].alcoolD, evenaux.decisions[1].funD, evenaux.decisions[1].socialD, evenaux.decisions[1].moneyD, evenaux.decisions[1].energyD);
-        choices3.active = false;
+        choices3.SetActive(false);
     }
     public void choice33()
     {
         player.ChangeStats(player, evenaux.decisions[2].alcoolD, evenaux.decisions[2].funD, evenaux.decisions[2].socialD, evenaux.decisions[2].moneyD, evenaux.decisions[2].energyD);
-        choices3.active = false;
+        choices3.SetActive(false);
     }
 
 
