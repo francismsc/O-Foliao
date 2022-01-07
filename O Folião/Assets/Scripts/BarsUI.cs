@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class barsUI : MonoBehaviour
+public class BarsUI : MonoBehaviour
 {
     [SerializeField]
     public Slider alcoolSlider;
@@ -37,32 +37,20 @@ public class barsUI : MonoBehaviour
 
 
 
-    public void SetMaxAllBars(int alcool, int fun, int social, int energy, int money)
+    public void SetMaxAllBars(int maxAlcool, int maxFun, int maxSocial, int maxEnergy, int money)
     {
-        alcoolSlider.maxValue = alcool;
-        alcoolSlider.value = alcool;
-        alcoolFill.color = alcoolGradient.Evaluate(1f);
+        alcoolSlider.maxValue = maxAlcool;
 
-        funSlider.maxValue = fun;
-        funSlider.value = fun;
-        funFill.color = funGradient.Evaluate(1f);
+        funSlider.maxValue = maxFun;
 
-        socialSlider.maxValue = social;
-        socialSlider.value = social;
-        socialFill.color = socialGradient.Evaluate(1f);
+        socialSlider.maxValue = maxSocial;
 
-        energySlider.maxValue = energy;
-        energySlider.value = energy;
-        energyFill.color = energyGradient.Evaluate(1f);
+        energySlider.maxValue = maxEnergy;
 
-        text.text = money.ToString();
-
-
-
-
+        SetValueAllBars();
     }
 
-    public void SetValueAllBars(int alcool, int fun, int social, int energy, int money)
+    public void SetValueAllBars(int alcool = 0, int fun = 50, int social = 50, int energy = 100, int money = 30)
     {
         alcoolSlider.value = alcool;
         alcoolFill.color = alcoolGradient.Evaluate(alcoolSlider.value);

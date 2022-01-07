@@ -14,4 +14,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FailScene.unity
     guid: f9361b271122e4d43ae63197b2e068ba
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: e5f5e84ff5f8b7049bea7428d854aae8, type: 2}

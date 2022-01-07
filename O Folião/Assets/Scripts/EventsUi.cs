@@ -6,18 +6,18 @@ using UnityEngine.UI;
 public class EventsUi : MonoBehaviour
 {
     public GameObject choices2;
-    public GameObject background2;
-    public GameObject choice0button0;
-    public GameObject choice0button1;
-    public GameObject description1;
+    public Image background2;
+    public Text choice0Button0;
+    public Text choice0Button1;
+    public Text description1;
 
 
     public GameObject choices3;
-    public GameObject background3;
-    public GameObject choice1button0;
-    public GameObject choice1button1;
-    public GameObject choice1button2;
-    public GameObject description2;
+    public Image background3;
+    public Text choice1Button0;
+    public Text choice1Button1;
+    public Text choice1Button2;
+    public Text description2;
 
     public GameObject result;
 
@@ -29,21 +29,21 @@ public class EventsUi : MonoBehaviour
         if(even.decisions.Length == 2)
         {
 
-            background2.GetComponent<Image>().sprite = even.background;
-            choice0button0.GetComponentInChildren<Text>().text = even.decisions[0].stringI;
-            choice0button1.GetComponentInChildren<Text>().text = even.decisions[1].stringI;
-            description1.GetComponentInChildren<Text>().text = even.Event;
+            background2.sprite = even.background;
+            choice0Button0.text = even.decisions[0].stringI;
+            choice0Button1.text = even.decisions[1].stringI;
+            description1.text = even.Event;
             choices2.SetActive(true);
 
         }
         if (even.decisions.Length == 3)
         {
 
-            background3.GetComponent<Image>().sprite = even.background;
-            choice1button0.GetComponentInChildren<Text>().text = even.decisions[0].stringI;
-            choice1button1.GetComponentInChildren<Text>().text = even.decisions[1].stringI;
-            choice1button2.GetComponentInChildren<Text>().text = even.decisions[2].stringI;
-            description2.GetComponentInChildren<Text>().text = even.Event;
+            background3.sprite = even.background;
+            choice1Button0.text = even.decisions[0].stringI;
+            choice1Button1.text = even.decisions[1].stringI;
+            choice1Button2.text = even.decisions[2].stringI;
+            description2.text = even.Event;
             choices3.SetActive(true);
 
         }

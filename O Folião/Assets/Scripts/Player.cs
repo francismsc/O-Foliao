@@ -5,22 +5,22 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private int MaxAlcool;
+    private int maxAlcool = 100;
     [SerializeField]
-    private int MaxFun;
+    private int maxFun = 100;
     [SerializeField]
-    private int MaxSocial;
+    private int maxSocial = 100;
     [SerializeField]
-    private int MaxEnergy;
+    private int maxEnergy = 100;
 
     [SerializeField]
-    private int alcool;
+    private int alcool = 0;
     [SerializeField]
-    private int fun;
+    private int fun = 50;
     [SerializeField]
-    private int social;
+    private int social = 50;
     [SerializeField]
-    private int energy;
+    private int energy = 100;
 
     [SerializeField]
     private int money;
@@ -29,18 +29,12 @@ public class Player : MonoBehaviour
     [SerializeField]
     public SceneChanger scene;
 
-    public barsUI bars;
+    public BarsUI bars;
 
 
     private void Start()
     {
-        alcool = 0;
-        fun = 50;
-        social = 50;
-        energy = MaxEnergy;
-        bars.SetMaxAllBars(MaxAlcool, MaxFun, MaxSocial, MaxEnergy,  money);
-
-        bars.SetValueAllBars(alcool, fun, social, MaxEnergy, money);
+        bars.SetMaxAllBars(maxAlcool, maxFun, maxSocial, maxEnergy,  money);
     }
 
 
@@ -59,21 +53,21 @@ public class Player : MonoBehaviour
         player.money += money;
         player.energy += energy;
 
-        if(player.alcool > MaxAlcool)
+        if(player.alcool > maxAlcool)
         {
-            player.alcool = MaxAlcool;
+            player.alcool = maxAlcool;
         }
-        if (player.fun > MaxFun)
+        if (player.fun > maxFun)
         {
-            player.fun = MaxFun;
+            player.fun = maxFun;
         }
-        if(player.social > MaxSocial)
+        if(player.social > maxSocial)
         { 
-            player.social = MaxSocial;
+            player.social = maxSocial;
         }
-        if(player.energy > MaxEnergy)
+        if(player.energy > maxEnergy)
         {
-            player.energy = MaxEnergy;
+            player.energy = maxEnergy;
         }
 
         if (player.alcool < 0)
@@ -104,7 +98,7 @@ public class Player : MonoBehaviour
         if (player.alcool == 100 || player.energy == 0)
         {
             Debug.Log("DIE");
-            scene.die();
+            scene.Death();
         }
 
     }

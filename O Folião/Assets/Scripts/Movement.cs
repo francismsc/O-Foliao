@@ -19,7 +19,7 @@ public class Movement: MonoBehaviour
         
     }
 
-    public bool Movingtime()
+    public bool isMoving()
     {
         return timetomove;
     }
@@ -82,7 +82,6 @@ public class Movement: MonoBehaviour
             }
             else if (player.gameObject.transform.position == child.transform.position && choice == true)
             {
-                Debug.Log("YA");
                 choice = false;
                 moving = false;
                 timetomove = false;
@@ -99,7 +98,6 @@ public class Movement: MonoBehaviour
 
     IEnumerator StillMoving(Player player,GameObject child)
     {
-        Debug.Log("Rola");
         yield return new WaitWhile(() => player.gameObject.transform.position != child.transform.position);
     }
 

@@ -170,10 +170,9 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
-  Options:
+  options:
   - {fileID: 895441762}
   - {fileID: 1657135960}
-  - {fileID: 2125884202}
   - {fileID: 195062983}
 --- !u!1 &4472506
 GameObject:
@@ -328,16 +327,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   choices2: {fileID: 97581438}
-  background2: {fileID: 2058699455}
-  choice0button0: {fileID: 264293542}
-  choice0button1: {fileID: 1377752082}
-  description1: {fileID: 980111629}
+  background2: {fileID: 2058699457}
+  choice0Button0: {fileID: 1902039927}
+  choice0Button1: {fileID: 1960237640}
+  description1: {fileID: 980111631}
   choices3: {fileID: 2045546134}
-  background3: {fileID: 4472506}
-  choice1button0: {fileID: 549545084}
-  choice1button1: {fileID: 1185391555}
-  choice1button2: {fileID: 1968434918}
-  description2: {fileID: 2040538904}
+  background3: {fileID: 4472508}
+  choice1Button0: {fileID: 1255338531}
+  choice1Button1: {fileID: 1035365290}
+  choice1Button2: {fileID: 327466210}
+  description2: {fileID: 2040538906}
   result: {fileID: 1579209257}
   evenaux: {fileID: 0}
   player: {fileID: 1592390869}
@@ -511,10 +510,9 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
-  Options:
-  - {fileID: 1408764755}
-  - {fileID: 911360576}
+  options:
   - {fileID: 699324352}
+  - {fileID: 911360576}
 --- !u!1 &119468169
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,8 +545,8 @@ MonoBehaviour:
   type: 0
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
-  node: {fileID: 0}
-  Options:
+  node: {fileID: 119468170}
+  options:
   - {fileID: 911360576}
   - {fileID: 290813222}
 --- !u!4 &119468171
@@ -869,11 +867,10 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
-  Options:
+  options:
   - {fileID: 2125884202}
   - {fileID: 1657135960}
   - {fileID: 3950660}
-  - {fileID: 895441762}
 --- !u!4 &195062985
 Transform:
   m_ObjectHideFlags: 0
@@ -935,7 +932,7 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 239217042}
-  Options:
+  options:
   - {fileID: 1946886341}
 --- !u!1 &244730962
 GameObject:
@@ -1365,11 +1362,11 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
-  Options:
-  - {fileID: 119468169}
+  options:
   - {fileID: 1342336682}
   - {fileID: 1671169446}
   - {fileID: 500871885}
+  - {fileID: 119468169}
 --- !u!1 &304478344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2030,9 +2027,9 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
-  Options:
-  - {fileID: 290813222}
+  options:
   - {fileID: 1671169446}
+  - {fileID: 290813222}
   - {fileID: 845040697}
 --- !u!1 &549545084
 GameObject:
@@ -2340,7 +2337,7 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
-  Options:
+  options:
   - {fileID: 1342336682}
   - {fileID: 99934416}
 --- !u!1 &701223692
@@ -2843,7 +2840,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 54.7
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3158,7 +3155,7 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
-  Options:
+  options:
   - {fileID: 500871885}
   - {fileID: 1671169446}
   - {fileID: 895441762}
@@ -3574,10 +3571,9 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
-  Options:
+  options:
   - {fileID: 845040697}
   - {fileID: 3950660}
-  - {fileID: 195062983}
 --- !u!4 &895441764
 Transform:
   m_ObjectHideFlags: 0
@@ -3586,7 +3582,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895441762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 1757844433}
@@ -3624,11 +3620,11 @@ MonoBehaviour:
   type: 0
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
-  node: {fileID: 0}
-  Options:
+  node: {fileID: 911360577}
+  options:
   - {fileID: 2041921415}
-  - {fileID: 119468169}
   - {fileID: 99934416}
+  - {fileID: 119468169}
 --- !u!4 &911360578
 Transform:
   m_ObjectHideFlags: 0
@@ -5625,7 +5621,7 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
-  Options:
+  options:
   - {fileID: 290813222}
   - {fileID: 699324352}
 --- !u!1 &1360569925
@@ -5983,7 +5979,7 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
-  Options:
+  options:
   - {fileID: 99934416}
 --- !u!1 &1458537677
 GameObject:
@@ -6277,10 +6273,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15b0dea455deb854789d8e226ac56f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxAlcool: 100
-  MaxFun: 100
-  MaxSocial: 100
-  MaxEnergy: 100
+  maxAlcool: 100
+  maxFun: 100
+  maxSocial: 100
+  maxEnergy: 100
   alcool: 0
   fun: 50
   social: 50
@@ -6755,7 +6751,7 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
-  Options:
+  options:
   - {fileID: 3950660}
   - {fileID: 2125884202}
   - {fileID: 195062983}
@@ -6820,10 +6816,10 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
-  Options:
-  - {fileID: 290813222}
+  options:
   - {fileID: 500871885}
   - {fileID: 845040697}
+  - {fileID: 290813222}
 --- !u!1 &1687220586
 GameObject:
   m_ObjectHideFlags: 0
@@ -8370,9 +8366,7 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
-  Options:
-  - {fileID: 239217040}
-  - {fileID: 2041921415}
+  options: []
 --- !u!1 &1960237638
 GameObject:
   m_ObjectHideFlags: 0
@@ -8912,10 +8906,9 @@ MonoBehaviour:
   type: 0
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
-  node: {fileID: 0}
-  Options:
-  - {fileID: 1946886341}
-  - {fileID: 911360576}
+  node: {fileID: 2041921417}
+  options:
+  - {fileID: 239217040}
 --- !u!1 &2045546134
 GameObject:
   m_ObjectHideFlags: 0
@@ -9242,7 +9235,7 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
-  Options:
-  - {fileID: 3950660}
+  options:
   - {fileID: 1657135960}
+  - {fileID: 3950660}
   - {fileID: 195062983}

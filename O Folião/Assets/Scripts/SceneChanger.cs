@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    public void die()
+    public void Death()
     {
         SceneManager.LoadScene("FailScene");
     }

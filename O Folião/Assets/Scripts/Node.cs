@@ -18,13 +18,13 @@ public class Node : MonoBehaviour
 
 
     [SerializeField]
-    List<GameObject> Options;
+    List<GameObject> options;
 
 
 
     public List<GameObject> GetOptions()
     {
-       return this.Options;
+       return this.options;
     }
         
 

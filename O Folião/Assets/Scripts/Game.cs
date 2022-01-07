@@ -15,8 +15,8 @@ public class Game : MonoBehaviour
     //public List<Decisions> decisions;
     //public List<Events> events;
 
-    private Events[] _events = null;
-    public Events[] Events { get { return _events; } }
+    private Events[] events = null;
+    public Events[] Events { get { return events; } }
     void Awake()
     {
         rnd = Random.Range(1, 254);
@@ -25,11 +25,11 @@ public class Game : MonoBehaviour
 
     private void Update()
     {
-        if (move.Movingtime() == true)
+        if (move.isMoving() == true)
         {
             GetComponent<Movement>().enabled = true;
         }
-        if (move.Movingtime() == false)
+        if (move.isMoving() == false)
         {
             GetComponent<Movement>().enabled = false;
             ChooseRandomEvent();
@@ -43,10 +43,10 @@ public class Game : MonoBehaviour
     void LoadEvents()
     {
         Object[] objs = Resources.LoadAll("Events", typeof(Events));
-        _events = new Events[objs.Length];
+        events = new Events[objs.Length];
         for (int i = 0; i < objs.Length; i++)
         {
-            _events[i] = (Events)objs[i];
+            events[i] = (Events)objs[i];
         }
 
     }
