@@ -7,20 +7,21 @@ public class Game : MonoBehaviour
 {
     public Player player;
     public Movement move;
-    private Node node;
     public EventsUi eventsUi;
+    public EventList eventsList;
+    public Node node;
     private int rnd;
     public int number = 1;
 
-    //public List<Decisions> decisions;
-    //public List<Events> events;
-
     private Events[] events = null;
     public Events[] Events { get { return events; } }
+
+    
     void Awake()
     {
         rnd = Random.Range(1, 254);
         LoadEvents();
+ 
     }
 
     private void Update()
@@ -38,7 +39,10 @@ public class Game : MonoBehaviour
         }
     }
 
+    void ChooseEventType()
+    {
 
+    }
 
     void LoadEvents()
     {

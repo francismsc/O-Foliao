@@ -313,6 +313,8 @@ MonoBehaviour:
   player: {fileID: 1592390869}
   move: {fileID: 60811732}
   eventsUi: {fileID: 60811734}
+  eventsList: {fileID: 0}
+  node: {fileID: 0}
   number: 1
 --- !u!114 &60811734
 MonoBehaviour:
@@ -5455,6 +5457,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1305438557}
+  - component: {fileID: 1305438558}
   m_Layer: 0
   m_Name: Events
   m_TagString: Untagged
@@ -5476,6 +5479,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1305438558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305438556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04c8e40a2916a1e4884da9e5b6225588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normal:
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: a969d906451325d4299253c08c8f86dc, type: 2}
+  - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
+  - {fileID: 11400000, guid: 933869a3a2a63e34881b6709c65a7a74, type: 2}
+  - {fileID: 11400000, guid: 0001b18037add904ea79bb826b2839ac, type: 2}
+  - {fileID: 11400000, guid: d74ef4cfa831e0d448cefb1940601dd0, type: 2}
+  - {fileID: 11400000, guid: 9ce5677824b567644b246b77a94d8d0a, type: 2}
+  store: []
+  bar: []
+  extra: []
 --- !u!1 &1319043134
 GameObject:
   m_ObjectHideFlags: 0

@@ -45,26 +45,11 @@ public class Node : MonoBehaviour
     }
 
 
-    public void Event(Player player)
+    public string NodeType(Player player)
     {
         node = GetNode(player);
-        if(node.type == Type.Normal)
-        {
-            
-
-        }
-        else if(node.type == Type.Store)
-        {
-
-        }
-        else if(node.type == Type.Bar)
-        {
-
-        }
-        else if(node.type == Type.Extra)
-        {
-
-        }
+        Debug.Log("ya");
+        return node.type.ToString();
     }
 
 
