@@ -32,6 +32,13 @@ using System;
         [SerializeField] private int _energyD;
         public int energyD { get { return _energyD; } }
 
+        [SerializeField] private int _random;
+        public int random { get { return _random; } }
+
+        [SerializeField] private Events[] _moreDecisionsStages;
+        public Events[] moreDecisionsStages { get { return _moreDecisionsStages; } }
+
+
 }
 [CreateAssetMenu(fileName = "New Event", menuName = "Events/new Event")]
     public class Events : ScriptableObject
@@ -57,7 +64,11 @@ using System;
         [SerializeField]
         private Energy energy;
 
-        
+        public enum Tag { Night, Day, Bars, LowAlcool, LowEnergy };
+
+        [SerializeField] private Tag[] _tags = null;
+        public Tag[] tags { get { return _tags; } }
+
 
 
 }

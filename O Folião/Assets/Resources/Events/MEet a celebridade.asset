@@ -23,6 +23,9 @@ MonoBehaviour:
     _socialD: 10
     _moneyD: 0
     _energyD: -5
+    _random: 0
+    _moreDecisionsStages:
+    - {fileID: 11400000, guid: 9ce5677824b567644b246b77a94d8d0a, type: 2}
   - _stringI: Dar um beijinho na bochecha
     _stringF: "Ele pediu o certificado de vacina\xE7\xE3o primeiro e depois de mostrar,
       l\xE1 deu uma beijoca"
@@ -32,6 +35,8 @@ MonoBehaviour:
     _socialD: 10
     _moneyD: 0
     _energyD: -5
+    _random: 0
+    _moreDecisionsStages: []
   - _stringI: "Dar um abra\xE7o apertadinho"
     _stringF: "Entusiasmaste-te e meteste a m\xE3o na n\xE1dega, acho que n\xE3o
       gostou muito "
@@ -41,3 +46,8 @@ MonoBehaviour:
     _socialD: -10
     _moneyD: 0
     _energyD: -5
+    _random: 0
+    _moreDecisionsStages: []
+  alcool: 1
+  energy: 0
+  _tags: 

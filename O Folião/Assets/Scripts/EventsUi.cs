@@ -23,7 +23,7 @@ public class EventsUi : MonoBehaviour
 
     public Events evenaux;
     public Player player;
-    public void eventUi(Events even)
+    public void EventUi(Events even)
     {
         evenaux = even;
         if(even.decisions.Length == 2)
@@ -50,48 +50,98 @@ public class EventsUi : MonoBehaviour
 
     }
 
-    public void resultcanvas()
+    public void Resultcanvas()
     {
         result  .SetActive(true);
     }
 
-    public void choice11()
+    public void Choice11()
     {
         player.ChangeStats(player, evenaux.decisions[0].alcoolD, evenaux.decisions[0].funD, evenaux.decisions[0].socialD, evenaux.decisions[0].moneyD, evenaux.decisions[0].energyD);
         choices2.SetActive(false);
         result.GetComponentInChildren<Text>().text = evenaux.decisions[0].stringF;
-        resultcanvas();
+
     }
 
-    public void choice12()
+    public void Choice12()
     {
         player.ChangeStats(player, evenaux.decisions[1].alcoolD, evenaux.decisions[1].funD, evenaux.decisions[1].socialD, evenaux.decisions[1].moneyD, evenaux.decisions[1].energyD);
         choices2.SetActive(false);
         result.GetComponentInChildren<Text>().text = evenaux.decisions[1].stringF;
-        resultcanvas();
+
     }
 
-    public void choice31()
+    public void Choice31()
     {
         player.ChangeStats(player, evenaux.decisions[0].alcoolD, evenaux.decisions[0].funD, evenaux.decisions[0].socialD, evenaux.decisions[0].moneyD, evenaux.decisions[0].energyD);
         choices3.SetActive(false);
         result.GetComponentInChildren<Text>().text = evenaux.decisions[0].stringF;
-        resultcanvas();
+
     }
-    public void choice32()
+    public void Choice32()
     {
         player.ChangeStats(player, evenaux.decisions[1].alcoolD, evenaux.decisions[1].funD, evenaux.decisions[1].socialD, evenaux.decisions[1].moneyD, evenaux.decisions[1].energyD);
         choices3.SetActive(false);
         result.GetComponentInChildren<Text>().text = evenaux.decisions[1].stringF;
-        resultcanvas();
+
     }
-    public void choice33()
+    public void Choice33()
     {
         player.ChangeStats(player, evenaux.decisions[2].alcoolD, evenaux.decisions[2].funD, evenaux.decisions[2].socialD, evenaux.decisions[2].moneyD, evenaux.decisions[2].energyD);
         choices3.SetActive(false);
         result.GetComponentInChildren<Text>().text = evenaux.decisions[2].stringF;
-        resultcanvas();
+
     }
+
+    public void Morechoices1()
+    {
+        if (evenaux.decisions[0].moreDecisionsStages.Length == 0)
+        {
+            Debug.Log("ya");
+            Resultcanvas();
+        }
+        else if (evenaux.decisions[0].moreDecisionsStages[0] != null)
+        {
+            Debug.Log("epa");
+            Debug.Log(evenaux.decisions[0].moreDecisionsStages[0]);
+            EventUi(evenaux.decisions[0].moreDecisionsStages[0]);
+
+        }
+    }
+
+    public void Morechoices2()
+    {
+        if (evenaux.decisions[1].moreDecisionsStages.Length == 0)
+        {
+            Debug.Log("ya");
+            Resultcanvas();
+        }
+        else if (evenaux.decisions[1].moreDecisionsStages[0] != null)
+        {
+            Debug.Log("epa");
+            Debug.Log(evenaux.decisions[1].moreDecisionsStages[0]);
+            EventUi(evenaux.decisions[1].moreDecisionsStages[0]);
+
+        }
+    }
+
+    public void Morechoices3()
+    {
+        if (evenaux.decisions[2].moreDecisionsStages.Length == 0)
+        {
+            Debug.Log("ya");
+            Resultcanvas();
+        }
+        else if (evenaux.decisions[2].moreDecisionsStages[0] != null)
+        {
+            Debug.Log("epa");
+            Debug.Log(evenaux.decisions[2].moreDecisionsStages[0]);
+            EventUi(evenaux.decisions[2].moreDecisionsStages[0]);
+
+        }
+    }
+
+
 
 
 }

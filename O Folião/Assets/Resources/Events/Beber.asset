@@ -23,6 +23,9 @@ MonoBehaviour:
     _socialD: 10
     _moneyD: 0
     _energyD: 0
+    _random: 0
+    _moreDecisionsStages:
+    - {fileID: 11400000, guid: 2c40ed9ed5e42ae4c8c25f839e260a2c, type: 2}
   - _stringI: "N\xE3o beber"
     _stringF: "Ele mandou a bebida de pen\xE1lti e foi-se embora"
     _alcoolD: -5
@@ -31,5 +34,8 @@ MonoBehaviour:
     _socialD: -5
     _moneyD: 5
     _energyD: 0
+    _random: 0
+    _moreDecisionsStages: []
   alcool: 1
   energy: 1
+  _tags: 

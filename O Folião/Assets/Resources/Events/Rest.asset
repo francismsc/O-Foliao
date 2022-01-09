@@ -23,6 +23,9 @@ MonoBehaviour:
     _socialD: 20
     _moneyD: 0
     _energyD: 15
+    _random: 0
+    _moreDecisionsStages:
+    - {fileID: 11400000, guid: 0001b18037add904ea79bb826b2839ac, type: 2}
   - _stringI: Continuar
     _stringF: Cumprimentaste os amigos e seguiste caminho
     _alcoolD: 0
@@ -31,3 +34,8 @@ MonoBehaviour:
     _socialD: 5
     _moneyD: 0
     _energyD: 0
+    _random: 0
+    _moreDecisionsStages: []
+  alcool: 0
+  energy: 0
+  _tags: 

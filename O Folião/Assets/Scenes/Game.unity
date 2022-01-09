@@ -1269,7 +1269,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 60811734}
         m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
-        m_MethodName: choice11
+        m_MethodName: Choice11
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 60811734}
+        m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
+        m_MethodName: Morechoices1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2118,7 +2130,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 60811734}
         m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
-        m_MethodName: choice31
+        m_MethodName: Choice31
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 60811734}
+        m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
+        m_MethodName: Morechoices1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5081,7 +5105,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 60811734}
         m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
-        m_MethodName: choice32
+        m_MethodName: Choice32
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 60811734}
+        m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
+        m_MethodName: Morechoices2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5938,7 +5974,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 60811734}
         m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
-        m_MethodName: choice12
+        m_MethodName: Choice12
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 60811734}
+        m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
+        m_MethodName: Morechoices2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8587,7 +8635,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 60811734}
         m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
-        m_MethodName: choice33
+        m_MethodName: Choice33
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 60811734}
+        m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
+        m_MethodName: Morechoices3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

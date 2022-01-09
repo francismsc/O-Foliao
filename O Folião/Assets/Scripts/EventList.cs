@@ -128,7 +128,7 @@ public class EventList : MonoBehaviour
         rnd = Random.Range(0, events.Length);
         foreach (Decisions decision in events[rnd].decisions)
         {
-            eventsUi.eventUi(events[rnd]);
+            eventsUi.EventUi(events[rnd]);
         }
     }
 

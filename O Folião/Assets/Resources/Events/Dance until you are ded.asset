@@ -23,6 +23,9 @@ MonoBehaviour:
     _socialD: 10
     _moneyD: 0
     _energyD: -10
+    _random: 0
+    _moreDecisionsStages:
+    - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
   - _stringI: Ignorar
     _stringF: "Perdeste a oportunidade de dan\xE7ar ao som das tuas m\xFAsicas favoritas"
     _alcoolD: 0
@@ -31,3 +34,8 @@ MonoBehaviour:
     _socialD: -10
     _moneyD: 0
     _energyD: 5
+    _random: 0
+    _moreDecisionsStages: []
+  alcool: 0
+  energy: 0
+  _tags: 00000000
