@@ -39,9 +39,9 @@ public class Player : MonoBehaviour
 
 
 
-    public void GetAllStats()
+    public int GetAllStats()
     {
-
+        return this.alcool;
     }
 
 
@@ -108,10 +108,16 @@ public class Player : MonoBehaviour
         this.position = position;
     }
 
-    public void GetAlcool()
+    public int GetAlcool()
     {
-        Debug.Log(this.alcool);
+        return this.alcool;
     }
+
+    public int GetEnergy()
+    {
+        return this.energy;
+    }
+
 
     public GameObject Position()
     {

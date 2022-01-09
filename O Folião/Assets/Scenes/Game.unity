@@ -313,8 +313,8 @@ MonoBehaviour:
   player: {fileID: 1592390869}
   move: {fileID: 60811732}
   eventsUi: {fileID: 60811734}
-  eventsList: {fileID: 0}
-  node: {fileID: 0}
+  eventsList: {fileID: 1305438558}
+  node: {fileID: 1305438559}
   number: 1
 --- !u!114 &60811734
 MonoBehaviour:
@@ -508,7 +508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a10b7f7853430d14c8107b23e66f5ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 1
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
@@ -2244,7 +2244,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 1360569926}
   m_HandleRect: {fileID: 0}
@@ -2834,7 +2834,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 1154548911}
   m_HandleRect: {fileID: 0}
@@ -3528,7 +3528,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 366538876}
   m_HandleRect: {fileID: 0}
@@ -3619,7 +3619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a10b7f7853430d14c8107b23e66f5ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 1
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 911360577}
@@ -5361,7 +5361,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 842542482}
   m_HandleRect: {fileID: 0}
@@ -5458,6 +5458,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1305438557}
   - component: {fileID: 1305438558}
+  - component: {fileID: 1305438559}
   m_Layer: 0
   m_Name: Events
   m_TagString: Untagged
@@ -5491,17 +5492,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c8e40a2916a1e4884da9e5b6225588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normal:
+  stagesDeck:
   - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
-  - {fileID: 11400000, guid: a969d906451325d4299253c08c8f86dc, type: 2}
-  - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
   - {fileID: 11400000, guid: 933869a3a2a63e34881b6709c65a7a74, type: 2}
-  - {fileID: 11400000, guid: 0001b18037add904ea79bb826b2839ac, type: 2}
   - {fileID: 11400000, guid: d74ef4cfa831e0d448cefb1940601dd0, type: 2}
-  - {fileID: 11400000, guid: 9ce5677824b567644b246b77a94d8d0a, type: 2}
-  store: []
-  bar: []
-  extra: []
+  - {fileID: 11400000, guid: 812d810d5bb655a479feacab55463206, type: 2}
+  barsDeck:
+  - {fileID: 11400000, guid: a969d906451325d4299253c08c8f86dc, type: 2}
+  - {fileID: 11400000, guid: b418435badfd7224393ddf5ad4655c14, type: 2}
+  - {fileID: 11400000, guid: 812d810d5bb655a479feacab55463206, type: 2}
+  lowAlcoolDeck:
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: b418435badfd7224393ddf5ad4655c14, type: 2}
+  - {fileID: 11400000, guid: c64b2da9ef247454fbc740896eaeee35, type: 2}
+  - {fileID: 11400000, guid: 812d810d5bb655a479feacab55463206, type: 2}
+  highAlcoolDeck:
+  - {fileID: 11400000, guid: 933869a3a2a63e34881b6709c65a7a74, type: 2}
+  - {fileID: 11400000, guid: 2c40ed9ed5e42ae4c8c25f839e260a2c, type: 2}
+  - {fileID: 11400000, guid: 812d810d5bb655a479feacab55463206, type: 2}
+  lowEnergyDeck:
+  - {fileID: 11400000, guid: c64b2da9ef247454fbc740896eaeee35, type: 2}
+  - {fileID: 11400000, guid: 812d810d5bb655a479feacab55463206, type: 2}
+--- !u!114 &1305438559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305438556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a10b7f7853430d14c8107b23e66f5ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  normal: {fileID: 0}
+  highLight: {fileID: 0}
+  node: {fileID: 0}
+  options: []
 --- !u!1 &1319043134
 GameObject:
   m_ObjectHideFlags: 0
@@ -8392,7 +8420,9 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
-  options: []
+  options:
+  - {fileID: 239217040}
+  - {fileID: 2041921415}
 --- !u!1 &1960237638
 GameObject:
   m_ObjectHideFlags: 0

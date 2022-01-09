@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
-    public enum Type { Normal, Store, Bar, Extra };
+    public enum Type {Stages, Bars};
 
     [SerializeField]
     private Type type;
@@ -12,23 +12,17 @@ public class Node : MonoBehaviour
     private Material normal;
     [SerializeField]
     private Material highLight;
-
-
     public Node node;
 
 
     [SerializeField]
     List<GameObject> options;
 
-
-
     public List<GameObject> GetOptions()
     {
        return this.options;
     }
         
-
-
     public void HighLight()
     {
         gameObject.GetComponentInParent<Renderer>().material = highLight;
@@ -45,11 +39,10 @@ public class Node : MonoBehaviour
     }
 
 
-    public string NodeType(Player player)
+    public Type NodeType(Player player)
     {
         node = GetNode(player);
-        Debug.Log("ya");
-        return node.type.ToString();
+        return node.type;
     }
 
 

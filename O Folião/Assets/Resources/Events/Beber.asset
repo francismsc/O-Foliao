@@ -31,3 +31,5 @@ MonoBehaviour:
     _socialD: -5
     _moneyD: 5
     _energyD: 0
+  alcool: 1
+  energy: 1

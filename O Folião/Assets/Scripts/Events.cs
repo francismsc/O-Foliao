@@ -45,6 +45,19 @@ using System;
 
         [SerializeField] Decisions[] _decisions = null;
         public Decisions[] decisions { get { return _decisions; } }
+
+        
+        public enum Alcool { Low30, Normal, High80 };
+
+        [SerializeField]
+        private Alcool alcool;
+        
+        public enum Energy { Low30, Normal };
+
+        [SerializeField]
+        private Energy energy;
+
         
 
-    }
+
+}
