@@ -14,33 +14,45 @@ using System;
         [SerializeField] private string _stringF;
         public string stringF { get { return _stringF; } }
 
-        [SerializeField] private int _alcoolD;
-        public int alcoolD { get { return _alcoolD; } }
+        [SerializeField] private int _timePassed;
+        public int timePassed { get { return _timePassed; } }
 
-        [SerializeField] private int _funD;
-        public int funD { get { return _funD; } }
+        [SerializeField] private int _alcoolPlus;
+        public int alcoolPlus { get { return _alcoolPlus; } }
 
-        [SerializeField] private int _hungerD;
-        public int hungerD { get { return _hungerD; } }
+        [SerializeField] private int _funPlus;
+        public int funPlus { get { return _funPlus; } }
 
-        [SerializeField] private int _socialD;
-        public int socialD { get { return _socialD; } }
+        [SerializeField] private int _socialPlus;
+        public int socialPlus { get { return _socialPlus; } }
 
-        [SerializeField] private int _moneyD;
-        public int moneyD { get { return _moneyD; } }
+        [SerializeField] private int _moneyPlus;
+        public int moneyPlus { get { return _moneyPlus; } }
 
-        [SerializeField] private int _energyD;
-        public int energyD { get { return _energyD; } }
+        [SerializeField] private int _energyPlus;
+        public int energyPlus { get { return _energyPlus; } }
 
-        [SerializeField] private int _random;
-        public int random { get { return _random; } }
+        [SerializeField] private int _minAlcool;
+        public int minAlcool { get { return _minAlcool; } }
+
+        [SerializeField] private int _minFun;
+        public int minFun { get { return _minFun; } }
+
+        [SerializeField] private int _minSocial;
+        public int minSocial { get { return _minSocial; } }
+
+        [SerializeField] private int _minEnergy;
+        public int minEnergy { get { return _minEnergy; } }
+
+        [SerializeField] private int _minMoney;
+        public int minMoney { get { return _minMoney; } }
 
         [SerializeField] private Events[] _moreDecisionsStages;
         public Events[] moreDecisionsStages { get { return _moreDecisionsStages; } }
 
 
-}
-[CreateAssetMenu(fileName = "New Event", menuName = "Events/new Event")]
+    }
+    [CreateAssetMenu(fileName = "New Event", menuName = "Events/new Event")]
     public class Events : ScriptableObject
     {
 
@@ -53,12 +65,12 @@ using System;
         [SerializeField] Decisions[] _decisions = null;
         public Decisions[] decisions { get { return _decisions; } }
 
-        
+
         public enum Alcool { Low30, Normal, High80 };
 
         [SerializeField]
         private Alcool alcool;
-        
+
         public enum Energy { Low30, Normal };
 
         [SerializeField]
@@ -71,4 +83,4 @@ using System;
 
 
 
-}
+    }

@@ -26,7 +26,7 @@ public class EventsUi : MonoBehaviour
     public void EventUi(Events even)
     {
         evenaux = even;
-        if(even.decisions.Length == 2)
+        if (even.decisions.Length == 2)
         {
 
             background2.sprite = even.background;
@@ -52,20 +52,20 @@ public class EventsUi : MonoBehaviour
 
     public void Resultcanvas()
     {
-        result  .SetActive(true);
+        result.SetActive(true);
     }
 
-    public void Choice11()
+    public void Choice21()
     {
-        player.ChangeStats(player, evenaux.decisions[0].alcoolD, evenaux.decisions[0].funD, evenaux.decisions[0].socialD, evenaux.decisions[0].moneyD, evenaux.decisions[0].energyD);
+        player.ChangeStats(player, evenaux.decisions[0].alcoolPlus, evenaux.decisions[0].funPlus, evenaux.decisions[0].socialPlus, evenaux.decisions[0].moneyPlus, evenaux.decisions[0].energyPlus);
         choices2.SetActive(false);
         result.GetComponentInChildren<Text>().text = evenaux.decisions[0].stringF;
 
     }
 
-    public void Choice12()
+    public void Choice22()
     {
-        player.ChangeStats(player, evenaux.decisions[1].alcoolD, evenaux.decisions[1].funD, evenaux.decisions[1].socialD, evenaux.decisions[1].moneyD, evenaux.decisions[1].energyD);
+        player.ChangeStats(player, evenaux.decisions[1].alcoolPlus, evenaux.decisions[1].funPlus, evenaux.decisions[1].socialPlus, evenaux.decisions[1].moneyPlus, evenaux.decisions[1].energyPlus);
         choices2.SetActive(false);
         result.GetComponentInChildren<Text>().text = evenaux.decisions[1].stringF;
 
@@ -73,21 +73,21 @@ public class EventsUi : MonoBehaviour
 
     public void Choice31()
     {
-        player.ChangeStats(player, evenaux.decisions[0].alcoolD, evenaux.decisions[0].funD, evenaux.decisions[0].socialD, evenaux.decisions[0].moneyD, evenaux.decisions[0].energyD);
+        player.ChangeStats(player, evenaux.decisions[0].alcoolPlus, evenaux.decisions[0].funPlus, evenaux.decisions[0].socialPlus, evenaux.decisions[0].moneyPlus, evenaux.decisions[0].energyPlus);
         choices3.SetActive(false);
         result.GetComponentInChildren<Text>().text = evenaux.decisions[0].stringF;
 
     }
     public void Choice32()
     {
-        player.ChangeStats(player, evenaux.decisions[1].alcoolD, evenaux.decisions[1].funD, evenaux.decisions[1].socialD, evenaux.decisions[1].moneyD, evenaux.decisions[1].energyD);
+        player.ChangeStats(player, evenaux.decisions[1].alcoolPlus, evenaux.decisions[1].funPlus, evenaux.decisions[1].socialPlus, evenaux.decisions[1].moneyPlus, evenaux.decisions[1].energyPlus);
         choices3.SetActive(false);
         result.GetComponentInChildren<Text>().text = evenaux.decisions[1].stringF;
 
     }
     public void Choice33()
     {
-        player.ChangeStats(player, evenaux.decisions[2].alcoolD, evenaux.decisions[2].funD, evenaux.decisions[2].socialD, evenaux.decisions[2].moneyD, evenaux.decisions[2].energyD);
+        player.ChangeStats(player, evenaux.decisions[2].alcoolPlus, evenaux.decisions[2].funPlus, evenaux.decisions[2].socialPlus, evenaux.decisions[2].moneyPlus, evenaux.decisions[2].energyPlus);
         choices3.SetActive(false);
         result.GetComponentInChildren<Text>().text = evenaux.decisions[2].stringF;
 
@@ -97,12 +97,11 @@ public class EventsUi : MonoBehaviour
     {
         if (evenaux.decisions[0].moreDecisionsStages.Length == 0)
         {
-            Debug.Log("ya");
             Resultcanvas();
         }
         else if (evenaux.decisions[0].moreDecisionsStages[0] != null)
         {
-            Debug.Log("epa");
+
             Debug.Log(evenaux.decisions[0].moreDecisionsStages[0]);
             EventUi(evenaux.decisions[0].moreDecisionsStages[0]);
 
@@ -113,12 +112,11 @@ public class EventsUi : MonoBehaviour
     {
         if (evenaux.decisions[1].moreDecisionsStages.Length == 0)
         {
-            Debug.Log("ya");
             Resultcanvas();
         }
         else if (evenaux.decisions[1].moreDecisionsStages[0] != null)
         {
-            Debug.Log("epa");
+
             Debug.Log(evenaux.decisions[1].moreDecisionsStages[0]);
             EventUi(evenaux.decisions[1].moreDecisionsStages[0]);
 
@@ -129,15 +127,11 @@ public class EventsUi : MonoBehaviour
     {
         if (evenaux.decisions[2].moreDecisionsStages.Length == 0)
         {
-            Debug.Log("ya");
             Resultcanvas();
         }
         else if (evenaux.decisions[2].moreDecisionsStages[0] != null)
         {
-            Debug.Log("epa");
-            Debug.Log(evenaux.decisions[2].moreDecisionsStages[0]);
             EventUi(evenaux.decisions[2].moreDecisionsStages[0]);
-
         }
     }
 

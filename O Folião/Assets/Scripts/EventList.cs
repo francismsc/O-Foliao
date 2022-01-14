@@ -17,6 +17,7 @@ public class EventList : MonoBehaviour
 
 
     private Events[] events = null;
+    protected Events randomEvent = null;
     private Events[] alcoolevents = null;
     private Events[] energyevents = null;
 
@@ -42,11 +43,11 @@ public class EventList : MonoBehaviour
 
     public Events[] GetCertainEventType(Node.Type nodetype)
     {
-        if(nodetype == Node.Type.Stages)
+        if (nodetype == Node.Type.Stages)
         {
             return stagesDeck;
         }
-        else if(nodetype == Node.Type.Bars)
+        else if (nodetype == Node.Type.Bars)
         {
             return barsDeck;
         }
@@ -59,24 +60,18 @@ public class EventList : MonoBehaviour
         return GetCertainEventType(node.NodeType(player));
     }
 
-
-    private void AlcoolStatus(Player player)
-    {
-        int alcool = player.GetAlcool();
-        int energy = player.GetEnergy();
-    }
-
     private Events[] ChooseAlcoolEvents(Player player)
     {
         int alcool = player.GetAlcool();
-        if(alcool <= lowAlcoolLvl)
+        if (alcool <= lowAlcoolLvl)
         {
             return lowAlcoolDeck;
         }
         else if (alcool >= highAlcoolLvl)
         {
             return highAlcoolDeck;
-        }else
+        }
+        else
         {
             return null;
         }
@@ -100,26 +95,31 @@ public class EventList : MonoBehaviour
         Events[] energyDeck)
     {
         Events[] eventaux = locationDeck;
-        if(locationDeck != null)
+        if (locationDeck != null)
         {
-            if(alcoolDeck != null)
+            if (alcoolDeck != null)
             {
-                eventaux = eventaux.Intersect(alcoolDeck).ToArray();
+                eventaux = eventaux.Union(alcoolDeck).ToArray();
+
                 return eventaux;
             }
 
-            if(energyDeck != null)
+            if (energyDeck != null)
             {
-                eventaux = eventaux.Intersect(energyDeck).ToArray();
+                eventaux = eventaux.Union(energyDeck).ToArray();
             }
         }
         return eventaux;
     }
 
 
-    public void ChooseRandomEvent(Player player , Node node, EventsUi eventsUi)
+
+
+
+
+    public void ChooseRandomEvent(Player player, Node node, EventsUi eventsUi)
     {
-        events = ChooseEventType(player,node);
+        events = ChooseEventType(player, node);
         alcoolevents = ChooseAlcoolEvents(player);
         energyevents = ChooseEnergyEvents(player);
         events = IntersectEvents(events, alcoolevents, energyevents);
@@ -128,8 +128,27 @@ public class EventList : MonoBehaviour
         rnd = Random.Range(0, events.Length);
         foreach (Decisions decision in events[rnd].decisions)
         {
+
             eventsUi.EventUi(events[rnd]);
         }
+    }
+
+
+    public void EventResources(int choiceNumber, Player player)
+    {
+        player.ChangeStats(player,
+            randomEvent.decisions[choiceNumber].alcoolPlus,
+            randomEvent.decisions[choiceNumber].funPlus,
+            randomEvent.decisions[choiceNumber].socialPlus,
+            randomEvent.decisions[choiceNumber].moneyPlus,
+            randomEvent.decisions[choiceNumber].energyPlus);
+
+
+    }
+
+    public void EventMinResources()
+    {
+
     }
 
 
@@ -138,4 +157,3 @@ public class EventList : MonoBehaviour
 
 
 }
-
