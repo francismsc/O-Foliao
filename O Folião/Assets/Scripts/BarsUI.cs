@@ -66,4 +66,10 @@ public class BarsUI : MonoBehaviour
 
         text.text = money.ToString();
     }
+
+    public void TimeUi(int hours, int minutes)
+    {
+
+    }
+
 }

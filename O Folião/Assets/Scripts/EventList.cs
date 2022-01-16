@@ -112,12 +112,7 @@ public class EventList : MonoBehaviour
         return eventaux;
     }
 
-
-
-
-
-
-    public void ChooseRandomEvent(Player player, Node node, EventsUi eventsUi)
+    public Events ChooseRandomEvent(Player player, Node node, EventsUi eventsUi)
     {
         events = ChooseEventType(player, node);
         alcoolevents = ChooseAlcoolEvents(player);
@@ -126,30 +121,14 @@ public class EventList : MonoBehaviour
 
 
         rnd = Random.Range(0, events.Length);
-        foreach (Decisions decision in events[rnd].decisions)
-        {
-
-            eventsUi.EventUi(events[rnd]);
-        }
+        randomEvent = events[rnd];
+        return randomEvent;
+        
     }
 
 
-    public void EventResources(int choiceNumber, Player player)
-    {
-        player.ChangeStats(player,
-            randomEvent.decisions[choiceNumber].alcoolPlus,
-            randomEvent.decisions[choiceNumber].funPlus,
-            randomEvent.decisions[choiceNumber].socialPlus,
-            randomEvent.decisions[choiceNumber].moneyPlus,
-            randomEvent.decisions[choiceNumber].energyPlus);
 
 
-    }
-
-    public void EventMinResources()
-    {
-
-    }
 
 
 

@@ -5,24 +5,25 @@ using UnityEngine.UI;
 
 public class EventsUi : MonoBehaviour
 {
-    public GameObject choices2;
-    public Image background2;
-    public Text choice0Button0;
-    public Text choice0Button1;
-    public Text description1;
+    [SerializeField] private GameObject choices2;
+    [SerializeField] private Image background2;
+    [SerializeField] private Text choice0Button0;
+    [SerializeField] private Text choice0Button1;
+    [SerializeField] private Text description1;
 
 
-    public GameObject choices3;
-    public Image background3;
-    public Text choice1Button0;
-    public Text choice1Button1;
-    public Text choice1Button2;
-    public Text description2;
+    [SerializeField] private GameObject choices3;
+    [SerializeField] private Image background3;
+    [SerializeField] private Text choice1Button0;
+    [SerializeField] private Text choice1Button1;
+    [SerializeField] private Text choice1Button2;
+    [SerializeField] private Text description2;
 
-    public GameObject result;
+    [SerializeField] private GameObject result;
 
-    public Events evenaux;
-    public Player player;
+    [SerializeField] private Events evenaux;
+    [SerializeField] private Player player;
+    [SerializeField] private DecisionRequirements decisionRequirements;
     public void EventUi(Events even)
     {
         evenaux = even;
@@ -30,19 +31,20 @@ public class EventsUi : MonoBehaviour
         {
 
             background2.sprite = even.background;
-            choice0Button0.text = even.decisions[0].stringI;
-            choice0Button1.text = even.decisions[1].stringI;
+            choice0Button0.text = even.decisions[0].decisionDescription;
+            choice0Button1.text = even.decisions[1].decisionDescription;
             description1.text = even.Event;
             choices2.SetActive(true);
 
         }
+        choices2.SetActive(true);
         if (even.decisions.Length == 3)
         {
 
             background3.sprite = even.background;
-            choice1Button0.text = even.decisions[0].stringI;
-            choice1Button1.text = even.decisions[1].stringI;
-            choice1Button2.text = even.decisions[2].stringI;
+            choice1Button0.text = even.decisions[0].decisionDescription;
+            choice1Button1.text = even.decisions[1].decisionDescription;
+            choice1Button2.text = even.decisions[2].decisionDescription;
             description2.text = even.Event;
             choices3.SetActive(true);
 
@@ -55,86 +57,73 @@ public class EventsUi : MonoBehaviour
         result.SetActive(true);
     }
 
-    public void Choice21()
+    public void DoubleChoice(int decisionNumber)
     {
-        player.ChangeStats(player, evenaux.decisions[0].alcoolPlus, evenaux.decisions[0].funPlus, evenaux.decisions[0].socialPlus, evenaux.decisions[0].moneyPlus, evenaux.decisions[0].energyPlus);
-        choices2.SetActive(false);
-        result.GetComponentInChildren<Text>().text = evenaux.decisions[0].stringF;
+        
+
+        if(decisionRequirements.CheckForDecisionSucess(player, evenaux.decisions[decisionNumber]) == true)
+        {
+
+            player.ChangeStats(player, evenaux.decisions[decisionNumber].sucessEvent[0].alcoolPlus, 
+                evenaux.decisions[0].sucessEvent[0].funPlus, evenaux.decisions[0].sucessEvent[0].socialPlus, 
+                evenaux.decisions[0].sucessEvent[0].moneyPlus, evenaux.decisions[0].sucessEvent[0].energyPlus);
+            result.GetComponentInChildren<Text>().text = evenaux.decisions[decisionNumber].sucessEvent[0].description;
+            choices2.SetActive(false);
+            Morechoices(evenaux.decisions[decisionNumber].sucessEvent[0].moreDecisionsStages);
+        }
+        else
+        {
+
+            player.ChangeStats(player, evenaux.decisions[decisionNumber].failedEvent[0].alcoolPlus,
+                evenaux.decisions[0].failedEvent[0].funPlus, evenaux.decisions[0].failedEvent[0].socialPlus,
+                evenaux.decisions[0].failedEvent[0].moneyPlus, evenaux.decisions[0].failedEvent[0].energyPlus);
+            result.GetComponentInChildren<Text>().text = evenaux.decisions[decisionNumber].failedEvent[0].description;
+            choices2.SetActive(false);
+            Morechoices(evenaux.decisions[decisionNumber].failedEvent[0].moreDecisionsStages);
+        }
+
+        
+
+    }
+    public void TripleChoice(int decisionNumber)
+    {
+        if (decisionRequirements.CheckForDecisionSucess(player, evenaux.decisions[decisionNumber]) == true)
+        {
+
+            player.ChangeStats(player, evenaux.decisions[decisionNumber].sucessEvent[0].alcoolPlus,
+                evenaux.decisions[0].sucessEvent[0].funPlus, evenaux.decisions[0].sucessEvent[0].socialPlus,
+                evenaux.decisions[0].sucessEvent[0].moneyPlus, evenaux.decisions[0].sucessEvent[0].energyPlus);
+            result.GetComponentInChildren<Text>().text = evenaux.decisions[decisionNumber].sucessEvent[0].description;
+            choices2.SetActive(false);
+            Morechoices(evenaux.decisions[decisionNumber].sucessEvent[0].moreDecisionsStages);
+
+        }
+        else
+        {
+
+            player.ChangeStats(player, evenaux.decisions[decisionNumber].failedEvent[0].alcoolPlus,
+                evenaux.decisions[0].failedEvent[0].funPlus, evenaux.decisions[0].failedEvent[0].socialPlus,
+                evenaux.decisions[0].failedEvent[0].moneyPlus, evenaux.decisions[0].failedEvent[0].energyPlus);
+            result.GetComponentInChildren<Text>().text = evenaux.decisions[decisionNumber].failedEvent[0].description;
+            choices2.SetActive(false);
+            Morechoices(evenaux.decisions[decisionNumber].failedEvent[0].moreDecisionsStages);
+        }
+
 
     }
 
-    public void Choice22()
+    public void Morechoices(Events[] nextDecisionStage)
     {
-        player.ChangeStats(player, evenaux.decisions[1].alcoolPlus, evenaux.decisions[1].funPlus, evenaux.decisions[1].socialPlus, evenaux.decisions[1].moneyPlus, evenaux.decisions[1].energyPlus);
-        choices2.SetActive(false);
-        result.GetComponentInChildren<Text>().text = evenaux.decisions[1].stringF;
 
-    }
-
-    public void Choice31()
-    {
-        player.ChangeStats(player, evenaux.decisions[0].alcoolPlus, evenaux.decisions[0].funPlus, evenaux.decisions[0].socialPlus, evenaux.decisions[0].moneyPlus, evenaux.decisions[0].energyPlus);
-        choices3.SetActive(false);
-        result.GetComponentInChildren<Text>().text = evenaux.decisions[0].stringF;
-
-    }
-    public void Choice32()
-    {
-        player.ChangeStats(player, evenaux.decisions[1].alcoolPlus, evenaux.decisions[1].funPlus, evenaux.decisions[1].socialPlus, evenaux.decisions[1].moneyPlus, evenaux.decisions[1].energyPlus);
-        choices3.SetActive(false);
-        result.GetComponentInChildren<Text>().text = evenaux.decisions[1].stringF;
-
-    }
-    public void Choice33()
-    {
-        player.ChangeStats(player, evenaux.decisions[2].alcoolPlus, evenaux.decisions[2].funPlus, evenaux.decisions[2].socialPlus, evenaux.decisions[2].moneyPlus, evenaux.decisions[2].energyPlus);
-        choices3.SetActive(false);
-        result.GetComponentInChildren<Text>().text = evenaux.decisions[2].stringF;
-
-    }
-
-    public void Morechoices1()
-    {
-        if (evenaux.decisions[0].moreDecisionsStages.Length == 0)
+        if (nextDecisionStage.Length == 0)
         {
             Resultcanvas();
         }
-        else if (evenaux.decisions[0].moreDecisionsStages[0] != null)
+        else if (nextDecisionStage != null)
         {
-
-            Debug.Log(evenaux.decisions[0].moreDecisionsStages[0]);
-            EventUi(evenaux.decisions[0].moreDecisionsStages[0]);
-
+            EventUi(nextDecisionStage[0]);
         }
     }
-
-    public void Morechoices2()
-    {
-        if (evenaux.decisions[1].moreDecisionsStages.Length == 0)
-        {
-            Resultcanvas();
-        }
-        else if (evenaux.decisions[1].moreDecisionsStages[0] != null)
-        {
-
-            Debug.Log(evenaux.decisions[1].moreDecisionsStages[0]);
-            EventUi(evenaux.decisions[1].moreDecisionsStages[0]);
-
-        }
-    }
-
-    public void Morechoices3()
-    {
-        if (evenaux.decisions[2].moreDecisionsStages.Length == 0)
-        {
-            Resultcanvas();
-        }
-        else if (evenaux.decisions[2].moreDecisionsStages[0] != null)
-        {
-            EventUi(evenaux.decisions[2].moreDecisionsStages[0]);
-        }
-    }
-
 
 
 

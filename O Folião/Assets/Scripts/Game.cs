@@ -5,14 +5,15 @@ using UnityEngine;
 
 public class Game : MonoBehaviour
 {
-    public Player player;
-    public Movement move;
-    public EventsUi eventsUi;
-    public EventList eventsList;
-    public Node node;
-    private int rnd;
-    public int number = 1;
+    [SerializeField] private Player player;
+    [SerializeField] private Movement move;
+    [SerializeField] private EventsUi eventsUi;
+    [SerializeField] private EventList eventsList;
+    [SerializeField] private Node node;
+    [SerializeField] private Clock clock;
 
+
+    private Events randomEvent;
     private Events[] events = null;
     public Events[] Events { get { return events; } }
 
@@ -28,7 +29,8 @@ public class Game : MonoBehaviour
         if (move.isMoving() == false)
         {
             GetComponent<Movement>().enabled = false;
-            eventsList.ChooseRandomEvent(player,node,eventsUi);
+            randomEvent = eventsList.ChooseRandomEvent(player,node,eventsUi);
+            eventsUi.EventUi(randomEvent);
             move.TimetoMove();
             
         }

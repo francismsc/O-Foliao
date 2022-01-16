@@ -15,19 +15,56 @@ MonoBehaviour:
   _event: "O DJ est\xE1 a passar uma m\xFAsica horrivel"
   _background: {fileID: 21300000, guid: 212097017645f1c448da15976322cc2c, type: 3}
   _decisions:
-  - _stringI: "Fazer um esfor\xE7o e ficar at\xE9 \xE0 pr\xF3xima m\xFAsica"
-    _stringF: "Foi chato mas no fim l\xE1 passou uma m\xFAsica que gostavas"
-    _alcoolD: 10
-    _funD: -5
-    _hungerD: 0
-    _socialD: 5
-    _moneyD: 0
-    _energyD: 5
-  - _stringI: Fazer "Booo" ao DJ
-    _stringF: "N\xE3o levou a nada, fizeste s\xF3 figura de urso"
-    _alcoolD: -5
-    _funD: -10
-    _hungerD: 0
-    _socialD: 0
-    _moneyD: 0
-    _energyD: -5
+  - _decisionDescription: shots shots
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: nele
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages:
+      - {fileID: 11400000, guid: 2c40ed9ed5e42ae4c8c25f839e260a2c, type: 2}
+    _failedEvent:
+    - _description: 
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+  - _decisionDescription: no shots
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: nah just end
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages:
+      - {fileID: 11400000, guid: cfe5cecaee1a3c947ba364869681fba3, type: 2}
+    _failedEvent:
+    - _description: h
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+  alcool: 0
+  energy: 0
+  _tags: 

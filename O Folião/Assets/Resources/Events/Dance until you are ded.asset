@@ -15,27 +15,57 @@ MonoBehaviour:
   _event: "Est\xE1 a dar boa m\xFAsica"
   _background: {fileID: 21300000, guid: 25cd164b6b0ccdc46a5b6e62a2b01e6f, type: 3}
   _decisions:
-  - _stringI: "Ficar e dan\xE7ar"
-    _stringF: Cansativo mas muito divertido
-    _alcoolD: 0
-    _funD: 15
-    _hungerD: 0
-    _socialD: 10
-    _moneyD: 0
-    _energyD: -10
-    _random: 0
-    _moreDecisionsStages:
-    - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
-  - _stringI: Ignorar
-    _stringF: "Perdeste a oportunidade de dan\xE7ar ao som das tuas m\xFAsicas favoritas"
-    _alcoolD: 0
-    _funD: -15
-    _hungerD: 0
-    _socialD: -10
-    _moneyD: 0
-    _energyD: 5
-    _random: 0
-    _moreDecisionsStages: []
+  - _decisionDescription: dance
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: ded
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages:
+      - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+    _failedEvent:
+    - _description: 
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages:
+      - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - _decisionDescription: mandar um kuduro
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: ya
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages:
+      - {fileID: 11400000, guid: d74ef4cfa831e0d448cefb1940601dd0, type: 2}
+    _failedEvent:
+    - _description: ya
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
   alcool: 0
   energy: 0
   _tags: 00000000

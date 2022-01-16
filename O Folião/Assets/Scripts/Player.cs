@@ -27,9 +27,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     private GameObject position;
     [SerializeField]
-    public SceneChanger scene;
-
-    public BarsUI bars;
+    private SceneChanger scene;
+    [SerializeField]
+    private BarsUI bars;
 
 
     private void Start()
@@ -89,11 +89,6 @@ public class Player : MonoBehaviour
 
 
 
-        Debug.Log("Alcool " + player.alcool);
-        Debug.Log("Fun " + player.fun);
-        Debug.Log("Social " + player.social);
-        Debug.Log("Energy " + player.energy);
-
         bars.SetValueAllBars(player.alcool, player.fun, player.social, player.energy, player.money);
         if (player.alcool == 100 || player.energy == 0)
         {
@@ -117,7 +112,20 @@ public class Player : MonoBehaviour
     {
         return this.energy;
     }
+    public int GetFun()
+    {
+        return this.fun;
+    }
 
+    public int GetSocial()
+    {
+        return this.social;
+    }
+
+    public int GetMoney()
+    {
+        return this.money;
+    }
 
     public GameObject Position()
     {

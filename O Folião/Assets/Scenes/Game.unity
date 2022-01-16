@@ -262,6 +262,7 @@ GameObject:
   - component: {fileID: 60811732}
   - component: {fileID: 60811734}
   - component: {fileID: 60811735}
+  - component: {fileID: 60811736}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -315,7 +316,6 @@ MonoBehaviour:
   eventsUi: {fileID: 60811734}
   eventsList: {fileID: 1305438558}
   node: {fileID: 1305438559}
-  number: 1
 --- !u!114 &60811734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,6 +342,7 @@ MonoBehaviour:
   result: {fileID: 1579209257}
   evenaux: {fileID: 0}
   player: {fileID: 1592390869}
+  decisionRequirements: {fileID: 60811736}
 --- !u!114 &60811735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,6 +353,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3965ed4d381fac43a01ef37c0c2805a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &60811736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60811730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50beadb1724b2f48a3b8367a3dec5cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &61069692
@@ -1237,20 +1250,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 60811734}
         m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
-        m_MethodName: Choice11
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 60811734}
-        m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
-        m_MethodName: Morechoices1
-        m_Mode: 1
+        m_MethodName: DoubleChoice
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2098,20 +2099,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 60811734}
         m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
-        m_MethodName: Choice31
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 60811734}
-        m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
-        m_MethodName: Morechoices1
-        m_Mode: 1
+        m_MethodName: TripleChoice
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5073,24 +5062,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 60811734}
         m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
-        m_MethodName: Choice32
-        m_Mode: 1
+        m_MethodName: TripleChoice
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 60811734}
-        m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
-        m_MethodName: Morechoices2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5498,25 +5475,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stagesDeck:
   - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
-  - {fileID: 11400000, guid: 933869a3a2a63e34881b6709c65a7a74, type: 2}
-  - {fileID: 11400000, guid: d74ef4cfa831e0d448cefb1940601dd0, type: 2}
-  - {fileID: 11400000, guid: 812d810d5bb655a479feacab55463206, type: 2}
   barsDeck:
   - {fileID: 11400000, guid: a969d906451325d4299253c08c8f86dc, type: 2}
-  - {fileID: 11400000, guid: b418435badfd7224393ddf5ad4655c14, type: 2}
-  - {fileID: 11400000, guid: 812d810d5bb655a479feacab55463206, type: 2}
   lowAlcoolDeck:
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
-  - {fileID: 11400000, guid: b418435badfd7224393ddf5ad4655c14, type: 2}
-  - {fileID: 11400000, guid: c64b2da9ef247454fbc740896eaeee35, type: 2}
-  - {fileID: 11400000, guid: 812d810d5bb655a479feacab55463206, type: 2}
+  - {fileID: 11400000, guid: a969d906451325d4299253c08c8f86dc, type: 2}
   highAlcoolDeck:
-  - {fileID: 11400000, guid: 933869a3a2a63e34881b6709c65a7a74, type: 2}
-  - {fileID: 11400000, guid: 2c40ed9ed5e42ae4c8c25f839e260a2c, type: 2}
-  - {fileID: 11400000, guid: 812d810d5bb655a479feacab55463206, type: 2}
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: a969d906451325d4299253c08c8f86dc, type: 2}
   lowEnergyDeck:
-  - {fileID: 11400000, guid: c64b2da9ef247454fbc740896eaeee35, type: 2}
-  - {fileID: 11400000, guid: 812d810d5bb655a479feacab55463206, type: 2}
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
 --- !u!114 &1305438559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5942,24 +5909,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 60811734}
         m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
-        m_MethodName: Choice12
-        m_Mode: 1
+        m_MethodName: DoubleChoice
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 60811734}
-        m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
-        m_MethodName: Morechoices2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8603,24 +8558,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 60811734}
         m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
-        m_MethodName: Choice33
-        m_Mode: 1
+        m_MethodName: TripleChoice
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 60811734}
-        m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
-        m_MethodName: Morechoices3
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

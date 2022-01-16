@@ -15,27 +15,54 @@ MonoBehaviour:
   _event: Um amigo oferece-te uma bebida
   _background: {fileID: 21300000, guid: 25cd164b6b0ccdc46a5b6e62a2b01e6f, type: 3}
   _decisions:
-  - _stringI: Aceitar
-    _stringF: Ficaram a conviver
-    _alcoolD: 10
-    _funD: 5
-    _hungerD: 0
-    _socialD: 10
-    _moneyD: 0
-    _energyD: 0
-    _random: 0
-    _moreDecisionsStages:
-    - {fileID: 11400000, guid: 2c40ed9ed5e42ae4c8c25f839e260a2c, type: 2}
-  - _stringI: "N\xE3o beber"
-    _stringF: "Ele mandou a bebida de pen\xE1lti e foi-se embora"
-    _alcoolD: -5
-    _funD: -5
-    _hungerD: 0
-    _socialD: -5
-    _moneyD: 5
-    _energyD: 0
-    _random: 0
-    _moreDecisionsStages: []
+  - _decisionDescription: beber
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: pa
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+    _failedEvent:
+    - _description: 
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+  - _decisionDescription: rebolar
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: ya
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+    _failedEvent:
+    - _description: 
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
   alcool: 1
   energy: 1
   _tags: 
