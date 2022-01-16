@@ -316,6 +316,7 @@ MonoBehaviour:
   eventsUi: {fileID: 60811734}
   eventsList: {fileID: 1305438558}
   node: {fileID: 1305438559}
+  clock: {fileID: 0}
 --- !u!114 &60811734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5474,16 +5475,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stagesDeck:
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: cfe5cecaee1a3c947ba364869681fba3, type: 2}
   barsDeck:
-  - {fileID: 11400000, guid: a969d906451325d4299253c08c8f86dc, type: 2}
+  - {fileID: 11400000, guid: 2c40ed9ed5e42ae4c8c25f839e260a2c, type: 2}
   lowAlcoolDeck:
-  - {fileID: 11400000, guid: a969d906451325d4299253c08c8f86dc, type: 2}
+  - {fileID: 11400000, guid: 812d810d5bb655a479feacab55463206, type: 2}
   highAlcoolDeck:
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
-  - {fileID: 11400000, guid: a969d906451325d4299253c08c8f86dc, type: 2}
+  - {fileID: 11400000, guid: 812d810d5bb655a479feacab55463206, type: 2}
   lowEnergyDeck:
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: 812d810d5bb655a479feacab55463206, type: 2}
 --- !u!114 &1305438559
 MonoBehaviour:
   m_ObjectHideFlags: 0
