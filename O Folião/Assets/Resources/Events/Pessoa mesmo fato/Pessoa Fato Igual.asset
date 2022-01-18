@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Pessoa Fato Igual
+  m_EditorClassIdentifier: 
+  _event: "V\xEAs uma pessoa com o mesmo fato que tu e trocam olhares"
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: Fazer ganda festa por terem um fato igual
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 30
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "A intera\xE7\xE3o resulta"
+      _timePassed: 5
+      _alcoolPlus: 0
+      _funPlus: 5
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: -5
+      _moreDecisionsStages:
+      - {fileID: 11400000, guid: dba69c04200e1ba48b34f34a81f7ad41, type: 2}
+    _failedEvent:
+    - _description: "Tentaste mas n\xE3o conseguiste"
+      _timePassed: 5
+      _alcoolPlus: 0
+      _funPlus: -5
+      _socialPlus: -5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+  - _decisionDescription: Acenar
+    _minAlcool: 0
+    _minFun: 30
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "A pessoa vem ter contigo e come\xE7am a falar"
+      _timePassed: 20
+      _alcoolPlus: 0
+      _funPlus: 5
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+    _failedEvent:
+    - _description: A pessoa acena de volta e casa um segue o seu caminho
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+  alcool: 0
+  energy: 0
+  _tags: 

@@ -5809,20 +5809,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stagesDeck:
   - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
-  - {fileID: 11400000, guid: a969d906451325d4299253c08c8f86dc, type: 2}
   barsDeck:
-  - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
   lowAlcoolDeck:
-  - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
-  highAlcoolDeck: []
-  lowEnergyDeck: []
-  morningDeck: []
-  afternoonDeck: []
-  nightDeck: []
-  day1Deck: []
-  day2Deck: []
-  day3Deck: []
-  clock: {fileID: 0}
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  highAlcoolDeck:
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  lowEnergyDeck:
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  morningDeck:
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  afternoonDeck:
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  nightDeck:
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  day1Deck:
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  day2Deck:
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  day3Deck:
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  clock: {fileID: 60811737}
 --- !u!114 &1305438559
 MonoBehaviour:
   m_ObjectHideFlags: 0

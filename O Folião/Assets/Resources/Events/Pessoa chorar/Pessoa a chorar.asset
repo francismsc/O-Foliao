@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Pessoa a chorar
+  m_EditorClassIdentifier: 
+  _event: Uma pessoa vem ter contigo a chorar
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: Perguntar o que se passa
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 20
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "A pessoa diz-te que os amigos a abandonaram e d\xE1-te para
+        as m\xE3os todos os seus pertences"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages:
+      - {fileID: 11400000, guid: 13f479493492c584bbf0348f74848c3c, type: 2}
+    _failedEvent:
+    - _description: "N\xE3o faz muito sentido isto falhar ou faz j\xE1 n\xE3o sei"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+  - _decisionDescription: "Dar um abra\xE7o"
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: rabo
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+    _failedEvent: []
+  alcool: 0
+  energy: 0
+  _tags: 
