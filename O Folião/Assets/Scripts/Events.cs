@@ -104,8 +104,8 @@ using System;
         public Decisions[] decisions { get { return _decisions; } }
 
 
-
-    public enum Alcool { Low30, Normal, High80 };
+        //Tags only for easy finding and placing of the object
+        public enum Alcool { Low30, Normal, High80 };
 
         [SerializeField]
         private Alcool alcool;
@@ -115,10 +115,16 @@ using System;
         [SerializeField]
         private Energy energy;
 
-        public enum Tag { Night, Day, Bars, LowAlcool, LowEnergy };
+        public enum TimeOfDay { Morning, Afternoon, Night };
 
-        [SerializeField] private Tag[] _tags = null;
-        public Tag[] tags { get { return _tags; } }
+        [SerializeField] private TimeOfDay _timeOfDay;
+        public TimeOfDay timeOfDay { get { return _timeOfDay; } }
+
+        
+        public enum DayOfWeek { Day1, Day2, Day3, Day4, Day5 };
+
+        [SerializeField] private DayOfWeek _dayOfWeek;
+        public DayOfWeek dayOfWeek { get { return _dayOfWeek; } }
 
 
 

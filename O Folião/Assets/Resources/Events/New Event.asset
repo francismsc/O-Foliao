@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "Encontraste uma figura emblem\xE1tica do carnaval mas que j\xE1 se encontra
     um bacadinho  alcoolizada"
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 5f6add5d14e831e4b99acf0e847735f9, type: 3}
   _decisions:
   - _decisionDescription: Falar com ela
     _minAlcool: 40

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "Estranho Dan\xE7ar"
   m_EditorClassIdentifier: 
   _event: "Est\xE1s a dan\xE7ar e uma pessoa mete-se contigo para dan\xE7ar tamb\xE9m"
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 5f6add5d14e831e4b99acf0e847735f9, type: 3}
   _decisions:
   - _decisionDescription: "Aceitar can\xE7ar"
     _minAlcool: 50
@@ -57,4 +57,5 @@ MonoBehaviour:
     _failedEvent: []
   alcool: 0
   energy: 0
-  _tags: 
+  _timeOfDay: 00000000
+  _dayOfWeek: 

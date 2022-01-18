@@ -13,9 +13,9 @@ public class Clock : MonoBehaviour
 
     public enum TimesOfDay
     {
-        Morning,
+        Night,
         Afternoon,
-        Night
+        Morning
     }
 
     public TimesOfDay currentTimeOfDay { get; private set; }
