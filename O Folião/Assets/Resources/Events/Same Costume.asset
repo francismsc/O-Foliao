@@ -23,8 +23,8 @@ MonoBehaviour:
     _minMoney: 0
     _sucessEvent:
     - _description: memo
-      _timePassed: 0
-      _alcoolPlus: 20
+      _timePassed: 50
+      _alcoolPlus: 0
       _funPlus: 10
       _socialPlus: 10
       _moneyPlus: 10

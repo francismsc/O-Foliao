@@ -334,6 +334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 60811731}
   - component: {fileID: 60811733}
+  - component: {fileID: 60811737}
   - component: {fileID: 60811732}
   - component: {fileID: 60811734}
   - component: {fileID: 60811735}
@@ -391,7 +392,7 @@ MonoBehaviour:
   eventsUi: {fileID: 60811734}
   eventsList: {fileID: 1305438558}
   node: {fileID: 1305438559}
-  clock: {fileID: 0}
+  clock: {fileID: 60811737}
 --- !u!114 &60811734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,6 +420,8 @@ MonoBehaviour:
   evenaux: {fileID: 0}
   player: {fileID: 1592390869}
   decisionRequirements: {fileID: 60811736}
+  time: {fileID: 1258839808}
+  clock: {fileID: 60811737}
 --- !u!114 &60811735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,6 +446,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b50beadb1724b2f48a3b8367a3dec5cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &60811737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60811730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e2bab6f46e4322438f472794d548855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hours: 22
+  minutes: 0
+  day: 1
+  minTimeBetweenEvents: 10
+  minuterPerHour: 60
 --- !u!1 &61069692
 GameObject:
   m_ObjectHideFlags: 0
@@ -2313,6 +2333,64 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &649828059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 649828061}
+  - component: {fileID: 649828060}
+  m_Layer: 0
+  m_Name: ScuffedDebugger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &649828060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649828059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04c8e40a2916a1e4884da9e5b6225588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stagesDeck:
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: a969d906451325d4299253c08c8f86dc, type: 2}
+  barsDeck: []
+  lowAlcoolDeck:
+  - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
+  highAlcoolDeck: []
+  lowEnergyDeck: []
+  morningDeck: []
+  afternoonDeck: []
+  nightDeck: []
+  day1Deck: []
+  day2Deck: []
+  day3Deck: []
+  clock: {fileID: 0}
+--- !u!4 &649828061
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649828059}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 990.1189, y: 691.5565, z: -187.31255}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &662453698
 GameObject:
   m_ObjectHideFlags: 0
@@ -5601,7 +5679,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 20:00
+  m_Text: 22:00
 --- !u!222 &1258839809
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5730,15 +5808,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stagesDeck:
-  - {fileID: 11400000, guid: cfe5cecaee1a3c947ba364869681fba3, type: 2}
+  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: a969d906451325d4299253c08c8f86dc, type: 2}
   barsDeck:
-  - {fileID: 11400000, guid: 2c40ed9ed5e42ae4c8c25f839e260a2c, type: 2}
+  - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
   lowAlcoolDeck:
-  - {fileID: 11400000, guid: 812d810d5bb655a479feacab55463206, type: 2}
-  highAlcoolDeck:
-  - {fileID: 11400000, guid: 812d810d5bb655a479feacab55463206, type: 2}
-  lowEnergyDeck:
-  - {fileID: 11400000, guid: 812d810d5bb655a479feacab55463206, type: 2}
+  - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
+  highAlcoolDeck: []
+  lowEnergyDeck: []
+  morningDeck: []
+  afternoonDeck: []
+  nightDeck: []
+  day1Deck: []
+  day2Deck: []
+  day3Deck: []
+  clock: {fileID: 0}
 --- !u!114 &1305438559
 MonoBehaviour:
   m_ObjectHideFlags: 0
