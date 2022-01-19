@@ -66,23 +66,13 @@ public class EventsUi : MonoBehaviour
 
         if(decisionRequirements.CheckForDecisionSucess(player, evenaux.decisions[decisionNumber]) == true)
         {
-
-            player.ChangeStats(player, evenaux.decisions[decisionNumber].sucessEvent[0].alcoolPlus, 
-                evenaux.decisions[0].sucessEvent[0].funPlus, evenaux.decisions[0].sucessEvent[0].socialPlus, 
-                evenaux.decisions[0].sucessEvent[0].moneyPlus, evenaux.decisions[0].sucessEvent[0].energyPlus);
-            TimeUi(clock.UpdateTime(evenaux.decisions[0].sucessEvent[0].timePassed));
-            result.GetComponentInChildren<Text>().text = evenaux.decisions[decisionNumber].sucessEvent[0].description;
+            Sucess(decisionNumber);
             choices2.SetActive(false);
             Morechoices(evenaux.decisions[decisionNumber].sucessEvent[0].moreDecisionsStages);
         }
         else
         {
-
-            player.ChangeStats(player, evenaux.decisions[decisionNumber].failedEvent[0].alcoolPlus,
-                evenaux.decisions[0].failedEvent[0].funPlus, evenaux.decisions[0].failedEvent[0].socialPlus,
-                evenaux.decisions[0].failedEvent[0].moneyPlus, evenaux.decisions[0].failedEvent[0].energyPlus);
-            TimeUi(clock.UpdateTime(evenaux.decisions[0].failedEvent[0].timePassed));
-            result.GetComponentInChildren<Text>().text = evenaux.decisions[decisionNumber].failedEvent[0].description;
+            Failure(decisionNumber);
             choices2.SetActive(false);
             Morechoices(evenaux.decisions[decisionNumber].failedEvent[0].moreDecisionsStages);
         }
@@ -94,30 +84,43 @@ public class EventsUi : MonoBehaviour
     {
         if (decisionRequirements.CheckForDecisionSucess(player, evenaux.decisions[decisionNumber]) == true)
         {
-
-            player.ChangeStats(player, evenaux.decisions[decisionNumber].sucessEvent[0].alcoolPlus,
-                evenaux.decisions[0].sucessEvent[0].funPlus, evenaux.decisions[0].sucessEvent[0].socialPlus,
-                evenaux.decisions[0].sucessEvent[0].moneyPlus, evenaux.decisions[0].sucessEvent[0].energyPlus);
-            TimeUi(clock.UpdateTime(evenaux.decisions[0].sucessEvent[0].timePassed));
-            result.GetComponentInChildren<Text>().text = evenaux.decisions[decisionNumber].sucessEvent[0].description;
-            choices2.SetActive(false);
+            Sucess(decisionNumber);
+            choices3.SetActive(false);
             Morechoices(evenaux.decisions[decisionNumber].sucessEvent[0].moreDecisionsStages);
 
         }
         else
         {
-
-            player.ChangeStats(player, evenaux.decisions[decisionNumber].failedEvent[0].alcoolPlus,
-                evenaux.decisions[0].failedEvent[0].funPlus, evenaux.decisions[0].failedEvent[0].socialPlus,
-                evenaux.decisions[0].failedEvent[0].moneyPlus, evenaux.decisions[0].failedEvent[0].energyPlus);
-            TimeUi(clock.UpdateTime(evenaux.decisions[0].failedEvent[0].timePassed));
-            result.GetComponentInChildren<Text>().text = evenaux.decisions[decisionNumber].failedEvent[0].description;
-            choices2.SetActive(false);
+            Failure(decisionNumber);
+            choices3.SetActive(false);
             Morechoices(evenaux.decisions[decisionNumber].failedEvent[0].moreDecisionsStages);
         }
 
 
     }
+
+    private void Sucess(int decisionNumber)
+    {
+        player.ChangeStats(player, evenaux.decisions[decisionNumber].sucessEvent[0].alcoolPlus,
+                evenaux.decisions[0].sucessEvent[0].funPlus, 
+                evenaux.decisions[0].sucessEvent[0].socialPlus,
+                evenaux.decisions[0].sucessEvent[0].moneyPlus, 
+                evenaux.decisions[0].sucessEvent[0].energyPlus);
+        TimeUi(clock.UpdateTime(evenaux.decisions[0].sucessEvent[0].timePassed));
+        result.GetComponentInChildren<Text>().text = evenaux.decisions[decisionNumber].sucessEvent[0].description;
+    }
+
+    private void Failure(int decisionNumber)
+    {
+        player.ChangeStats(player, evenaux.decisions[decisionNumber].failedEvent[0].alcoolPlus,
+            evenaux.decisions[0].failedEvent[0].funPlus, 
+            evenaux.decisions[0].failedEvent[0].socialPlus,
+            evenaux.decisions[0].failedEvent[0].moneyPlus, 
+            evenaux.decisions[0].failedEvent[0].energyPlus);
+        TimeUi(clock.UpdateTime(evenaux.decisions[0].failedEvent[0].timePassed));
+        result.GetComponentInChildren<Text>().text = evenaux.decisions[decisionNumber].failedEvent[0].description;
+    }
+
 
     public void Morechoices(Events[] nextDecisionStage)
     {
@@ -137,6 +140,7 @@ public class EventsUi : MonoBehaviour
         time.text = (timetxt);
     }
 
+    
 
 
 

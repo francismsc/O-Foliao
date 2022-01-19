@@ -10,15 +10,8 @@ public class Game : MonoBehaviour
     [SerializeField] private EventsUi eventsUi;
     [SerializeField] private EventList eventsList;
     [SerializeField] private Node node;
-    [SerializeField] private Clock clock;
-
 
     private Events randomEvent;
-    private Events[] events = null;
-    public Events[] Events { get { return events; } }
-
-    
-
     private void Update()
     {
         if (move.isMoving() == true)

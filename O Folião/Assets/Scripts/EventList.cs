@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
@@ -17,7 +15,7 @@ public class EventList : MonoBehaviour
 
 
     private Events[] events = null;
-    protected Events randomEvent = null;
+    private Events randomEvent = null;
     private Events[] alcoolEvents = null;
     private Events[] energyEvents = null;
     private Events[] timeOfDayEvents = null;
@@ -46,14 +44,7 @@ public class EventList : MonoBehaviour
 
     public Clock clock;
 
-    private void Awake()
-    {
-        rnd = Random.Range(1, 254);
-    }
-
-
-
-    public Events[] GetLocalEventType(Node.Type nodetype)
+    private Events[] GetLocalEventType(Node.Type nodetype)
     {
         switch(nodetype)
         {
@@ -68,7 +59,7 @@ public class EventList : MonoBehaviour
         }
     }
 
-    public Events[] GetTimeOfDayEvents()
+    private Events[] GetTimeOfDayEvents()
     {
         switch(clock.GetCurrentTimeOfDay())
         {
@@ -87,7 +78,7 @@ public class EventList : MonoBehaviour
         }
     }
 
-    public Events[] GetDayEvents()
+    private Events[] GetDayEvents()
     {
         switch (clock.GetDay())
         {
@@ -202,14 +193,5 @@ public class EventList : MonoBehaviour
         return randomEvent;
         
     }
-
-
-
-
-
-
-
-
-
 
 }

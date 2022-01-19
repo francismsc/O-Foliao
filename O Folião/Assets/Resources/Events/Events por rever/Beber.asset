@@ -24,12 +24,13 @@ MonoBehaviour:
     _sucessEvent:
     - _description: pa
       _timePassed: 0
-      _alcoolPlus: 0
-      _funPlus: 0
-      _socialPlus: 0
-      _moneyPlus: 0
-      _energyPlus: 0
+      _alcoolPlus: 5
+      _funPlus: 5
+      _socialPlus: 5
+      _moneyPlus: 5
+      _energyPlus: 5
       _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
     _failedEvent:
     - _description: 
       _timePassed: 0
@@ -39,6 +40,7 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
   - _decisionDescription: rebolar
     _minAlcool: 0
     _minFun: 0
@@ -54,6 +56,7 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
     _failedEvent:
     - _description: 
       _timePassed: 0
@@ -63,6 +66,8 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
   alcool: 1
   energy: 1
-  _tags: 
+  _timeOfDay: 0
+  _dayOfWeek: 0

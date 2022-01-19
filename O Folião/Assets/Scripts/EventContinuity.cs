@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System;
+
 
 
 [CreateAssetMenu(fileName = "New EventContinuity/StoryLine", menuName = "Events/New Continuity")]
@@ -25,11 +23,5 @@ public class EventContinuity : ScriptableObject
     [SerializeField] private Events _theEvent;
     public Events theEvent { get { return _theEvent; } }
 
-
-
-
-    //DIA
-    //Local
-    //time
-}   //Event
+}   
     

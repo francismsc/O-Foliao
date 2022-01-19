@@ -5,13 +5,14 @@ using UnityEngine;
 public class Movement: MonoBehaviour
 {
     public Player player;
-    bool timetomove = true;
+    private bool timetomove = true;
+    private bool choice = false;
+    private bool stillmoving = false;
+    private bool moving = false;
+
     private List<GameObject> list;
-    public Material mate;
-    bool moving = false;
-    GameObject child;
-    bool choice = false;
-    bool stillmoving = false;
+    private GameObject child;
+
     public void Move(Player player,GameObject nextpoint)
     {
         
@@ -72,15 +73,18 @@ public class Movement: MonoBehaviour
 
             if (moving == true && player.gameObject.transform.position != child.transform.position)
             {
-                player.gameObject.transform.position = Vector3.MoveTowards(player.gameObject.transform.position, child.transform.position, 300 * Time.deltaTime);
+                player.gameObject.transform.position = Vector3.MoveTowards(player.gameObject.transform.position,
+                                                        child.transform.position, 300 * Time.deltaTime);
                 stillmoving = true;
 
             }
-            else if (child == null || (player.gameObject.transform.position == child.transform.position && choice == false))
+            else if (child == null || (player.gameObject.transform.position == child.transform.position 
+                     && choice == false))
             {
                 moving = false;
             }
-            else if (player.gameObject.transform.position == child.transform.position && choice == true)
+            else if (player.gameObject.transform.position == child.transform.position 
+                     && choice == true)
             {
                 choice = false;
                 moving = false;

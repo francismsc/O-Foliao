@@ -30,6 +30,7 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
     _failedEvent:
     - _description: "Trope\xE7am um no outro mas nenhum de voc\xEAs se importa"
       _timePassed: 0
@@ -39,6 +40,7 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
   - _decisionDescription: Recusar
     _minAlcool: 0
     _minFun: 0
@@ -54,8 +56,9 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
     _failedEvent: []
   alcool: 0
   energy: 0
-  _timeOfDay: 00000000
-  _dayOfWeek: 
+  _timeOfDay: 0
+  _dayOfWeek: 0

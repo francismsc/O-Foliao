@@ -37,15 +37,14 @@ public class Player : MonoBehaviour
         bars.SetMaxAllBars(maxAlcool, maxFun, maxSocial, maxEnergy,  money);
     }
 
-
-
     public int GetAllStats()
     {
         return this.alcool;
     }
 
 
-    public void ChangeStats(Player player, int alcool = 0, int fun = 0, int social = 0, int money = 0, int energy = 0)
+    public void ChangeStats(Player player, int alcool = 0, int fun = 0, 
+                            int social = 0, int money = 0, int energy = 0)
     {
         player.alcool += alcool;
         player.fun += fun;
@@ -87,12 +86,10 @@ public class Player : MonoBehaviour
             player.energy = 0;
         }
 
-
-
-        bars.SetValueAllBars(player.alcool, player.fun, player.social, player.energy, player.money);
+        bars.SetValueAllBars(player.alcool, player.fun, player.social, 
+                             player.energy, player.money);
         if (player.alcool == 100 || player.energy == 0)
         {
-            Debug.Log("DIE");
             scene.Death();
         }
 

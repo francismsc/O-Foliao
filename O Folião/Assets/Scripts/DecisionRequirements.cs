@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DecisionRequirements : MonoBehaviour
@@ -17,7 +15,7 @@ public class DecisionRequirements : MonoBehaviour
         }
     }
 
-    public bool CheckAllResources(Player player, Decisions decision)
+    private bool CheckAllResources(Player player, Decisions decision)
     {
         if (CheckMinResource(decision.minAlcool, player.GetAlcool()) == false)
         {
@@ -51,7 +49,7 @@ public class DecisionRequirements : MonoBehaviour
 
         return true;
     }
-    public bool CheckMinResource(int minNeeded, int resource)
+    private bool CheckMinResource(int minNeeded, int resource)
     {
         if (minNeeded > resource)
         {

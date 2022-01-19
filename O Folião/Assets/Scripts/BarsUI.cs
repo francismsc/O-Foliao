@@ -1,43 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class BarsUI : MonoBehaviour
 {
     [SerializeField]
-    public Slider alcoolSlider;
+    private Slider alcoolSlider;
     [SerializeField]
-    public Gradient alcoolGradient;
+    private Gradient alcoolGradient;
     [SerializeField]
-    public Image alcoolFill;
+    private Image alcoolFill;
 
     [SerializeField]
-    public Slider funSlider;
+    private Slider funSlider;
     [SerializeField]
-    public Gradient funGradient;
+    private Gradient funGradient;
     [SerializeField]
-    public Image funFill;
+    private Image funFill;
 
     [SerializeField]
-    public Slider socialSlider;
+    private Slider socialSlider;
     [SerializeField]
-    public Gradient socialGradient;
+    private Gradient socialGradient;
     [SerializeField]
-    public Image socialFill;
+    private Image socialFill;
 
     [SerializeField]
-    public Slider energySlider;
+    private Slider energySlider;
     [SerializeField]
-    public Gradient energyGradient;
+    private Gradient energyGradient;
     [SerializeField]
-    public Image energyFill;
+    private Image energyFill;
+    [SerializeField]
+    private Text text;
 
-    public Text text;
 
 
-
-    public void SetMaxAllBars(int maxAlcool, int maxFun, int maxSocial, int maxEnergy, int money)
+    public void SetMaxAllBars(int maxAlcool, int maxFun, int maxSocial,
+                              int maxEnergy, int money)
     {
         alcoolSlider.maxValue = maxAlcool;
 
@@ -50,7 +49,8 @@ public class BarsUI : MonoBehaviour
         SetValueAllBars();
     }
 
-    public void SetValueAllBars(int alcool = 0, int fun = 50, int social = 50, int energy = 100, int money = 30)
+    public void SetValueAllBars(int alcool = 0, int fun = 50, int social = 50, 
+                                int energy = 100, int money = 30)
     {
         alcoolSlider.value = alcool;
         alcoolFill.color = alcoolGradient.Evaluate(alcoolSlider.value);
@@ -67,9 +67,6 @@ public class BarsUI : MonoBehaviour
         text.text = money.ToString();
     }
 
-    public void TimeUi(int hours, int minutes)
-    {
 
-    }
 
 }

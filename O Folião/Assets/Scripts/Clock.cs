@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Clock : MonoBehaviour
@@ -24,9 +22,20 @@ public class Clock : MonoBehaviour
     private int extraHours;
     private int extraMin;
 
+    public int GetHours()
+    {
+        return this.hours;
+    }
 
+    public int GetDay()
+    {
+        return this.day;
+    }
 
-
+    public TimesOfDay GetCurrentTimeOfDay()
+    {
+        return this.currentTimeOfDay;
+    }
 
     public string UpdateTime(int timepassed)
     {
@@ -69,19 +78,7 @@ public class Clock : MonoBehaviour
         
     }
 
-    public int GetHours()
-    {
-        return this.hours;
-    }
-
-    public TimesOfDay GetCurrentTimeOfDay()
-    {
-        Debug.Log(this.currentTimeOfDay);
-        return this.currentTimeOfDay;
-
-    }
-
-    public void TimeOfDay()
+    private void TimeOfDay()
     {
         int hours = GetHours();
         GetCurrentTimeOfDay();
@@ -98,13 +95,10 @@ public class Clock : MonoBehaviour
             currentTimeOfDay = TimesOfDay.Night;
         }
 
-        Debug.Log(currentTimeOfDay);
     }
 
-    public int GetDay()
-    {
-        return this.day;
-    }
+
+
     
 
 
