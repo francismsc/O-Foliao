@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
-    public enum Type {Stages, Bars};
+    public enum Type {Stages, Bars, Hotels};
 
     [SerializeField]
     private Type type;

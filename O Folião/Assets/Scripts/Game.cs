@@ -10,6 +10,7 @@ public class Game : MonoBehaviour
     [SerializeField] private EventsUi eventsUi;
     [SerializeField] private EventList eventsList;
     [SerializeField] private Node node;
+    [SerializeField] private Clock clock;
 
     private Events randomEvent;
     private void Update()
@@ -24,6 +25,10 @@ public class Game : MonoBehaviour
             GetComponent<Movement>().enabled = false;
             randomEvent = eventsList.ChooseRandomEvent(player,node,eventsUi);
             eventsUi.EventUi(randomEvent);
+            if(clock.GetDay() == 4)
+            {
+                
+            }
             move.TimetoMove();
             
         }

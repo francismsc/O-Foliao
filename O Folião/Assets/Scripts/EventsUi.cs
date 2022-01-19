@@ -20,13 +20,16 @@ public class EventsUi : MonoBehaviour
     [SerializeField] private Text description2;
 
     [SerializeField] private GameObject result;
+    [SerializeField] private GameObject resources;
 
     [SerializeField] private Events evenaux;
     [SerializeField] private Player player;
     [SerializeField] private DecisionRequirements decisionRequirements;
 
     [SerializeField] private Text time;
+    [SerializeField] private Text calendar;
     [SerializeField] private Clock clock;
+
     [SerializeField] private EventContinuityHandler eventContinuityHandler;
     public void EventUi(Events even)
     {
@@ -41,7 +44,6 @@ public class EventsUi : MonoBehaviour
             choices2.SetActive(true);
 
         }
-        choices2.SetActive(true);
         if (even.decisions.Length == 3)
         {
 
@@ -56,9 +58,14 @@ public class EventsUi : MonoBehaviour
 
     }
 
-    public void Resultcanvas()
+    public void ResultCanvas()
     {
         result.SetActive(true);
+    }
+
+    public void ResourcesCanvas()
+    {
+        resources.SetActive(true);
     }
 
     public void DoubleChoice(int decisionNumber)
@@ -68,7 +75,6 @@ public class EventsUi : MonoBehaviour
         if(decisionRequirements.CheckForDecisionSucess(player, evenaux.decisions[decisionNumber]) == true)
         {
             Sucess(decisionNumber);
-            Debug.Log(evenaux.decisions[decisionNumber].sucessEvent[0].nextEventStoryLine);
             eventContinuityHandler.EventContinuity
                 (evenaux.decisions[decisionNumber].sucessEvent[0].nextEventStoryLine,
                  evenaux);
@@ -113,6 +119,33 @@ public class EventsUi : MonoBehaviour
 
     }
 
+    public void ShowResourceChanges(int decisionNumber, bool sucess)
+    {
+        if(sucess)
+        { 
+            result.GetComponentInChildren<Text>().text += "\n" +
+            ResourceToString(evenaux.decisions[decisionNumber].sucessEvent[0].alcoolPlus,
+            "Álcool")
+            + ResourceToString(evenaux.decisions[decisionNumber].sucessEvent[0].funPlus,
+            "Diversão")
+            + ResourceToString(evenaux.decisions[decisionNumber].sucessEvent[0].socialPlus,
+            "Social")
+            + ResourceToString(evenaux.decisions[decisionNumber].sucessEvent[0].energyPlus,
+            "Energia");
+        }else if(!sucess)
+        {
+            result.GetComponentInChildren<Text>().text += "\n" + 
+            ResourceToString(evenaux.decisions[decisionNumber].failedEvent[0].alcoolPlus,
+            "Álcool")
+            + ResourceToString(evenaux.decisions[decisionNumber].failedEvent[0].funPlus,
+            "Diversão")
+            + ResourceToString(evenaux.decisions[decisionNumber].failedEvent[0].socialPlus,
+            "Social")
+            + ResourceToString(evenaux.decisions[decisionNumber].failedEvent[0].energyPlus,
+            "Energia");
+        }
+    }
+
     private void Sucess(int decisionNumber)
     {
         player.ChangeStats(player, evenaux.decisions[decisionNumber].sucessEvent[0].alcoolPlus,
@@ -121,7 +154,10 @@ public class EventsUi : MonoBehaviour
                 evenaux.decisions[0].sucessEvent[0].moneyPlus, 
                 evenaux.decisions[0].sucessEvent[0].energyPlus);
         TimeUi(clock.UpdateTime(evenaux.decisions[0].sucessEvent[0].timePassed));
+        CalendarUi();
+
         result.GetComponentInChildren<Text>().text = evenaux.decisions[decisionNumber].sucessEvent[0].description;
+        ShowResourceChanges(decisionNumber, true);
     }
 
     private void Failure(int decisionNumber)
@@ -133,6 +169,7 @@ public class EventsUi : MonoBehaviour
             evenaux.decisions[0].failedEvent[0].energyPlus);
         TimeUi(clock.UpdateTime(evenaux.decisions[0].failedEvent[0].timePassed));
         result.GetComponentInChildren<Text>().text = evenaux.decisions[decisionNumber].failedEvent[0].description;
+        ShowResourceChanges(decisionNumber, false);
     }
 
 
@@ -141,10 +178,11 @@ public class EventsUi : MonoBehaviour
 
         if (nextDecisionStage.Length == 0)
         {
-            Resultcanvas();
+            ResultCanvas();
         }
         else if (nextDecisionStage != null)
         {
+            ResultCanvas();
             EventUi(nextDecisionStage[0]);
         }
     }
@@ -154,7 +192,34 @@ public class EventsUi : MonoBehaviour
         time.text = (timetxt);
     }
 
-    
+    public void CalendarUi()
+    {
+        calendar.text = "Day " + clock.GetDay();
+    }
+
+    public string ResourceToString(int value, string resource)
+    {
+        if(value > 0 && value < 15)
+        {
+            return resource + ": +  ";
+        }
+        else if(value >= 15 )
+        {
+            return resource + ": ++  ";
+        }
+        else if(value < 0 && value > -15)
+        {
+            return resource + ": -  ";
+        }
+        else if(value < -15)
+        {
+            return resource + ": --  ";
+        }
+        else
+        {
+            return "";
+        }
+    }
 
 
 

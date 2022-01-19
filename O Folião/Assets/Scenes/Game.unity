@@ -560,6 +560,7 @@ MonoBehaviour:
   options:
   - {fileID: 699324352}
   - {fileID: 911360576}
+  - {fileID: 1408764755}
 --- !u!1 &119468169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,7 +1483,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
+  - {fileID: 2100000, guid: ba8379942f9510f44966742ca36667d4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2301,62 +2302,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &649828059
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 649828061}
-  - component: {fileID: 649828060}
-  m_Layer: 0
-  m_Name: ScuffedDebugger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &649828060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 649828059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c8e40a2916a1e4884da9e5b6225588, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stagesDeck: []
-  barsDeck: []
-  lowAlcoolDeck: []
-  highAlcoolDeck: []
-  lowEnergyDeck: []
-  morningDeck: []
-  afternoonDeck: []
-  nightDeck: []
-  day1Deck: []
-  day2Deck: []
-  day3Deck: []
-  clock: {fileID: 0}
-  eventContinuity: {fileID: 0}
---- !u!4 &649828061
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 649828059}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 990.1189, y: 691.5565, z: -187.31255}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &662453698
 GameObject:
   m_ObjectHideFlags: 0
@@ -2602,6 +2547,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &723327610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 723327612}
+  - component: {fileID: 723327611}
+  m_Layer: 0
+  m_Name: Cheats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &723327611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723327610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4231e65be494a2488d524cb2732080f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cheatShowEvent: {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
+  cheatShowEventContinuity: {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  cheatShowEventContinuity2: {fileID: 0}
+  player: {fileID: 1592390869}
+  eventsUi: {fileID: 1305438561}
+--- !u!4 &723327612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723327610}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1341.7861, y: 684.9264, z: -223.4239}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &744039144
 GameObject:
   m_ObjectHideFlags: 0
@@ -5776,32 +5769,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stagesDeck:
-  - {fileID: 11400000, guid: 5cd98e46589b93e44ab1a86da9a44cdf, type: 2}
-  - {fileID: 11400000, guid: 50bf4b4d31c90d14f85a9ea4c240dc36, type: 2}
+  - {fileID: 11400000, guid: f3e61cb06dc82c545bf72b1cb7a633ac, type: 2}
+  - {fileID: 11400000, guid: 486306ff68d6ea94b8dfaeb54cc98581, type: 2}
   barsDeck:
-  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
+  - {fileID: 11400000, guid: f3e61cb06dc82c545bf72b1cb7a633ac, type: 2}
+  - {fileID: 11400000, guid: 486306ff68d6ea94b8dfaeb54cc98581, type: 2}
+  hotelDeck:
+  - {fileID: 11400000, guid: ab666486a13fb584e869f277a753a22f, type: 2}
   lowAlcoolDeck:
   - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: 486306ff68d6ea94b8dfaeb54cc98581, type: 2}
   highAlcoolDeck:
   - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: 486306ff68d6ea94b8dfaeb54cc98581, type: 2}
   lowEnergyDeck:
   - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
   morningDeck:
-  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
-  - {fileID: 11400000, guid: 5cd98e46589b93e44ab1a86da9a44cdf, type: 2}
+  - {fileID: 11400000, guid: ab666486a13fb584e869f277a753a22f, type: 2}
+  - {fileID: 11400000, guid: 486306ff68d6ea94b8dfaeb54cc98581, type: 2}
   afternoonDeck:
+  - {fileID: 11400000, guid: ab666486a13fb584e869f277a753a22f, type: 2}
   - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
   - {fileID: 11400000, guid: 5cd98e46589b93e44ab1a86da9a44cdf, type: 2}
+  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
+  - {fileID: 11400000, guid: 486306ff68d6ea94b8dfaeb54cc98581, type: 2}
   nightDeck:
-  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
-  - {fileID: 11400000, guid: 5cd98e46589b93e44ab1a86da9a44cdf, type: 2}
+  - {fileID: 11400000, guid: ab666486a13fb584e869f277a753a22f, type: 2}
+  - {fileID: 11400000, guid: f3e61cb06dc82c545bf72b1cb7a633ac, type: 2}
+  - {fileID: 11400000, guid: 486306ff68d6ea94b8dfaeb54cc98581, type: 2}
   day1Deck:
-  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
-  - {fileID: 11400000, guid: 5cd98e46589b93e44ab1a86da9a44cdf, type: 2}
-  day2Deck: []
-  day3Deck: []
+  - {fileID: 11400000, guid: ab666486a13fb584e869f277a753a22f, type: 2}
+  - {fileID: 11400000, guid: 486306ff68d6ea94b8dfaeb54cc98581, type: 2}
+  day2Deck:
+  - {fileID: 11400000, guid: ab666486a13fb584e869f277a753a22f, type: 2}
+  - {fileID: 11400000, guid: f3e61cb06dc82c545bf72b1cb7a633ac, type: 2}
+  - {fileID: 11400000, guid: f3e61cb06dc82c545bf72b1cb7a633ac, type: 2}
+  - {fileID: 11400000, guid: 486306ff68d6ea94b8dfaeb54cc98581, type: 2}
+  day3Deck:
+  - {fileID: 11400000, guid: ab666486a13fb584e869f277a753a22f, type: 2}
+  - {fileID: 11400000, guid: f3e61cb06dc82c545bf72b1cb7a633ac, type: 2}
+  - {fileID: 11400000, guid: 486306ff68d6ea94b8dfaeb54cc98581, type: 2}
   clock: {fileID: 60811737}
-  eventContinuity: {fileID: 0}
+  eventContinuity: {fileID: 1305438560}
+  eventsUi: {fileID: 0}
 --- !u!114 &1305438559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5856,6 +5866,7 @@ MonoBehaviour:
   choice1Button2: {fileID: 327466210}
   description2: {fileID: 2040538906}
   result: {fileID: 1579209257}
+  resources: {fileID: 0}
   evenaux: {fileID: 0}
   player: {fileID: 1592390869}
   decisionRequirements: {fileID: 60811736}
@@ -6361,9 +6372,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a10b7f7853430d14c8107b23e66f5ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
-  normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
-  highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
+  type: 2
+  normal: {fileID: 2100000, guid: ba8379942f9510f44966742ca36667d4, type: 2}
+  highLight: {fileID: 2100000, guid: de3029a32e595494dbe844f2689a5423, type: 2}
   node: {fileID: 0}
   options:
   - {fileID: 99934416}
@@ -9066,7 +9077,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!1 &1995068586
 GameObject:

@@ -27,6 +27,7 @@ public class EventList : MonoBehaviour
     [Header("Local Decks")]
     [SerializeField] private List<Events> stagesDeck;
     [SerializeField] private List<Events> barsDeck;
+    [SerializeField] private List<Events> hotelDeck;
 
     [Header("Resources Decks")]
     [SerializeField] private List<Events> lowAlcoolDeck;
@@ -45,6 +46,7 @@ public class EventList : MonoBehaviour
 
     public Clock clock;
     public EventContinuityHandler eventContinuity;
+    [SerializeField] private EventsUi eventsUi;
 
     private List<Events> GetLocalEventType(Node.Type nodetype)
     {
@@ -54,6 +56,8 @@ public class EventList : MonoBehaviour
                 return stagesDeck;
             case (Node.Type.Bars):
                 return barsDeck;
+            case (Node.Type.Hotels):
+                return hotelDeck;
             default:
                 Debug.Log("Error:GetLocalEvent");
                 return null;
@@ -179,19 +183,27 @@ public class EventList : MonoBehaviour
 
     public Events ChooseRandomEvent(Player player, Node node, EventsUi eventsUi)
     {
+
         events = ChooseEventType(player, node);
-        alcoolEvents = ChooseAlcoolEvents(player);
-        energyEvents = ChooseEnergyEvents(player);
-        timeOfDayEvents = GetTimeOfDayEvents();
-        dayEvents = GetDayEvents();
+        //if temporário apenas arranjo rápido para uma feature
+        if (events == hotelDeck)
+        {
+            return hotelDeck[0];
+        }
+            alcoolEvents = ChooseAlcoolEvents(player);
+            energyEvents = ChooseEnergyEvents(player);
+            timeOfDayEvents = GetTimeOfDayEvents();
+            dayEvents = GetDayEvents();
 
 
-        events = UnionEvents(events, alcoolEvents, energyEvents);
-        events = IntersectEvents(events, timeOfDayEvents, dayEvents);
+
+            events = UnionEvents(events, alcoolEvents, energyEvents);
+            events = IntersectEvents(events, timeOfDayEvents, dayEvents);
 
 
-        rnd = Random.Range(0, events.Count);
-        randomEvent = events[rnd];
+            rnd = Random.Range(0, events.Count);
+            randomEvent = events[rnd];
+        
         return randomEvent;
         
     }

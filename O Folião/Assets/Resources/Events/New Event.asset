@@ -26,20 +26,22 @@ MonoBehaviour:
     - _description: Ficam a falar sobre a vida
       _timePassed: 15
       _alcoolPlus: 0
-      _funPlus: 0
+      _funPlus: 10
       _socialPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
       _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
     _failedEvent:
     - _description: "N\xE3o consegues perceber nada do que ele te est\xE1 a dizer"
-      _timePassed: 0
+      _timePassed: 5
       _alcoolPlus: 0
-      _funPlus: 0
+      _funPlus: 5
       _socialPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
       _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
   - _decisionDescription: "Dan\xE7ar com ela "
     _minAlcool: 30
     _minFun: 40
@@ -55,6 +57,7 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
     _failedEvent:
     - _description: "Ficas desconfort\xE1vel com a dan\xE7a dela e perdes a vontade
         de dan\xE7ar"
@@ -65,6 +68,9 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
   alcool: 0
   energy: 0
-  _tags: 
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

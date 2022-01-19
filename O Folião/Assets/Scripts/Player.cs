@@ -85,6 +85,10 @@ public class Player : MonoBehaviour
         {
             player.energy = 0;
         }
+        if (player.money < 0)
+        {
+            player.money = 0;
+        }
 
         bars.SetValueAllBars(player.alcool, player.fun, player.social, 
                              player.energy, player.money);
