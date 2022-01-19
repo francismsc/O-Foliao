@@ -27,6 +27,7 @@ public class EventsUi : MonoBehaviour
 
     [SerializeField] private Text time;
     [SerializeField] private Clock clock;
+    [SerializeField] private EventContinuityHandler eventContinuityHandler;
     public void EventUi(Events even)
     {
         evenaux = even;
@@ -67,12 +68,19 @@ public class EventsUi : MonoBehaviour
         if(decisionRequirements.CheckForDecisionSucess(player, evenaux.decisions[decisionNumber]) == true)
         {
             Sucess(decisionNumber);
+            Debug.Log(evenaux.decisions[decisionNumber].sucessEvent[0].nextEventStoryLine);
+            eventContinuityHandler.EventContinuity
+                (evenaux.decisions[decisionNumber].sucessEvent[0].nextEventStoryLine,
+                 evenaux);
             choices2.SetActive(false);
             Morechoices(evenaux.decisions[decisionNumber].sucessEvent[0].moreDecisionsStages);
         }
         else
         {
             Failure(decisionNumber);
+            eventContinuityHandler.EventContinuity
+                (evenaux.decisions[decisionNumber].failedEvent[0].nextEventStoryLine,
+                 evenaux);
             choices2.SetActive(false);
             Morechoices(evenaux.decisions[decisionNumber].failedEvent[0].moreDecisionsStages);
         }
@@ -85,6 +93,9 @@ public class EventsUi : MonoBehaviour
         if (decisionRequirements.CheckForDecisionSucess(player, evenaux.decisions[decisionNumber]) == true)
         {
             Sucess(decisionNumber);
+            eventContinuityHandler.EventContinuity
+                (evenaux.decisions[decisionNumber].sucessEvent[0].nextEventStoryLine,
+                 evenaux);
             choices3.SetActive(false);
             Morechoices(evenaux.decisions[decisionNumber].sucessEvent[0].moreDecisionsStages);
 
@@ -92,6 +103,9 @@ public class EventsUi : MonoBehaviour
         else
         {
             Failure(decisionNumber);
+            eventContinuityHandler.EventContinuity
+                (evenaux.decisions[decisionNumber].failedEvent[0].nextEventStoryLine,
+                 evenaux);
             choices3.SetActive(false);
             Morechoices(evenaux.decisions[decisionNumber].failedEvent[0].moreDecisionsStages);
         }

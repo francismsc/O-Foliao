@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Game" Collapsed="true">
+    <Position X="1.5" Y="5.25" Width="1.5" />
+    <InheritanceLine Type="UnityEngine.MonoBehaviour" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="1.441" />
+        <Point X="2.5" Y="1.691" />
+        <Point X="1.125" Y="1.691" />
+        <Point X="1.125" Y="5.875" />
+        <Point X="1.5" Y="5.875" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AwQAABAAAAAAAACAAAAAAAAAAAAAAAAJAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneChanger" Collapsed="true">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\SceneChanger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraPan" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARgFAACAAAAAAAAAAAAAAAAAAAAAAAADAABBBIAAEA=</HashCode>
+      <FileName>Assets\Scripts\CameraPan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraSettings" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CameraSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clock" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAkABAABGhAQQAAAAAAAEBAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Clock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DecisionRequirements" Collapsed="true">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAQAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DecisionRequirements.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventContinuity" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAABAABAAAAAAAAABAAAAAAAEAAAAIQAAAAEAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EventContinuity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventList" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhBEGAAACAAABQgBAAABAgAABEgAAxIKEIACBABIAMA=</HashCode>
+      <FileName>Assets\Scripts\EventList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Events" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAABAAAAAQAAABABAAAAgEAAAAAAAEAAUAAIAg=</HashCode>
+      <FileName>Assets\Scripts\Events.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventsUi" Collapsed="true">
+    <Position X="4.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABJBAQFHgAAAAAAJQQJACAAAAAAgACFAAACAAAAAAg=</HashCode>
+      <FileName>Assets\Scripts\EventsUi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainMenu" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgEAAAAAAAQA=</HashCode>
+      <FileName>Assets\Scripts\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Movement" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYgAgAAAIAAAAAAAACAAAAIAAAAAAIBAAABAAACAgA=</HashCode>
+      <FileName>Assets\Scripts\Movement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Node" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUAAACAAAAAAAAAAAEAAAAgAEAABAAAAAAQAACAEAAA=</HashCode>
+      <FileName>Assets\Scripts\Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PauseMenu" Collapsed="true">
+    <Position X="4.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQgAAAAACAAAAAAAAAAAIAAAAAAgAAgAAAAAAgAAAA=</HashCode>
+      <FileName>Assets\Scripts\PauseMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player" Collapsed="true">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAGIQhASAAAAQgAAAAIIEAAAAAAAAABCcACAgAEAA=</HashCode>
+      <FileName>Assets\Scripts\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BarsUI" Collapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAACQAAAAACQBAQEAgCIgIAIAAAAAAQ=</HashCode>
+      <FileName>Assets\Scripts\BarsUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="7.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="UnityEngine.MonoBehaviour" Collapsed="true">
+    <Position X="1.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Struct Name="Decisions" Collapsed="true">
+    <Position X="4.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQgggAQAAAAABAAAAAAAAIAQAAAAQgQAABAAAIiQ=</HashCode>
+      <FileName>Assets\Scripts\Events.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SucessEvent" Collapsed="true">
+    <Position X="7.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAEIAEAAAFIgAAABAABAABAAIAAhAABUAAAIA=</HashCode>
+      <FileName>Assets\Scripts\Events.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="FailedEvent" Collapsed="true">
+    <Position X="6" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAEIAEAAAFIgAAABAABAABAAIAAhAABUAAAIA=</HashCode>
+      <FileName>Assets\Scripts\Events.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

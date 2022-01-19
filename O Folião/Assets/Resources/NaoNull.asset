@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15bfc27dd4b74a04db5c1a14853e73b5, type: 3}
-  m_Name: New EventContinuity
+  m_Script: {fileID: 11500000, guid: 18e57c419cc332e489354e5ad64aac5c, type: 3}
+  m_Name: NaoNull
   m_EditorClassIdentifier: 
   _dayOfWeek: 0
-  _local: 0
-  _timeOfDay: 0
-  _nextEvent: {fileID: 0}
+  _local: 1
+  _timeOfDay: 2
+  _theEvent: {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}

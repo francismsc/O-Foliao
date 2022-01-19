@@ -20,7 +20,7 @@ public class EventContinuity : ScriptableObject
     [SerializeField] private TimeOfDay _timeOfDay;
     public TimeOfDay timeOfDay { get { return _timeOfDay; } }
 
-    [SerializeField] private Events _theEvent;
+    [SerializeField] private Events _theEvent = null;
     public Events theEvent { get { return _theEvent; } }
 
 }   

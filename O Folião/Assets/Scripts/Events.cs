@@ -132,6 +132,13 @@ public class Events : ScriptableObject
     [SerializeField] private DayOfWeek _dayOfWeek;
     public DayOfWeek dayOfWeek { get { return _dayOfWeek; } }
 
+    public enum Locals { Stages, Bars };
+
+    [SerializeField] private Locals[] _locals;
+    public Locals[] locals { get { return _locals; } }
+
+
+
 
 
 }

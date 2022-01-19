@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Linq;
+using System.Collections.Generic;
 
 public class EventList : MonoBehaviour
 {
@@ -14,37 +15,38 @@ public class EventList : MonoBehaviour
 
 
 
-    private Events[] events = null;
+    private List<Events> events = null;
     private Events randomEvent = null;
-    private Events[] alcoolEvents = null;
-    private Events[] energyEvents = null;
-    private Events[] timeOfDayEvents = null;
-    private Events[] dayEvents = null;
+    private List<Events> alcoolEvents = null;
+    private List<Events> energyEvents = null;
+    private List<Events> timeOfDayEvents = null;
+    private List<Events> dayEvents = null;
 
     private int rnd;
 
     [Header("Local Decks")]
-    [SerializeField] private Events[] stagesDeck;
-    [SerializeField] private Events[] barsDeck;
+    [SerializeField] private List<Events> stagesDeck;
+    [SerializeField] private List<Events> barsDeck;
 
     [Header("Resources Decks")]
-    [SerializeField] private Events[] lowAlcoolDeck;
-    [SerializeField] private Events[] highAlcoolDeck;
-    [SerializeField] private Events[] lowEnergyDeck;
+    [SerializeField] private List<Events> lowAlcoolDeck;
+    [SerializeField] private List<Events> highAlcoolDeck;
+    [SerializeField] private List<Events> lowEnergyDeck;
 
     [Header("TimeOfDay Decks")]
-    [SerializeField] private Events[] morningDeck;
-    [SerializeField] private Events[] afternoonDeck;
-    [SerializeField] private Events[] nightDeck;
+    [SerializeField] private List<Events> morningDeck;
+    [SerializeField] private List<Events> afternoonDeck;
+    [SerializeField] private List<Events> nightDeck;
 
     [Header("Day Decks")]
-    [SerializeField] private Events[] day1Deck;
-    [SerializeField] private Events[] day2Deck;
-    [SerializeField] private Events[] day3Deck;
+    [SerializeField] private List<Events> day1Deck;
+    [SerializeField] private List<Events> day2Deck;
+    [SerializeField] private List<Events> day3Deck;
 
     public Clock clock;
+    public EventContinuityHandler eventContinuity;
 
-    private Events[] GetLocalEventType(Node.Type nodetype)
+    private List<Events> GetLocalEventType(Node.Type nodetype)
     {
         switch(nodetype)
         {
@@ -59,7 +61,7 @@ public class EventList : MonoBehaviour
         }
     }
 
-    private Events[] GetTimeOfDayEvents()
+    private List<Events> GetTimeOfDayEvents()
     {
         switch(clock.GetCurrentTimeOfDay())
         {
@@ -78,7 +80,7 @@ public class EventList : MonoBehaviour
         }
     }
 
-    private Events[] GetDayEvents()
+    private List<Events> GetDayEvents()
     {
         switch (clock.GetDay())
         {
@@ -98,12 +100,12 @@ public class EventList : MonoBehaviour
         }
     }
 
-    private Events[] ChooseEventType(Player player, Node node)
+    private List<Events> ChooseEventType(Player player, Node node)
     {
         return GetLocalEventType(node.NodeType(player));
     }
 
-    private Events[] ChooseAlcoolEvents(Player player)
+    private List<Events> ChooseAlcoolEvents(Player player)
     {
         int alcool = player.GetAlcool();
         if (alcool <= lowAlcoolLvl)
@@ -120,7 +122,7 @@ public class EventList : MonoBehaviour
         }
     }
 
-    private Events[] ChooseEnergyEvents(Player player)
+    private List<Events> ChooseEnergyEvents(Player player)
     {
         int energy = player.GetEnergy();
         if (energy <= lowEnergyLvl)
@@ -134,42 +136,42 @@ public class EventList : MonoBehaviour
 
     }
 
-    private Events[] UnionEvents(Events[] locationDeck, Events[] alcoolDeck,
-        Events[] energyDeck)
+    private List<Events> UnionEvents(List<Events> locationDeck, List<Events> alcoolDeck,
+        List<Events> energyDeck)
     {
-        Events[] eventaux = locationDeck;
+        List<Events> eventaux = locationDeck;
         if (locationDeck != null)
         {
             if (alcoolDeck != null)
             {
-                eventaux = eventaux.Union(alcoolDeck).ToArray();
+                eventaux = eventaux.Union(alcoolDeck).ToList();
 
                 return eventaux;
             }
 
             if (energyDeck != null)
             {
-                eventaux = eventaux.Union(energyDeck).ToArray();
+                eventaux = eventaux.Union(energyDeck).ToList();
             }
         }
         return eventaux;
     }
 
-    private Events[] IntersectEvents(Events[] mainDeck, Events[] timeofDayDeck,
-    Events[] dayDeck)
+    private List<Events> IntersectEvents(List<Events> mainDeck, List<Events> timeofDayDeck,
+    List<Events> dayDeck)
     {
-        Events[] eventaux = mainDeck;
+        List<Events> eventaux = mainDeck;
         if (mainDeck != null)
         {
             if (timeofDayDeck != null)
             {
-                eventaux = eventaux.Union(timeofDayDeck).ToArray();
+                eventaux = eventaux.Intersect(timeofDayDeck).ToList();
 
             }
 
             if (dayDeck != null)
             {
-                eventaux = eventaux.Union(dayDeck).ToArray();
+                eventaux = eventaux.Intersect(dayDeck).ToList();
             }
         }
         return eventaux;
@@ -188,10 +190,105 @@ public class EventList : MonoBehaviour
         events = IntersectEvents(events, timeOfDayEvents, dayEvents);
 
 
-        rnd = Random.Range(0, events.Length);
+        rnd = Random.Range(0, events.Count);
         randomEvent = events[rnd];
         return randomEvent;
         
     }
+
+    public void AddToDecks(EventContinuity newEvent)
+    {
+        switch ((int)newEvent.dayOfWeek)
+        {
+            case 0:
+                day1Deck.Add(newEvent.theEvent);
+                break;
+            case 1:
+                day2Deck.Add(newEvent.theEvent);
+                break;
+            default:
+                day3Deck.Add(newEvent.theEvent);
+                break;
+        }
+
+        switch ((int)newEvent.timeOfDay)
+        {
+            case 0:
+                morningDeck.Add(newEvent.theEvent);
+                break;
+            case 1:
+                afternoonDeck.Add(newEvent.theEvent);
+                break;
+            case 2:
+                nightDeck.Add(newEvent.theEvent);
+                break;
+            default:
+                Debug.Log("Error timeofdayContinuity");
+                break;
+        }
+
+        switch ((int)newEvent.local)
+        {
+            case 0:
+                stagesDeck.Add(newEvent.theEvent);
+                break;
+            case 1:
+                barsDeck.Add(newEvent.theEvent);
+                break;
+            default:
+                Debug.Log("Error localContinuity");
+                break;
+        }
+    }
+
+    public void RemoveFromDecks(EventContinuity newEvent, Events oldEvent)
+    {
+        switch ((int)oldEvent.dayOfWeek)
+        {
+            case 0:
+                day1Deck.Remove(oldEvent);
+                break;
+            case 1:
+                day2Deck.Remove(oldEvent);
+                break;
+            default:
+                day3Deck.Remove(oldEvent);
+                break;
+        }
+
+        switch ((int)oldEvent.timeOfDay)
+        {
+            case 0:
+                morningDeck.Remove(oldEvent);
+                break;
+            case 1:
+                afternoonDeck.Remove(oldEvent);
+                break;
+            case 2:
+                nightDeck.Remove(oldEvent);
+                break;
+            default:
+                Debug.Log("Error timeofdayContinuity");
+                break;
+        }
+
+        for (int local = 0; local < oldEvent.locals.Length; local++)
+        {
+            switch ((int)oldEvent.locals[local])
+            {
+                case 0:
+                    stagesDeck.Remove(oldEvent);
+                    break;
+                case 1:
+                    barsDeck.Remove(oldEvent);
+                    break;
+                default:
+                    Debug.Log("Error localContinuity");
+                    break;
+            }
+        }
+    }
+
+
 
 }

@@ -336,7 +336,6 @@ GameObject:
   - component: {fileID: 60811733}
   - component: {fileID: 60811737}
   - component: {fileID: 60811732}
-  - component: {fileID: 60811734}
   - component: {fileID: 60811735}
   - component: {fileID: 60811736}
   m_Layer: 0
@@ -374,7 +373,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1592390869}
-  mate: {fileID: 0}
 --- !u!114 &60811733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,39 +387,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1592390869}
   move: {fileID: 60811732}
-  eventsUi: {fileID: 60811734}
+  eventsUi: {fileID: 1305438561}
   eventsList: {fileID: 1305438558}
   node: {fileID: 1305438559}
-  clock: {fileID: 60811737}
---- !u!114 &60811734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60811730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de6bfb43a7be5fa4dab11f36a0a611c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  choices2: {fileID: 97581438}
-  background2: {fileID: 2058699457}
-  choice0Button0: {fileID: 1902039927}
-  choice0Button1: {fileID: 1960237640}
-  description1: {fileID: 980111631}
-  choices3: {fileID: 2045546134}
-  background3: {fileID: 4472508}
-  choice1Button0: {fileID: 1255338531}
-  choice1Button1: {fileID: 1035365290}
-  choice1Button2: {fileID: 327466210}
-  description2: {fileID: 2040538906}
-  result: {fileID: 1579209257}
-  evenaux: {fileID: 0}
-  player: {fileID: 1592390869}
-  decisionRequirements: {fileID: 60811736}
-  time: {fileID: 1258839808}
-  clock: {fileID: 60811737}
 --- !u!114 &60811735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1344,7 +1312,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 60811734}
+      - m_Target: {fileID: 1305438561}
         m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
         m_MethodName: DoubleChoice
         m_Mode: 3
@@ -2193,7 +2161,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 60811734}
+      - m_Target: {fileID: 1305438561}
         m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
         m_MethodName: TripleChoice
         m_Mode: 3
@@ -2349,7 +2317,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &649828060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2362,12 +2330,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c8e40a2916a1e4884da9e5b6225588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stagesDeck:
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
-  - {fileID: 11400000, guid: a969d906451325d4299253c08c8f86dc, type: 2}
+  stagesDeck: []
   barsDeck: []
-  lowAlcoolDeck:
-  - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
+  lowAlcoolDeck: []
   highAlcoolDeck: []
   lowEnergyDeck: []
   morningDeck: []
@@ -2377,6 +2342,7 @@ MonoBehaviour:
   day2Deck: []
   day3Deck: []
   clock: {fileID: 0}
+  eventContinuity: {fileID: 0}
 --- !u!4 &649828061
 Transform:
   m_ObjectHideFlags: 0
@@ -5315,7 +5281,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 60811734}
+      - m_Target: {fileID: 1305438561}
         m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
         m_MethodName: TripleChoice
         m_Mode: 3
@@ -5774,6 +5740,8 @@ GameObject:
   - component: {fileID: 1305438557}
   - component: {fileID: 1305438558}
   - component: {fileID: 1305438559}
+  - component: {fileID: 1305438561}
+  - component: {fileID: 1305438560}
   m_Layer: 0
   m_Name: Events
   m_TagString: Untagged
@@ -5808,9 +5776,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stagesDeck:
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: 5cd98e46589b93e44ab1a86da9a44cdf, type: 2}
+  - {fileID: 11400000, guid: 50bf4b4d31c90d14f85a9ea4c240dc36, type: 2}
   barsDeck:
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
   lowAlcoolDeck:
   - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
   highAlcoolDeck:
@@ -5818,26 +5787,21 @@ MonoBehaviour:
   lowEnergyDeck:
   - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
   morningDeck:
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
+  - {fileID: 11400000, guid: 5cd98e46589b93e44ab1a86da9a44cdf, type: 2}
   afternoonDeck:
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
+  - {fileID: 11400000, guid: 5cd98e46589b93e44ab1a86da9a44cdf, type: 2}
   nightDeck:
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
+  - {fileID: 11400000, guid: 5cd98e46589b93e44ab1a86da9a44cdf, type: 2}
   day1Deck:
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
-  day2Deck:
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
-  day3Deck:
-  - {fileID: 11400000, guid: 8ac4a031065cf0f47bcb83390b6c8d7b, type: 2}
+  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
+  - {fileID: 11400000, guid: 5cd98e46589b93e44ab1a86da9a44cdf, type: 2}
+  day2Deck: []
+  day3Deck: []
   clock: {fileID: 60811737}
+  eventContinuity: {fileID: 0}
 --- !u!114 &1305438559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5855,6 +5819,49 @@ MonoBehaviour:
   highLight: {fileID: 0}
   node: {fileID: 0}
   options: []
+--- !u!114 &1305438560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305438556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3ecd12c2952d904ebd638ab09b60467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventList: {fileID: 1305438558}
+--- !u!114 &1305438561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305438556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de6bfb43a7be5fa4dab11f36a0a611c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  choices2: {fileID: 97581438}
+  background2: {fileID: 2058699457}
+  choice0Button0: {fileID: 1902039927}
+  choice0Button1: {fileID: 1960237640}
+  description1: {fileID: 980111631}
+  choices3: {fileID: 2045546134}
+  background3: {fileID: 4472508}
+  choice1Button0: {fileID: 1255338531}
+  choice1Button1: {fileID: 1035365290}
+  choice1Button2: {fileID: 327466210}
+  description2: {fileID: 2040538906}
+  result: {fileID: 1579209257}
+  evenaux: {fileID: 0}
+  player: {fileID: 1592390869}
+  decisionRequirements: {fileID: 60811736}
+  time: {fileID: 1258839808}
+  clock: {fileID: 60811737}
+  eventContinuityHandler: {fileID: 1305438560}
 --- !u!1 &1319043134
 GameObject:
   m_ObjectHideFlags: 0
@@ -6261,7 +6268,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 60811734}
+      - m_Target: {fileID: 1305438561}
         m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
         m_MethodName: DoubleChoice
         m_Mode: 3
@@ -8911,7 +8918,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 60811734}
+      - m_Target: {fileID: 1305438561}
         m_TargetAssemblyTypeName: EventsUi, Assembly-CSharp
         m_MethodName: TripleChoice
         m_Mode: 3
@@ -9290,7 +9297,8 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 2041921417}
   options:
-  - {fileID: 239217040}
+  - {fileID: 1946886341}
+  - {fileID: 911360576}
 --- !u!1 &2045546134
 GameObject:
   m_ObjectHideFlags: 0
