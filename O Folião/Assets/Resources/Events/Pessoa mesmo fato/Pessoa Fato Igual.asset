@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pessoa Fato Igual
   m_EditorClassIdentifier: 
   _event: "V\xEAs uma pessoa com o mesmo fato que tu e trocam olhares"
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: f5489e1808a2b7c4dbd92e7f6910cded, type: 3}
   _decisions:
   - _decisionDescription: Fazer ganda festa por terem um fato igual
     _minAlcool: 0
@@ -31,6 +31,7 @@ MonoBehaviour:
       _energyPlus: -5
       _moreDecisionsStages:
       - {fileID: 11400000, guid: dba69c04200e1ba48b34f34a81f7ad41, type: 2}
+      _nextEventStoryLine: {fileID: 0}
     _failedEvent:
     - _description: "Tentaste mas n\xE3o conseguiste"
       _timePassed: 5
@@ -40,6 +41,7 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
   - _decisionDescription: Acenar
     _minAlcool: 0
     _minFun: 30
@@ -55,6 +57,7 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
     _failedEvent:
     - _description: A pessoa acena de volta e casa um segue o seu caminho
       _timePassed: 0
@@ -64,6 +67,9 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
   alcool: 0
   energy: 0
-  _tags: 
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

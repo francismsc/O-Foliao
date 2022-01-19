@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "A pessoa diz-te que os amigos a abandonaram e d\xE1-te para as m\xE3os
     todos os seus pertences"
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 17d6a1160fe3bc345b40b7c20d962584, type: 3}
   _decisions:
   - _decisionDescription: Ficar com as coisas e ir embora
     _minAlcool: 0
@@ -28,9 +28,10 @@ MonoBehaviour:
       _alcoolPlus: 0
       _funPlus: 0
       _socialPlus: 0
-      _moneyPlus: 696969
+      _moneyPlus: 20
       _energyPlus: 0
       _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
     _failedEvent: []
   - _decisionDescription: Consolar a pessoa
     _minAlcool: 0
@@ -39,15 +40,18 @@ MonoBehaviour:
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-    - _description: Oh tadinho
+    - _description: "D\xE3o um abra\xE7o"
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 0
-      _socialPlus: 0
+      _socialPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
       _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
     _failedEvent: []
   alcool: 0
   energy: 0
-  _tags: 
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

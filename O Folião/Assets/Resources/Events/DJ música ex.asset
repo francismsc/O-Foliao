@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "DJ m\xFAsica ex"
   m_EditorClassIdentifier: 
   _event: "O DJ come\xE7ou a passar a tua m\xFAsica e do teu/tua ex "
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 2213c957f1d259242a37f9eaabc6b945, type: 3}
   _decisions:
   - _decisionDescription: "Fazes-te de forte e n\xE3o sais do s\xEDtio"
     _minAlcool: 80

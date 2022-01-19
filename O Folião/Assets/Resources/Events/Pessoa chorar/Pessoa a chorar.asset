@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pessoa a chorar
   m_EditorClassIdentifier: 
   _event: Uma pessoa vem ter contigo a chorar
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 17d6a1160fe3bc345b40b7c20d962584, type: 3}
   _decisions:
   - _decisionDescription: Perguntar o que se passa
     _minAlcool: 0
@@ -50,11 +50,11 @@ MonoBehaviour:
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-    - _description: rabo
+    - _description: "Ficam abra\xE7ados durante algum tempo"
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 0
-      _socialPlus: 0
+      _socialPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
       _moreDecisionsStages: []

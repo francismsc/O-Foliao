@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mascara de Touro
   m_EditorClassIdentifier: 
   _event: Encontraste uma pessoa mascarada de touro
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: bcb65d31aa4511b44abfb3ef588bb0aa, type: 3}
   _decisions:
   - _decisionDescription: Pedir uma toalha vermelha ao barman
     _minAlcool: 50

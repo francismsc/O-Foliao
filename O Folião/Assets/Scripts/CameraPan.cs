@@ -87,24 +87,4 @@ public class CameraPan : MonoBehaviour
         if (pan) pan = false;
         else pan = true;
     }
-
-
-    /*
-    /// <summary>
-    /// Function responsible for zooming in the camera.
-    /// Zooms in the camera by 10%
-    /// </summary>
-    public void ZoomIn()
-    {
-        cam.orthographicSize = cam.orthographicSize / 1.1f;
-    }
-    /// <summary>
-    /// Function responsible for zooming out the camera.
-    /// Zooms out the camera by 10%
-    /// </summary>
-    public void ZoomOut()
-    {
-        cam.orthographicSize = cam.orthographicSize * 1.1f;
-    }
-    */
 }

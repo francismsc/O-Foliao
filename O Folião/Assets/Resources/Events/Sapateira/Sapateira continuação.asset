@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "D\xE1-te a sapateira para a m\xE3o e vai-se embora. Ficas sem saber o
     que fazer com ela."
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 5c9152132914c1d4aaffc1398e67764b, type: 3}
   _decisions:
   - _decisionDescription: "Ficar com a sapateira como animal de estima\xE7\xE3o"
     _minAlcool: 0

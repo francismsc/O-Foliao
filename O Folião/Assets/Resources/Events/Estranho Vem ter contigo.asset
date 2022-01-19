@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Estranho Vem ter contigo
   m_EditorClassIdentifier: 
   _event: "Vais ter com uma pessoa que n\xE3o conheces."
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: f5489e1808a2b7c4dbd92e7f6910cded, type: 3}
   _decisions:
   - _decisionDescription: "Vais-me pagar um shot, n\xE3o vais?"
     _minAlcool: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
     - _description: "Ela ficou impressionada com a tua confian\xE7a e pagou-te um
         shot."
       _timePassed: 0
-      _alcoolPlus: 10
+      _alcoolPlus: 15
       _funPlus: 0
       _socialPlus: 5
       _moneyPlus: 0
@@ -80,7 +80,7 @@ MonoBehaviour:
     - _description: "Tem uma conversa interessante e aleat\xF3ria sobre o carnaval
         e os vossos sonhos."
       _timePassed: 20
-      _alcoolPlus: -10
+      _alcoolPlus: 0
       _funPlus: 10
       _socialPlus: 10
       _moneyPlus: 0

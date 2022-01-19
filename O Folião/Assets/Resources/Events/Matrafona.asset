@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
-  m_Name: Matrafora
+  m_Name: Matrafona
   m_EditorClassIdentifier: 
   _event: "Est\xE1s na Pra\xE7a da Batata com o teu grupo de amigos e aparece-te
     uma matrafona \xE0 frente. "
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: e3b736447ed84954d8e9045e3a38e17c, type: 3}
   _decisions:
   - _decisionDescription: Elogiar a roupa da matrafona
     _minAlcool: 0

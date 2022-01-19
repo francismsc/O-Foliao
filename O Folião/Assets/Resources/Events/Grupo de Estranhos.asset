@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "Est\xE1s num espa\xE7o mais apertado e de repente \xE9s empurrado para
     o meio de um grupo de estranhos  a consumir subst\xE2ncias il\xEDcitas."
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: f5a9349bdb8e0584d9b292eb3db51fc0, type: 3}
   _decisions:
   - _decisionDescription: "Fingir que n\xE3o viste nada"
     _minAlcool: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sapateira
   m_EditorClassIdentifier: 
   _event: "Encontraste uma pessoa com uma sapateira na m\xE3o"
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 5c9152132914c1d4aaffc1398e67764b, type: 3}
   _decisions:
   - _decisionDescription: "Perguntar onde \xE9 que a arranjou"
     _minAlcool: 0

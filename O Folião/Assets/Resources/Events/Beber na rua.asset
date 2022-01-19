@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "Est\xE1s a beber na rua com os teus amigos, e aparecem dois estrangeiros
     a fazer conversa e um deles est\xE1 meio a cair para cima de ti"
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: fec46b88b3a91a943befe54ef1feeed2, type: 3}
   _decisions:
   - _decisionDescription: Fazes conversa de volta
     _minAlcool: 0

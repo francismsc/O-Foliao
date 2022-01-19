@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "Entras num bar com o objetibo de sair de l\xE1 sem pagar um tost\xE3o
     e passares um bom bocado com os teus amigos."
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 1a4f0bf664706674d823f1cf09d37a03, type: 3}
   _decisions:
   - _decisionDescription: "Dizer ao barman que \xE9 o teu anivers\xE1rio e que ele
       te podia oferecer um shot."
@@ -26,7 +26,7 @@ MonoBehaviour:
     _sucessEvent:
     - _description: O barman acredita, paga uma rodada de shots a ti e aos teus amigos
       _timePassed: 15
-      _alcoolPlus: 10
+      _alcoolPlus: 15
       _funPlus: 10
       _socialPlus: 0
       _moneyPlus: 0
