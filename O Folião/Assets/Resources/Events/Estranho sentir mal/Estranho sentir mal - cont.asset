@@ -10,45 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
-  m_Name: "Estranho Dan\xE7ar"
+  m_Name: Estranho sentir mal - cont
   m_EditorClassIdentifier: 
-  _event: "Est\xE1s a dan\xE7ar e uma pessoa mete-se contigo para dan\xE7ar tamb\xE9m"
-  _background: {fileID: 21300000, guid: 5f6add5d14e831e4b99acf0e847735f9, type: 3}
+  _event: Voltas a encontrar-te com a pessoa que ajudaste no outro dia
+  _background: {fileID: 0}
   _decisions:
-  - _decisionDescription: Aceitar o pedido
-    _minAlcool: 60
-    _minFun: 0
-    _minSocial: 0
-    _minEnergy: 0
-    _minMoney: 0
-    _sucessEvent:
-    - _description: "Trope\xE7am um no outro mas nenhum de voc\xEAs se importa"
-      _timePassed: 15
-      _alcoolPlus: 0
-      _funPlus: 10
-      _socialPlus: 5
-      _moneyPlus: 0
-      _energyPlus: -5
-      _moreDecisionsStages: []
-      _nextEventStoryLine: {fileID: 11400000, guid: 9bb526aac1acec047bcf16d531a173e1, type: 2}
-    _failedEvent:
-    - _description: "A vossa dan\xE7a deixa toda a gente a vossa volta impressionada"
-      _timePassed: 10
-      _alcoolPlus: 0
-      _funPlus: 5
-      _socialPlus: 5
-      _moneyPlus: 0
-      _energyPlus: -5
-      _moreDecisionsStages: []
-      _nextEventStoryLine: {fileID: 0}
-  - _decisionDescription: Recusar
+  - _decisionDescription: "Perguntar se j\xE1 est\xE1 melhor"
     _minAlcool: 0
     _minFun: 0
     _minSocial: 0
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-    - _description: "A pessoa sorri e d\xE1 meia volta e continua a dan\xE7ar"
+    - _description: Ela lembra-se de ti, agradece e paga-te uma cerveja
+      _timePassed: 10
+      _alcoolPlus: 5
+      _funPlus: 5
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "N\xE3o devias estar a ver isto"
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 0
@@ -57,9 +41,34 @@ MonoBehaviour:
       _energyPlus: 0
       _moreDecisionsStages: []
       _nextEventStoryLine: {fileID: 0}
-    _failedEvent: []
-  alcool: 0
-  energy: 0
+  - _decisionDescription: Pagar-lhe uma bebida
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: A pessoa aceita e ficam um bocado a falar sobre aquele dia
+      _timePassed: 20
+      _alcoolPlus: 10
+      _funPlus: 5
+      _socialPlus: 10
+      _moneyPlus: -5
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: nao devias estar a ver esta msg
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  alcool: 1
+  energy: 1
   _timeOfDay: 2
-  _dayOfWeek: 0
-  _locals: 0100000000000000
+  _dayOfWeek: 1
+  _locals: 

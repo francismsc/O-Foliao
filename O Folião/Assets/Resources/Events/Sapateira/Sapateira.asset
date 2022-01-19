@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Sapateira
+  m_EditorClassIdentifier: 
+  _event: "Encontraste uma pessoa com uma sapateira na m\xE3o"
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Perguntar onde \xE9 que a arranjou"
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 50
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Ela diste que roubou de um aqu\xE1rio de um restaurante. "
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages:
+      - {fileID: 11400000, guid: 6c9e091df6e9d314bb5c99192ab831da, type: 2}
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "Ela diste que roubou de um aqu\xE1rio de um restaurante."
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 5
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: Tirar uma foto com a sapateira
+    _minAlcool: 40
+    _minFun: 0
+    _minSocial: 20
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: Meteste a foto no instagram e recebeste muitos gostos.
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 5
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "Tiraste a foto mas decidiste n\xE3o meter em lado nenhum"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  alcool: 0
+  energy: 0
+  _timeOfDay: 1
+  _dayOfWeek: 0
+  _locals: 0000000001000000

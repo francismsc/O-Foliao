@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Bar sem pagar
+  m_EditorClassIdentifier: 
+  _event: "Entras num bar com o objetibo de sair de l\xE1 sem pagar um tost\xE3o
+    e passares um bom bocado com os teus amigos."
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Dizer ao barman que \xE9 o teu anivers\xE1rio e que ele
+      te podia oferecer um shot."
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 40
+    _minEnergy: 50
+    _minMoney: 0
+    _sucessEvent:
+    - _description: O barman acredita, paga uma rodada de shots a ti e aos teus amigos
+      _timePassed: 15
+      _alcoolPlus: 10
+      _funPlus: 10
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "O barman percebe que est\xE1s a mentir e diz que n\xE3o \xE9
+        o teu dia de sorte"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: -5
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: "Dizes ao DJ que \xE9 o teu anivers\xE1rio e insistes para
+      te cantarem os parab\xE9ns"
+    _minAlcool: 40
+    _minFun: 80
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "O DJ mete a dar a m\xFAsica dos Batatoon, \"Hoje \xE9 o teu
+        dia\", e come\xE7a o bar todo a cantar para ti"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 10
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: O DJ manda-te embora do bar por estares a perturbar o trabalho
+        dele
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: -10
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  alcool: 0
+  energy: 0
+  _timeOfDay: 2
+  _dayOfWeek: 0
+  _locals: 01000000

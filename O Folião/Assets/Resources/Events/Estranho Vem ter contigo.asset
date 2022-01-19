@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Estranho Vem ter contigo
+  m_EditorClassIdentifier: 
+  _event: "Vais ter com uma pessoa que n\xE3o conheces."
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Vais-me pagar um shot, n\xE3o vais?"
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 30
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Ela ficou impressionada com a tua confian\xE7a e pagou-te um
+        shot."
+      _timePassed: 0
+      _alcoolPlus: 10
+      _funPlus: 0
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "A pergunta n\xE3o saiu exatamente como querias e a pessoa rejeitou-te
+        o pedido."
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: -5
+      _socialPlus: -5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: "Queres dan\xE7ar?"
+    _minAlcool: 30
+    _minFun: 0
+    _minSocial: 20
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "A tua dan\xE7a e o teu entusiamos fizeram com que ficassem a
+        dan\xE7ar durante imenso tempo."
+      _timePassed: 15
+      _alcoolPlus: -10
+      _funPlus: 10
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: -10
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: Ao fim de uma quantas pisadelas a pessoa decidiu-se ir embora.
+      _timePassed: 5
+      _alcoolPlus: -5
+      _funPlus: 5
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: -5
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: Falar com ela
+    _minAlcool: 50
+    _minFun: 0
+    _minSocial: 30
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Tem uma conversa interessante e aleat\xF3ria sobre o carnaval
+        e os vossos sonhos."
+      _timePassed: 20
+      _alcoolPlus: -10
+      _funPlus: 10
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "N\xE3o conseguiste acompanhar o entusiasmo da pessoa e a conversa
+        n\xE3o chegou muito longe."
+      _timePassed: 5
+      _alcoolPlus: -5
+      _funPlus: 0
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  alcool: 1
+  energy: 1
+  _timeOfDay: 2
+  _dayOfWeek: 0
+  _locals: 0100000000000000

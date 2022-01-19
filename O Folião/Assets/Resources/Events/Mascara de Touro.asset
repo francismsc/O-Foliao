@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Mascara de Touro
+  m_EditorClassIdentifier: 
+  _event: Encontraste uma pessoa mascarada de touro
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: Pedir uma toalha vermelha ao barman
+    _minAlcool: 50
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Come\xE7aste a fazer de toureiro. A pessoa entrou na brincadeira
+        e ainda te pagou uma cerveja"
+      _timePassed: 10
+      _alcoolPlus: 5
+      _funPlus: 5
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: -5
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "Deu-te um coice ao fim de 2 \xABol\xE9s\xBB, como um verdadeiro
+        boi. Ela achou ofensivo porque \xE9 contra touradas e come\xE7ou-te dar uma
+        aula da import\xE2ncia da prote\xE7\xE3o animal"
+      _timePassed: -10
+      _alcoolPlus: 0
+      _funPlus: -10
+      _socialPlus: -5
+      _moneyPlus: 0
+      _energyPlus: -5
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: Fazer de forcado
+    _minAlcool: 70
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: Consegues desviar-te de todas as tentativas de ataque do touro
+      _timePassed: 10
+      _alcoolPlus: -5
+      _funPlus: 5
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: -5
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "N\xE3o te consegues desviar do touro"
+      _timePassed: 5
+      _alcoolPlus: -5
+      _funPlus: -5
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: -5
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 01000000

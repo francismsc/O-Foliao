@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Grupo de Estranhos
+  m_EditorClassIdentifier: 
+  _event: "Est\xE1s num espa\xE7o mais apertado e de repente \xE9s empurrado para
+    o meio de um grupo de estranhos  a consumir subst\xE2ncias il\xEDcitas."
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Fingir que n\xE3o viste nada"
+    _minAlcool: 0
+    _minFun: 10
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Conseguiste sair de l\xE1 a dan\xE7a e sem chamar \xE0 aten\xE7\xE3o"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 5
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: -5
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "Tentaste sair de l\xE1 sem dar nas vistas, mas foste mesmo contra
+        uma das pessoas. Empurraram-te para fora do grupo. "
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: -5
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: -5
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: Ralhar com eles
+    _minAlcool: 70
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Eles percebem que j\xE1 est\xE1s b\xEAbado e ignoram-te."
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: Dizem para te meteres na tua vida e mandam-te um murro.
+      _timePassed: 0
+      _alcoolPlus: -5
+      _funPlus: -10
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: -10
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  alcool: 1
+  energy: 1
+  _timeOfDay: 2
+  _dayOfWeek: 0
+  _locals: 0000000001000000

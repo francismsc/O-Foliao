@@ -10,45 +10,57 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
-  m_Name: "Estranho Dan\xE7ar"
+  m_Name: Grupo matrafonas
   m_EditorClassIdentifier: 
-  _event: "Est\xE1s a dan\xE7ar e uma pessoa mete-se contigo para dan\xE7ar tamb\xE9m"
-  _background: {fileID: 21300000, guid: 5f6add5d14e831e4b99acf0e847735f9, type: 3}
+  _event: Encontraste um grupo de matrafonas
+  _background: {fileID: 0}
   _decisions:
-  - _decisionDescription: Aceitar o pedido
-    _minAlcool: 60
+  - _decisionDescription: Falar com elas
+    _minAlcool: 0
     _minFun: 0
-    _minSocial: 0
+    _minSocial: 20
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-    - _description: "Trope\xE7am um no outro mas nenhum de voc\xEAs se importa"
-      _timePassed: 15
-      _alcoolPlus: 0
-      _funPlus: 10
-      _socialPlus: 5
-      _moneyPlus: 0
-      _energyPlus: -5
-      _moreDecisionsStages: []
-      _nextEventStoryLine: {fileID: 11400000, guid: 9bb526aac1acec047bcf16d531a173e1, type: 2}
-    _failedEvent:
-    - _description: "A vossa dan\xE7a deixa toda a gente a vossa volta impressionada"
-      _timePassed: 10
-      _alcoolPlus: 0
+    - _description: Ficam a falar sobre o carnaval e a vida
+      _timePassed: 30
+      _alcoolPlus: -5
       _funPlus: 5
       _socialPlus: 5
       _moneyPlus: 0
-      _energyPlus: -5
+      _energyPlus: 0
       _moreDecisionsStages: []
       _nextEventStoryLine: {fileID: 0}
-  - _decisionDescription: Recusar
+    _failedEvent:
+    - _description: "Elas come\xE7am a dar-te conselhos de vida"
+      _timePassed: 5
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: Pagar-lhe um copo
     _minAlcool: 0
     _minFun: 0
     _minSocial: 0
     _minEnergy: 0
-    _minMoney: 0
+    _minMoney: 15
     _sucessEvent:
-    - _description: "A pessoa sorri e d\xE1 meia volta e continua a dan\xE7ar"
+    - _description: "Elas agradecem-te, dan\xE7am um bocadinho e pagam-te uma bebida
+        tamb\xE9m"
+      _timePassed: 30
+      _alcoolPlus: 10
+      _funPlus: 10
+      _socialPlus: 10
+      _moneyPlus: -15
+      _energyPlus: -5
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "N\xE3o tinhas dinheiro para todas. Agradeceram a intens\xE3o
+        e foram-se embora."
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 0
@@ -57,9 +69,8 @@ MonoBehaviour:
       _energyPlus: 0
       _moreDecisionsStages: []
       _nextEventStoryLine: {fileID: 0}
-    _failedEvent: []
   alcool: 0
   energy: 0
   _timeOfDay: 2
   _dayOfWeek: 0
-  _locals: 0100000000000000
+  _locals: 00000000

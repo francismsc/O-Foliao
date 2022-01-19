@@ -194,7 +194,7 @@ public class EventsUi : MonoBehaviour
 
     public void CalendarUi()
     {
-        calendar.text = "Day " + clock.GetDay();
+        calendar.text = "Dia " + clock.GetDay();
     }
 
     public string ResourceToString(int value, string resource)

@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Matrafora
+  m_EditorClassIdentifier: 
+  _event: "Est\xE1s na Pra\xE7a da Batata com o teu grupo de amigos e aparece-te
+    uma matrafona \xE0 frente. "
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: Elogiar a roupa da matrafona
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 20
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: Ela fica lisonjeada e falam sem parar
+      _timePassed: 30
+      _alcoolPlus: 0
+      _funPlus: 5
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: 'Ela faz um sorriso amarelo e continua o caminho dela '
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: -5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: Tentas engata-la
+    _minAlcool: 60
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Ela acha piada ao que disseste e come\xE7am a falar"
+      _timePassed: 20
+      _alcoolPlus: -5
+      _funPlus: 5
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: Ela olha para ti com cara de nojo e segue caminho
+      _timePassed: 5
+      _alcoolPlus: 0
+      _funPlus: -5
+      _socialPlus: -5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: "Perguntar como \xE9 que lhe est\xE1 a correr a noite"
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 60
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "A matrafona sussurra-te ao ouvido \u201CDe repente ficou muito
+        melhor\u201D, pisca-te o olho e vai se embora a desfilar"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 5
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: Fazem dois dedos de conversa, mas nada demais
+      _timePassed: 5
+      _alcoolPlus: -5
+      _funPlus: 0
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 0000000001000000

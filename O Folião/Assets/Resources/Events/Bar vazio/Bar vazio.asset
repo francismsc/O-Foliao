@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Bar vazio
+  m_EditorClassIdentifier: 
+  _event: "O bar est\xE1 quase vazio e os donos est\xE3o a oferecer bebidas."
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Beber at\xE9 j\xE1 n\xE3o dar mais."
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Os donos meteram-te na rua por estarem a abusar da situa\xE7\xE3o"
+      _timePassed: 30
+      _alcoolPlus: 40
+      _funPlus: -5
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: -10
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: nao devias estar a ver isto
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: "Beber com modera\xE7\xE3o"
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Vais falando com os donos e eles v\xE3o te dando umas bebidas"
+      _timePassed: 30
+      _alcoolPlus: 20
+      _funPlus: 10
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: -5
+      _moreDecisionsStages:
+      - {fileID: 11400000, guid: 6596b9b524367e545ba5cf4c99a6fdb9, type: 2}
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: Nada para ver aqui
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  alcool: 0
+  energy: 0
+  _timeOfDay: 2
+  _dayOfWeek: 0
+  _locals: 01000000

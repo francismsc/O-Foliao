@@ -10,5 +10,10 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("FailScene");
     }
 
+    public void Win()
+    {
+        SceneManager.LoadScene("WinScene");
+    }
+
 
 }
