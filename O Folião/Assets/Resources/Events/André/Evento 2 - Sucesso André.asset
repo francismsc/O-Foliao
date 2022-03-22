@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: "Evento 2 - Sucesso Andr\xE9"
+  m_EditorClassIdentifier: 
+  _event: 
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: Ficar com as coisas e ir embora
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Decis\xE3o arriscada\u2026"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: -5
+      _socialPlus: 0
+      _moneyPlus: 25
+      _energyPlus: -10
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 11400000, guid: 26d515b4912e28d42a0be431deffeb11, type: 2}
+    _failedEvent: []
+  - _decisionDescription: "Consolar o Andr\xE9 da melhor forma poss\xEDvel"
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: Ele vai ficar agradecido de certeza
+      _timePassed: 30
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 11400000, guid: 1d1acd606e644254aab9840042493981, type: 2}
+    _failedEvent: []
+  - _decisionDescription: "Dar um abra\xE7o e devolver os pertences dele"
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 5
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent: []
+    _failedEvent: []
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

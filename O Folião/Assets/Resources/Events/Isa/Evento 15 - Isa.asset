@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Evento 15 - Isa
+  m_EditorClassIdentifier: 
+  _event: "Entraste num bar em que a barwoman Isa estava em fase de forma\xE7\xE3o
+    e a mesma precisava de preparar v\xE1rios shots para serem aprovados pelo dono,
+    que por acaso era o irm\xE3o g\xEAmeo do L\xE9o, o T\xE9o. O T\xE9o desliga a
+    m\xFAsica e pergunta em voz alta quem quer beber shots de gra\xE7a (que podem
+    ser bons ou muito maus)."
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Tu aceitaste sem hesitar e fazes uma degusta\xE7\xE3o
+      de shots"
+    _minAlcool: 40
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Apanhas ganda bebedeira e sais a correr do bar para ir vomitar
+        l\xE1 fora. Ficas a saber mais tarde que o T\xE9o contrata na hora a rapariga
+        que te serviu"
+      _timePassed: 0
+      _alcoolPlus: 15
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "Os shots eram terr\xEDveis e n\xE3o conseguiste beber mais que
+        2. O T\xE9o dispensa a Isa na hora e n\xE3o lhe paga as horas de forma\xE7\xE3o
+        dela (que tinha direito)"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: 'Recusar '
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Ponderas a oferta, mas acabas por negar, n\xE3o te apetece apanhar
+        uma gastroenterite. Sabe-se l\xE1 o que t\xEAm aqueles shots\u2026"
+      _timePassed: 0
+      _alcoolPlus: -10
+      _funPlus: -10
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent: []
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

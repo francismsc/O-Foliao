@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: "Evento 8 - L\xE9o (Beber Modera\xE7\xE3o)"
+  m_EditorClassIdentifier: 
+  _event: "L\xE9o queixa-se da falta de clientes que tem tido ultimamente"
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Dizer que a culpa \xE9 das m\xFAsicas que o DJ Manel est\xE1
+      a passar"
+    _minAlcool: 50
+    _minFun: 50
+    _minSocial: 50
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "L\xE9o deixa-te passar m\xFAsica na mesa e \xE9s um sucesso"
+      _timePassed: 90
+      _alcoolPlus: 10
+      _funPlus: 20
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: -15
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "L\xE9o deixa-te passar m\xFAsica, mas fazes figura de ursa,
+        ficou pior do que j\xE1 estava. Ele pede-te para sair do bar com toda a educa\xE7\xE3o"
+      _timePassed: 10
+      _alcoolPlus: 0
+      _funPlus: -10
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: ' Dizer que vais chamar mais pessoal'
+    _minAlcool: 50
+    _minFun: 50
+    _minSocial: 50
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: Encontraste a Joana e a Margarida na rua e elas entraram no bar
+        contigo. Aquelas duas fizeram a festa sozinhas
+      _timePassed: 60
+      _alcoolPlus: -5
+      _funPlus: 15
+      _socialPlus: 15
+      _moneyPlus: 0
+      _energyPlus: -15
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "N\xE3o conseguiste chamar ningu\xE9m, s\xF3 o Andr\xE9 que continuava
+        a chorar, estragou completamente o clima do bar"
+      _timePassed: 15
+      _alcoolPlus: 0
+      _funPlus: -10
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: -10
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

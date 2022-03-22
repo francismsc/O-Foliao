@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: "Evento 7 - Andr\xE9 (consolar)"
+  m_EditorClassIdentifier: 
+  _event: "Voltas a encontrar o Andr\xE9  e ele est\xE1 se a sentir mal ao p\xE9
+    de ti. Que novidade\u2026 Ele declara-se a ti, a dizer que nunca o tinham tratado
+    t\xE3o bem na vida\u2026 Est\xE1s feita\u2026"
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Ap\xF3s a declara\xE7\xE3o de amor, levar o Andr\xE9 ao
+      posto m\xE9dico"
+    _minAlcool: 70
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Tens dificuldades em pegar nele e abrir caminho no meio da confus\xE3o"
+      _timePassed: 15
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: -15
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "Consegues facilmente levar o Andr\xE9 para o posto m\xE9dico"
+      _timePassed: 5
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: -10
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 11400000, guid: 1db042fa0274a00409cd18db2b4fbc33, type: 2}
+  - _decisionDescription: "Chamar uma ambul\xE2ncia "
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "As pessoas abrem caminho para a ambul\xE2ncia e levam-no. Parece
+        que vai ficar bem\u2026"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent: []
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

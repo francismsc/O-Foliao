@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Evento 5 - Paulo
+  m_EditorClassIdentifier: 
+  _event: Um rapaz afortunado, chamado Paulo, que acabaste de conhecer vem ter contigo.
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Decides ser direta e dizer \u201CVais-me pagar um shot,
+      n\xE3o vais?\u201D"
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 30
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Surpreendentemente ou n\xE3o, o Paulo aceita pagar-te a bebida"
+      _timePassed: 0
+      _alcoolPlus: 10
+      _funPlus: 0
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 11400000, guid: a9b52886307606b4c9660a929e5989b5, type: 2}
+    _failedEvent:
+    - _description: "Pareceste um pouco agressiva a falar, o Paulo n\xE3o te aceita
+        pagar a bebida"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: -5
+      _socialPlus: -10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: "Est\xE1s com uma vontade louca de dan\xE7ar e ele parece
+      ser bom rapaz. Perguntas \u201CQueres dan\xE7ar?\u201D"
+    _minAlcool: 30
+    _minFun: 0
+    _minSocial: 20
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "O Paulo obviamente aceita dan\xE7ar contigo e parece que rola
+        ali uma qu\xEDmica entre voc\xEAs"
+      _timePassed: 15
+      _alcoolPlus: -5
+      _funPlus: 10
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: -10
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 11400000, guid: a9b52886307606b4c9660a929e5989b5, type: 2}
+    _failedEvent:
+    - _description: "Achaste que ele estava a esticar muito a corda, por isso dan\xE7aram
+        s\xF3 durante um bocadinho e depois afastaste-te"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 11400000, guid: a9b52886307606b4c9660a929e5989b5, type: 2}
+  - _decisionDescription: "Ficaste curiosa para saber mais sobre a vida do famoso
+      Paulo e vais abord\xE1-lo"
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 30
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: Achaste o rapaz um pouco snobe e arrogante, mas tirando isso
+        deu para rir um bocado
+      _timePassed: 0
+      _alcoolPlus: -5
+      _funPlus: 5
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 11400000, guid: a9b52886307606b4c9660a929e5989b5, type: 2}
+    _failedEvent:
+    - _description: "N\xE3o aguentaste o mon\xF3logo dele sobre a mans\xE3o com praia
+        privada que ele tem em Vilamoura, por isso a conversa acabou r\xE1pido"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 11400000, guid: a9b52886307606b4c9660a929e5989b5, type: 2}
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

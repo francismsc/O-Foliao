@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Evento 12 - Jack e John
+  m_EditorClassIdentifier: 
+  _event: "Est\xE1s sentada na berma da estrada, a beber com os teus amigos, e aparecem
+    dois estrangeiros, o Jack e o John, a fazer conversa e o Jack est\xE1 meio a
+    cair para cima de ti."
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Fazes conversa de volta, vamos ver o que eles querem\u2026"
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 60
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Ficas a saber que o John tem uma empresa na \xE1rea onde trabalhas
+        e de repente est\xE1-te a fazer uma entrevista de emprego para ires estagiar
+        na empresa dele "
+      _timePassed: 15
+      _alcoolPlus: 0
+      _funPlus: 10
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 11400000, guid: 6945fe341bea72e48b628b5bf59f4ee0, type: 2}
+    _failedEvent:
+    - _description: "Ficas a saber que o John tem uma empresa na \xE1rea onde trabalhas
+        e do nada est\xE1s a mostrar o teu CV e portef\xF3lio, mas ele n\xE3o demonstra
+        muito interesse"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 11400000, guid: 6945fe341bea72e48b628b5bf59f4ee0, type: 2}
+  - _decisionDescription: "Metes o bra\xE7o \xE0 frente para afastar um bocado o
+      Jack"
+    _minAlcool: 60
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Levantas-te e empurras-o de volta, o Jack caia no meio do ch\xE3o
+        e tu voltas-te a sentar na berma "
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: -10
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: -5
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 11400000, guid: 6945fe341bea72e48b628b5bf59f4ee0, type: 2}
+    _failedEvent:
+    - _description: "Sentes que est\xE3o a incomodar toda a gente, inclusive a ti,
+        e mandas embora"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: -10
+      _socialPlus: -5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 11400000, guid: 6945fe341bea72e48b628b5bf59f4ee0, type: 2}
+  - _decisionDescription: Ir embora
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Achas que est\xE3o a ser demasiado invasivos e decides ir embora
+        com os teus amigos"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: -5
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent: []
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

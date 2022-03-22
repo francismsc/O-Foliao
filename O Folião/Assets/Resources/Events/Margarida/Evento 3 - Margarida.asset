@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Evento 3 - Margarida
+  m_EditorClassIdentifier: 
+  _event: "Est\xE1s a dan\xE7ar e uma rapariga chamada Margarida mete-se contigo
+    na pista."
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Aceitas dan\xE7ar com ela"
+    _minAlcool: 70
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Trope\xE7am uma na outra, mas nenhuma de voc\xEAs se importa,
+        riem-se juntas e continuam as coreografias"
+      _timePassed: 15
+      _alcoolPlus: 0
+      _funPlus: 10
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "Dominam a pista de dan\xE7a juntas, houve ali uma conex\xE3o"
+      _timePassed: 10
+      _alcoolPlus: 0
+      _funPlus: 10
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: "Recusar dan\xE7ar com ela, est\xE1 a fazer movimentos
+      estranhos"
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Come\xE7aste a identificar as dan\xE7as do TikTok e n\xE3o te
+        apetece ser cringe a esse n\xEDvel. H\xE1 que manter a reputa\xE7\xE3o. A
+        Margarida sorri, d\xE1 meia volta e continua a dan\xE7ar sozinha, parece
+        que n\xE3o levou a mal"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent: []
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

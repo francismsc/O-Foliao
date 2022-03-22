@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: Bar sem pagar
   m_EditorClassIdentifier: 
-  _event: "Entras num bar com o objetibo de sair de l\xE1 sem pagar um tost\xE3o
+  _event: "Entras num bar com o objetivo de sair de l\xE1 sem pagar um tost\xE3o
     e passares um bom bocado com os teus amigos."
   _background: {fileID: 21300000, guid: 1a4f0bf664706674d823f1cf09d37a03, type: 3}
   _decisions:

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Evento 24 - Jack e John
+  m_EditorClassIdentifier: 
+  _event: "Encontraste o Jack e o John e eles pediram-te para lhes tirares uma fotografia
+    com um grupo de matrafonas, uma delas era a J\xFAlia. Eles queriam uma recorda\xE7\xE3o
+    do carnaval de Torres para mostrar \xE0 fam\xEDlia em Inglaterra. "
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Dizes \u201Ccheese!\u201D "
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Os brit\xE2nicos sorriem, por\xE9m algumas matrafonas, mais
+        velhas que n\xE3o sabem ingl\xEAs, ficam confusas e com caras de caso na
+        fotografia."
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 10
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent: []
+  - _decisionDescription: "Dizes uma piada r\xE1pida e infal\xEDvel."
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "As matrafonas come\xE7am-se todas a rir e os brit\xE2nicos ficam
+        a franzir o sobrolho na fotografia."
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 10
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent: []
+  - _decisionDescription: "Dizes ao Jack para dar um selinho \xE0 J\xFAlia."
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "N\xE3o \xE9 que eles come\xE7aram-se a beijar a s\xE9rio ap\xF3s
+        tirares a fotografia. Parece que houve ali um romance\u2026"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 10
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent: []
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

@@ -12,17 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: Pessoa Fato Igual
   m_EditorClassIdentifier: 
-  _event: "V\xEAs uma pessoa com o mesmo fato que tu e trocam olhares"
+  _event: "V\xEAs a tua velha amiga de inf\xE2ncia Joana, que por acaso est\xE1 com
+    o mesmo fato que tu e por isso reparam logo uma na outra. "
   _background: {fileID: 21300000, guid: f5489e1808a2b7c4dbd92e7f6910cded, type: 3}
   _decisions:
-  - _decisionDescription: Fazer ganda festa por terem um fato igual
+  - _decisionDescription: Fazer ganda festa por terem um fato igual e pouco comum
+      no carnaval
     _minAlcool: 0
     _minFun: 0
     _minSocial: 30
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-    - _description: "A intera\xE7\xE3o resulta"
+    - _description: 'Decides tirar uma foto com ela para recordar aquele momento '
       _timePassed: 5
       _alcoolPlus: 0
       _funPlus: 5
@@ -33,7 +35,7 @@ MonoBehaviour:
       - {fileID: 11400000, guid: dba69c04200e1ba48b34f34a81f7ad41, type: 2}
       _nextEventStoryLine: {fileID: 0}
     _failedEvent:
-    - _description: "Tentaste mas n\xE3o conseguiste"
+    - _description: "N\xE3o te lembras de pedir para enviar a foto "
       _timePassed: 5
       _alcoolPlus: 0
       _funPlus: -5

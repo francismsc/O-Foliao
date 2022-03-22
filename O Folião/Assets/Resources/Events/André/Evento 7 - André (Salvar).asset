@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: "Evento 7 - Andr\xE9 (Salvar)"
+  m_EditorClassIdentifier: 
+  _event: "Encontraste o Andr\xE9 mais tarde, saud\xE1vel e mais bem parecido. "
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Perguntar se j\xE1 est\xE1 melhor. "
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Ele, claramente, lembra-se de ti, e n\xE3o te larga durante
+        1 hora"
+      _timePassed: 60
+      _alcoolPlus: 10
+      _funPlus: 5
+      _socialPlus: 15
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent: []
+  - _decisionDescription: Pagar-lhe uma bebida
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Ele, claramente, est\xE1 interessado em ti e tu at\xE9 n\xE3o
+        desgostas dele\u2026 vamos ver no que isto d\xE1"
+      _timePassed: 60
+      _alcoolPlus: 15
+      _funPlus: 10
+      _socialPlus: 15
+      _moneyPlus: -10
+      _energyPlus: -10
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent: []
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

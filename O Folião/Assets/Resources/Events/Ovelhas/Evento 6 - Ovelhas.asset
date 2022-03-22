@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Evento 6 - Ovelhas
+  m_EditorClassIdentifier: 
+  _event: "Est\xE1s num espa\xE7o mais apertado e de repente \xE9s empurrado para
+    o meio de um grupo de pessoas vestidas de ovelhas que est\xE3o a consumir uma
+    subst\xE2ncia estranha."
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Dan\xE7ar e ignorar a atividade, eles que se divirtam
+      sozinhos"
+    _minAlcool: 0
+    _minFun: 10
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Dan\xE7as dali para fora"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 5
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: -10
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "Trope\xE7as nas pessoas mas consegues sair de l\xE1 intacta"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: -10
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: "Dizer que o que eles est\xE3o a fazer \xE9 errado, podiam
+      ao menos fazer aquilo num lugar mais privado\u2026 "
+    _minAlcool: 70
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Eles ignoram-te e continuam a fungar pelo nariz, parece que
+        o pessoal anda constipado\u2026 "
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "Dizem para te meteres na tua vida e mandam-te um empurr\xE3o.
+        Para a pr\xF3xima toma mais cuidado com quem te metes"
+      _timePassed: 0
+      _alcoolPlus: -5
+      _funPlus: -10
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: -10
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 11400000, guid: c988d331e40e5c345b6a688fe756c93b, type: 2}
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

@@ -6027,128 +6027,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stagesDeck:
-  - {fileID: 11400000, guid: f3ea6394dfb427942a01cccbd879cc33, type: 2}
-  - {fileID: 11400000, guid: cbe29dc6c3804414db46e25b3baaa433, type: 2}
-  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
-  - {fileID: 11400000, guid: e826633957e721c468cb7b3d4f817207, type: 2}
-  - {fileID: 11400000, guid: 2faca32295bcc004e981699b136dc600, type: 2}
-  - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
-  - {fileID: 11400000, guid: 1a645a5afc75b124b81086ab028de1a3, type: 2}
-  - {fileID: 11400000, guid: c80c2e6861449f244a2c17f9b8c27384, type: 2}
-  - {fileID: 11400000, guid: 486306ff68d6ea94b8dfaeb54cc98581, type: 2}
+  - {fileID: 11400000, guid: 6393ab7b1ca2bae44854fef88f50faac, type: 2}
+  - {fileID: 11400000, guid: 7faca9f8676a3d647bf83308ba319dde, type: 2}
   barsDeck:
-  - {fileID: 11400000, guid: 34246a265ac66974eb8dbb032081afdd, type: 2}
-  - {fileID: 11400000, guid: bd94c663a734eb84b9e5366a386ed713, type: 2}
-  - {fileID: 11400000, guid: feff6be0e60efd14e8df14055d37b1d6, type: 2}
-  - {fileID: 11400000, guid: 2faca32295bcc004e981699b136dc600, type: 2}
-  - {fileID: 11400000, guid: 2bfa546fb4799a541ae21acc541335fa, type: 2}
-  - {fileID: 11400000, guid: 77a76bf12aebee84b97f113a87c8b664, type: 2}
-  - {fileID: 11400000, guid: 50bf4b4d31c90d14f85a9ea4c240dc36, type: 2}
-  - {fileID: 11400000, guid: 48c51dbf3a332bd4895dc58e4b481196, type: 2}
-  - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
-  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
-  - {fileID: 11400000, guid: 5cd98e46589b93e44ab1a86da9a44cdf, type: 2}
+  - {fileID: 11400000, guid: 6393ab7b1ca2bae44854fef88f50faac, type: 2}
+  - {fileID: 11400000, guid: 7faca9f8676a3d647bf83308ba319dde, type: 2}
   hotelDeck:
   - {fileID: 11400000, guid: ab666486a13fb584e869f277a753a22f, type: 2}
-  lowAlcoolDeck:
-  - {fileID: 11400000, guid: 34246a265ac66974eb8dbb032081afdd, type: 2}
-  - {fileID: 11400000, guid: c80c2e6861449f244a2c17f9b8c27384, type: 2}
+  lowAlcoolDeck: []
   highAlcoolDeck: []
   lowEnergyDeck: []
   morningDeck:
-  - {fileID: 11400000, guid: ab666486a13fb584e869f277a753a22f, type: 2}
-  - {fileID: 11400000, guid: bd94c663a734eb84b9e5366a386ed713, type: 2}
-  - {fileID: 11400000, guid: 34246a265ac66974eb8dbb032081afdd, type: 2}
-  - {fileID: 11400000, guid: cbe29dc6c3804414db46e25b3baaa433, type: 2}
-  - {fileID: 11400000, guid: feff6be0e60efd14e8df14055d37b1d6, type: 2}
-  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
-  - {fileID: 11400000, guid: 2faca32295bcc004e981699b136dc600, type: 2}
-  - {fileID: 11400000, guid: 5cd98e46589b93e44ab1a86da9a44cdf, type: 2}
-  - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
-  - {fileID: 11400000, guid: c80c2e6861449f244a2c17f9b8c27384, type: 2}
-  - {fileID: 11400000, guid: 1a645a5afc75b124b81086ab028de1a3, type: 2}
-  - {fileID: 11400000, guid: 48c51dbf3a332bd4895dc58e4b481196, type: 2}
-  - {fileID: 11400000, guid: 50bf4b4d31c90d14f85a9ea4c240dc36, type: 2}
-  - {fileID: 11400000, guid: 486306ff68d6ea94b8dfaeb54cc98581, type: 2}
-  - {fileID: 11400000, guid: 2bfa546fb4799a541ae21acc541335fa, type: 2}
+  - {fileID: 11400000, guid: 6393ab7b1ca2bae44854fef88f50faac, type: 2}
+  - {fileID: 11400000, guid: 7faca9f8676a3d647bf83308ba319dde, type: 2}
   afternoonDeck:
-  - {fileID: 11400000, guid: ab666486a13fb584e869f277a753a22f, type: 2}
-  - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
-  - {fileID: 11400000, guid: f3ea6394dfb427942a01cccbd879cc33, type: 2}
-  - {fileID: 11400000, guid: 77a76bf12aebee84b97f113a87c8b664, type: 2}
+  - {fileID: 11400000, guid: 6393ab7b1ca2bae44854fef88f50faac, type: 2}
+  - {fileID: 11400000, guid: 7faca9f8676a3d647bf83308ba319dde, type: 2}
   nightDeck:
-  - {fileID: 11400000, guid: ab666486a13fb584e869f277a753a22f, type: 2}
-  - {fileID: 11400000, guid: bd94c663a734eb84b9e5366a386ed713, type: 2}
-  - {fileID: 11400000, guid: 34246a265ac66974eb8dbb032081afdd, type: 2}
-  - {fileID: 11400000, guid: cbe29dc6c3804414db46e25b3baaa433, type: 2}
-  - {fileID: 11400000, guid: feff6be0e60efd14e8df14055d37b1d6, type: 2}
-  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
-  - {fileID: 11400000, guid: 2faca32295bcc004e981699b136dc600, type: 2}
-  - {fileID: 11400000, guid: 5cd98e46589b93e44ab1a86da9a44cdf, type: 2}
-  - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
-  - {fileID: 11400000, guid: c80c2e6861449f244a2c17f9b8c27384, type: 2}
-  - {fileID: 11400000, guid: 1a645a5afc75b124b81086ab028de1a3, type: 2}
-  - {fileID: 11400000, guid: 48c51dbf3a332bd4895dc58e4b481196, type: 2}
-  - {fileID: 11400000, guid: 50bf4b4d31c90d14f85a9ea4c240dc36, type: 2}
-  - {fileID: 11400000, guid: 486306ff68d6ea94b8dfaeb54cc98581, type: 2}
-  - {fileID: 11400000, guid: 2bfa546fb4799a541ae21acc541335fa, type: 2}
+  - {fileID: 11400000, guid: 6393ab7b1ca2bae44854fef88f50faac, type: 2}
+  - {fileID: 11400000, guid: 7faca9f8676a3d647bf83308ba319dde, type: 2}
   day1Deck:
-  - {fileID: 11400000, guid: ab666486a13fb584e869f277a753a22f, type: 2}
-  - {fileID: 11400000, guid: bd94c663a734eb84b9e5366a386ed713, type: 2}
-  - {fileID: 11400000, guid: 34246a265ac66974eb8dbb032081afdd, type: 2}
-  - {fileID: 11400000, guid: f3ea6394dfb427942a01cccbd879cc33, type: 2}
-  - {fileID: 11400000, guid: cbe29dc6c3804414db46e25b3baaa433, type: 2}
-  - {fileID: 11400000, guid: feff6be0e60efd14e8df14055d37b1d6, type: 2}
-  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
-  - {fileID: 11400000, guid: e826633957e721c468cb7b3d4f817207, type: 2}
-  - {fileID: 11400000, guid: 2faca32295bcc004e981699b136dc600, type: 2}
-  - {fileID: 11400000, guid: 5cd98e46589b93e44ab1a86da9a44cdf, type: 2}
-  - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
-  - {fileID: 11400000, guid: 1a645a5afc75b124b81086ab028de1a3, type: 2}
-  - {fileID: 11400000, guid: c80c2e6861449f244a2c17f9b8c27384, type: 2}
-  - {fileID: 11400000, guid: 48c51dbf3a332bd4895dc58e4b481196, type: 2}
-  - {fileID: 11400000, guid: 77a76bf12aebee84b97f113a87c8b664, type: 2}
-  - {fileID: 11400000, guid: 50bf4b4d31c90d14f85a9ea4c240dc36, type: 2}
-  - {fileID: 11400000, guid: 486306ff68d6ea94b8dfaeb54cc98581, type: 2}
-  - {fileID: 11400000, guid: 2bfa546fb4799a541ae21acc541335fa, type: 2}
+  - {fileID: 11400000, guid: 6393ab7b1ca2bae44854fef88f50faac, type: 2}
+  - {fileID: 11400000, guid: 7faca9f8676a3d647bf83308ba319dde, type: 2}
   day2Deck:
-  - {fileID: 11400000, guid: ab666486a13fb584e869f277a753a22f, type: 2}
-  - {fileID: 11400000, guid: bd94c663a734eb84b9e5366a386ed713, type: 2}
-  - {fileID: 11400000, guid: 34246a265ac66974eb8dbb032081afdd, type: 2}
-  - {fileID: 11400000, guid: f3ea6394dfb427942a01cccbd879cc33, type: 2}
-  - {fileID: 11400000, guid: cbe29dc6c3804414db46e25b3baaa433, type: 2}
-  - {fileID: 11400000, guid: feff6be0e60efd14e8df14055d37b1d6, type: 2}
-  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
-  - {fileID: 11400000, guid: e826633957e721c468cb7b3d4f817207, type: 2}
-  - {fileID: 11400000, guid: 2faca32295bcc004e981699b136dc600, type: 2}
-  - {fileID: 11400000, guid: 5cd98e46589b93e44ab1a86da9a44cdf, type: 2}
-  - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
-  - {fileID: 11400000, guid: 1a645a5afc75b124b81086ab028de1a3, type: 2}
-  - {fileID: 11400000, guid: c80c2e6861449f244a2c17f9b8c27384, type: 2}
-  - {fileID: 11400000, guid: 48c51dbf3a332bd4895dc58e4b481196, type: 2}
-  - {fileID: 11400000, guid: 77a76bf12aebee84b97f113a87c8b664, type: 2}
-  - {fileID: 11400000, guid: 50bf4b4d31c90d14f85a9ea4c240dc36, type: 2}
-  - {fileID: 11400000, guid: 486306ff68d6ea94b8dfaeb54cc98581, type: 2}
-  - {fileID: 11400000, guid: 2bfa546fb4799a541ae21acc541335fa, type: 2}
+  - {fileID: 11400000, guid: 6393ab7b1ca2bae44854fef88f50faac, type: 2}
   day3Deck:
-  - {fileID: 11400000, guid: ab666486a13fb584e869f277a753a22f, type: 2}
-  - {fileID: 11400000, guid: bd94c663a734eb84b9e5366a386ed713, type: 2}
-  - {fileID: 11400000, guid: 34246a265ac66974eb8dbb032081afdd, type: 2}
-  - {fileID: 11400000, guid: f3ea6394dfb427942a01cccbd879cc33, type: 2}
-  - {fileID: 11400000, guid: cbe29dc6c3804414db46e25b3baaa433, type: 2}
-  - {fileID: 11400000, guid: feff6be0e60efd14e8df14055d37b1d6, type: 2}
-  - {fileID: 11400000, guid: a98518dd08ff55344ab466e6939767ea, type: 2}
-  - {fileID: 11400000, guid: e826633957e721c468cb7b3d4f817207, type: 2}
-  - {fileID: 11400000, guid: 2faca32295bcc004e981699b136dc600, type: 2}
-  - {fileID: 11400000, guid: 5cd98e46589b93e44ab1a86da9a44cdf, type: 2}
-  - {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
-  - {fileID: 11400000, guid: 1a645a5afc75b124b81086ab028de1a3, type: 2}
-  - {fileID: 11400000, guid: c80c2e6861449f244a2c17f9b8c27384, type: 2}
-  - {fileID: 11400000, guid: 48c51dbf3a332bd4895dc58e4b481196, type: 2}
-  - {fileID: 11400000, guid: 77a76bf12aebee84b97f113a87c8b664, type: 2}
-  - {fileID: 11400000, guid: 50bf4b4d31c90d14f85a9ea4c240dc36, type: 2}
-  - {fileID: 11400000, guid: 486306ff68d6ea94b8dfaeb54cc98581, type: 2}
-  - {fileID: 11400000, guid: 2bfa546fb4799a541ae21acc541335fa, type: 2}
+  - {fileID: 11400000, guid: 6393ab7b1ca2bae44854fef88f50faac, type: 2}
   clock: {fileID: 60811737}
   eventContinuity: {fileID: 1305438560}
   eventsUi: {fileID: 0}

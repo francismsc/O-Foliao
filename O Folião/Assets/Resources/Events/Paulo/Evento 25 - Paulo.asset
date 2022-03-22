@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Evento 25 - Paulo
+  m_EditorClassIdentifier: 
+  _event: "Viste o Paulo a entrar no Alpha Bar pela entrada principal e a sair pelas
+    traseiras de mota. De onde \xE9 que a mota apareceu\u2026"
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Perguntaste ao dono do bar como \xE9 que aquilo tinha
+      acontecido."
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 75
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Ele desabafa contigo e basicamente diz que o Paulo s\xF3 tem
+        criado confus\xE3o no carnaval, o habitual\u2026O dono paga-te uma bebida
+        por teres demonstrado preocupa\xE7\xE3o"
+      _timePassed: 0
+      _alcoolPlus: 5
+      _funPlus: 0
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "O dono estava sem paci\xEAncia e irritado com o Paulo. Com a
+        sorte que tens, foste saco de encher\u2026 mais valia teres estado calada "
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: -10
+      _socialPlus: -10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: "Decidiste sair do bar e ir atr\xE1s do Paulo, ficaste
+      curiosa com o sucedido\u2026"
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "O Paulo n\xE3o te revela a hist\xF3ria, mas puxa-te para cima
+        da mota e d\xE3o os dois uma volta por Torres. Achaste bastante divertido
+        e nalguns momentos perigoso, preferes n\xE3o repetir\u2026 "
+      _timePassed: 120
+      _alcoolPlus: 0
+      _funPlus: 10
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent: []
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Evento 1 - Joana
+  m_EditorClassIdentifier: 
+  _event: "V\xEAs a tua velha amiga de inf\xE2ncia Joana, que por acaso est\xE1 com
+    o mesmo fato que tu e por isso reparam logo uma na outra."
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: 'Fazer ganda festa por terem um fato igual e pouco comum
+      no carnaval '
+    _minAlcool: 30
+    _minFun: 0
+    _minSocial: 30
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Ela lembrou-se de ti e abra\xE7ou-te, j\xE1 n\xE3o se viam h\xE1
+        bastante tempo"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 5
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages:
+      - {fileID: 11400000, guid: 6a96f77c9f9654c47b9e3ec0ace18854, type: 2}
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "Ela n\xE3o se lembrava bem de quem eras, parece que est\xE1s
+        muito diferente desde os teus 5 anos\u2026 bom sinal"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: "Acenar \xE0 Joana. N\xE3o podes passar por pessoa mal
+      educada, n\xE3o \xE9\u2026"
+    _minAlcool: 0
+    _minFun: 30
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "A Joana vem ter contigo e come\xE7am a meter a conversa em dia."
+      _timePassed: 20
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: 'A Joana acena de volta e cada uma segue o seu caminho.  '
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

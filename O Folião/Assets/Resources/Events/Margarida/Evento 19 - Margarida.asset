@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Evento 19 - Margarida
+  m_EditorClassIdentifier: 
+  _event: "Chegaste \xE0 Pra\xE7a, olhaste para um dos palcos e v\xEAs a Margarida
+    a dan\xE7ar o \xABcr\xE9u\xBB sozinha. Apercebes-te que ela estava um pouco alterada
+    e passou-te pela cabe\xE7a que ela podia-se arrepender na manh\xE3 seguinte."
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Decides fazer alguma coisa, nem que seja gravar para ela
+      ver amanh\xE3 as figuras dela "
+    _minAlcool: 70
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Acabaste por ficar t\xE3o orgulhosa dela que foste aos berros
+        ter com a Margarida, para ir dan\xE7ar o \xABcr\xE9u\xBB com ela claro"
+      _timePassed: 15
+      _alcoolPlus: 0
+      _funPlus: 10
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: -10
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "Acabaste por ficar com tanta vergonha alheia que deste meia
+        volta e foste embora, n\xE3o dava mais "
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: -10
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: Achaste que o mais sensato era tirar-la do palco
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Toda a gente come\xE7ou a assobiar e a aplaudir, a achar que
+        ias dan\xE7ar com ela. Mas tu agarraste-a no pulso e levaste-a contigo dali
+        para fora"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: -10
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent: []
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

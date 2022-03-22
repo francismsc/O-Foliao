@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: "Evento 4 - Rei Jo\xE3o"
+  m_EditorClassIdentifier: 
+  _event: "Encontras o Rei Jo\xE3o do carnaval, o mesmo encontra-se um bocadinho
+    alcoolizado."
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Falar com ele, \xE9 a tua oportunidade de conhecer o Rei"
+    _minAlcool: 40
+    _minFun: 40
+    _minSocial: 30
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Falam sobre pol\xEDtica, economia, sobre o governo, sobre as
+        elei\xE7\xF5es e chegas \xE0 conclus\xE3o que o Rei mesmo b\xEAbedo, nunca
+        perde a classe e a sabedoria."
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "N\xE3o consegues perceber nada do que ele est\xE1 a dizer, as
+        \xFAnicas palavras que ouves s\xE3o  \u201CMarcelo\u201D, \u201CCosta\u201D,
+        \u201CRio\u201D e \u201CVentura\u201D. Ponderas se o homem est\xE1-te a propor
+        uma aventura pela costa junto ao rio, com o amigo dele chamado Marcelo, muito
+        confuso\u2026"
+      _timePassed: 5
+      _alcoolPlus: 0
+      _funPlus: -5
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: "Dan\xE7ar com ele, os teus amigos v\xE3o ficar cheios
+      de inveja, aposto"
+    _minAlcool: 30
+    _minFun: 40
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Ficam a dan\xE7ar durante uns 10 minutos. O Rei sabe uns passos
+        de dan\xE7a\u2026"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 10
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "Ficas desconfort\xE1vel com a dan\xE7a dele e perdes a vontade
+        de estar ali. L\xE1 por ser o Rei do carnaval, n\xE3o deixa de ser um homem
+        de 50 anos, n\xE3o \xE9\u2026"
+      _timePassed: 0
+      _alcoolPlus: -10
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

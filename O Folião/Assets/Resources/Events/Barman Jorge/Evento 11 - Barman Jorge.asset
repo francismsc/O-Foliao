@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Evento 11 - Barman Jorge
+  m_EditorClassIdentifier: 
+  _event: "Entras num bar com o objetivo de sair de l\xE1 sem pagar um tost\xE3o
+    e passares um bom bocado com os teus amigos. "
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Dizes ao barman Jorge que \xE9 o teu anivers\xE1rio e
+      que ele devia-te pagar um shot"
+    _minAlcool: 50
+    _minFun: 50
+    _minSocial: 40
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: O Jorge acredita, paga uma rodada de shots a ti e aos teus amigos
+      _timePassed: 0
+      _alcoolPlus: 10
+      _funPlus: 10
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "O Jorge percebe que est\xE1s a mentir e diz que n\xE3o \xE9
+        o teu dia de sorte"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: -10
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: "Dizes ao barman Jorge que \xE9 o teu anivers\xE1rio e
+      insistes para te cantarem os \xABParab\xE9ns\xBB "
+    _minAlcool: 80
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: 'O Jorge manda-te embora do bar por estares a perturbar o trabalho
+        dele '
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: -10
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "O Jorge mete a dar a m\xFAsica dos Batatoon, \xABHoje \xE9 o
+        teu dia\xBB, e come\xE7a o bar todo a cantar para ti"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 10
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

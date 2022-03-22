@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Evento 1 - Sucesso Joana
+  m_EditorClassIdentifier: 
+  _event: 
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: Decides tirar uma foto com ela para recordar aquele momento
+    _minAlcool: 80
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "N\xE3o te lembras de pedir para enviar a foto"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: Lembras-te de pedir para enviar a foto
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  - _decisionDescription: "Ficar a conversar mais sobre o tema do fato e o porqu\xEA
+      de o terem escolhido "
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 60
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Ficam a falar durante 30 minutos, parece que existe a possibilidade
+        de reatar a velha amizade\u2026  "
+      _timePassed: 20
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent:
+    - _description: "A conversa acaba em 5 minutos, percebes que n\xE3o t\xEAm grande
+        coisa em comum desde o jardim de inf\xE2ncia\u2026 "
+      _timePassed: 5
+      _alcoolPlus: 0
+      _funPlus: 0
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

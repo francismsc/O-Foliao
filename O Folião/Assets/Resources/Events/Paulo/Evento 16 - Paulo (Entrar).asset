@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Evento 16 - Paulo (Entrar)
+  m_EditorClassIdentifier: 
+  _event: "Algu\xE9m pergunta se queres sentar-te no colo dele e reparas que \xE9
+    o Paulo"
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: 'Aceitar e entrar '
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: Fumaste com eles e passaste um bom bocado a divertir-te
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 10
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 11400000, guid: 2d54948367832d9498944c7e270225ef, type: 2}
+    _failedEvent: []
+  - _decisionDescription: "N\xE3o \xE9 boa ideia"
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "O Paulo puxa-te para dentro do carro na mesma, n\xE3o te arrependeste
+        e ficaste bu\xE9 amiga do grupo"
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 5
+      _socialPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _moreDecisionsStages:
+      - {fileID: 0}
+      _nextEventStoryLine: {fileID: 11400000, guid: 2d54948367832d9498944c7e270225ef, type: 2}
+    _failedEvent: []
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

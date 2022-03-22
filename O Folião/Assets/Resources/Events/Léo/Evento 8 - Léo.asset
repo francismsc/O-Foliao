@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: "Evento 8 - L\xE9o"
+  m_EditorClassIdentifier: 
+  _event: "O DOC est\xE1 quase vazio e o dono, o L\xE9o, est\xE1 a oferecer bebidas
+    limitadas a cada cliente. Tu, obviamente, que entras no bar."
+  _background: {fileID: 0}
+  _decisions:
+  - _decisionDescription: "Aproveitar ao m\xE1ximo a bebida gr\xE1tis"
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Talvez tenhas excedido o n\xFAmero m\xE1ximo de bebidas. E de
+        alguma forma conseguiste arranjar cart\xF5es novos para continuares a beber.
+        O L\xE9o acabou por perceber e n\xE3o ficou muito contente com a tua visita"
+      _timePassed: 120
+      _alcoolPlus: 40
+      _funPlus: -10
+      _socialPlus: -10
+      _moneyPlus: 0
+      _energyPlus: -20
+      _moreDecisionsStages: []
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent: []
+  - _decisionDescription: "Beber com modera\xE7\xE3o"
+    _minAlcool: 0
+    _minFun: 0
+    _minSocial: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+    - _description: "Perguntas como est\xE1 a correr o neg\xF3cio e como vai a fam\xEDlia.
+        Desta forma, vais ganhando bebida gr\xE1tis pela tua simpatia incr\xEDvel"
+      _timePassed: 60
+      _alcoolPlus: 20
+      _funPlus: 10
+      _socialPlus: 10
+      _moneyPlus: 0
+      _energyPlus: -10
+      _moreDecisionsStages:
+      - {fileID: 11400000, guid: 34756c41846695747a461a47beb7ee0e, type: 2}
+      _nextEventStoryLine: {fileID: 0}
+    _failedEvent: []
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 
