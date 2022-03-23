@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    public void Death()
+    public void DeathEnergy()
     {
-        SceneManager.LoadScene("FailScene");
+        SceneManager.LoadScene("FailSceneEnergy");
+    }
+    public void DeathAlcool()
+    {
+        SceneManager.LoadScene("FailSceneAlcool");
     }
 
     public void Win()

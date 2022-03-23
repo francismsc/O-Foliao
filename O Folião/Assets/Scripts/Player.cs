@@ -92,9 +92,13 @@ public class Player : MonoBehaviour
 
         bars.SetValueAllBars(player.alcool, player.fun, player.social, 
                              player.energy, player.money);
-        if (player.alcool == 100 || player.energy == 0)
+        if (player.alcool == 100)
         {
-            scene.Death();
+            scene.DeathAlcool();
+        }
+        else if(player.energy == 0)
+        {
+            scene.DeathEnergy();
         }
 
     }
