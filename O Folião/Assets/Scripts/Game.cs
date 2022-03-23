@@ -26,7 +26,7 @@ public class Game : MonoBehaviour
             GetComponent<Movement>().enabled = false;
             randomEvent = eventsList.ChooseRandomEvent(player,node,eventsUi);
             eventsUi.EventUi(randomEvent);
-            if(clock.GetDay() >= 4)
+            if(clock.GetDay() >= 3)
             {
                 sceneChanger.Win();
             }

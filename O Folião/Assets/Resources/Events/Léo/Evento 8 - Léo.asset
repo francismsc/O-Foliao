@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "O DOC est\xE1 quase vazio e o dono, o L\xE9o, est\xE1 a oferecer bebidas
     limitadas a cada cliente. Tu, obviamente, que entras no bar."
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 1a4f0bf664706674d823f1cf09d37a03, type: 3}
   _decisions:
   - _decisionDescription: "Aproveitar ao m\xE1ximo a bebida gr\xE1tis"
     _minAlcool: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   _event: "Est\xE1s num espa\xE7o mais apertado e de repente \xE9s empurrado para
     o meio de um grupo de pessoas vestidas de ovelhas que est\xE3o a consumir uma
     subst\xE2ncia estranha."
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 5c9152132914c1d4aaffc1398e67764b, type: 3}
   _decisions:
   - _decisionDescription: "Dan\xE7ar e ignorar a atividade, eles que se divirtam
       sozinhos"

@@ -15,7 +15,7 @@ MonoBehaviour:
   _event: "V\xEAs um rapaz deitado no ch\xE3o s\xF3 de cuecas, percebes que \xE9
     o Paulo. Decides ir ter com ele para perceber o que se passou. Ele n\xE3o tem
     rea\xE7\xE3o nenhuma quando te aproximas e come\xE7as a tentar falar com ele."
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 8c9403e394d0b1a4fbeeda6d50ba161f, type: 3}
   _decisions:
   - _decisionDescription: "D\xE1s-lhe um estalo"
     _minAlcool: 0

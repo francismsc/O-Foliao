@@ -15,7 +15,7 @@ MonoBehaviour:
   _event: "Chegaste \xE0 Pra\xE7a, olhaste para um dos palcos e v\xEAs a Margarida
     a dan\xE7ar o \xABcr\xE9u\xBB sozinha. Apercebes-te que ela estava um pouco alterada
     e passou-te pela cabe\xE7a que ela podia-se arrepender na manh\xE3 seguinte."
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 8c9403e394d0b1a4fbeeda6d50ba161f, type: 3}
   _decisions:
   - _decisionDescription: "Decides fazer alguma coisa, nem que seja gravar para ela
       ver amanh\xE3 as figuras dela "

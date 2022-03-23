@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Evento 18 - DJ Manel
   m_EditorClassIdentifier: 
   _event: "O DJ Manel come\xE7ou a passar a m\xFAsica da tua ex, a VOSSA m\xFAsica...  "
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: aa5e378b447ec67429d40b70b9822077, type: 3}
   _decisions:
   - _decisionDescription: "Fazes-te de forte e n\xE3o sais do s\xEDtio"
     _minAlcool: 60

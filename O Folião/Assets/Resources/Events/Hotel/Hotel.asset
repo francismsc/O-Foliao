@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: Hotel
   m_EditorClassIdentifier: 
-  _event: 'Deparas-te com o hotel '
+  _event: "Est\xE1s no melhor, mais inovador e \xFAnico hotel de Torres Vedras! Queres
+    descansar durante uma noite, paga 30\u20AC e viras a bela adormecida."
   _background: {fileID: 21300000, guid: 968d729f00aa5b0469a65a91e4d1bedf, type: 3}
   _decisions:
-  - _decisionDescription: "Dormir no Hotel (30\u20AC)"
+  - _decisionDescription: Dormir no Hotel
     _minAlcool: 0
     _minFun: 0
     _minSocial: 0

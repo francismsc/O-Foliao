@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "Encontras um grupo de matrafonas, mas uma em espec\xEDfico, chama-te especial
     aten\xE7\xE3o com a troca de olhares que surgem entre voc\xEAs."
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 7b0c31989a839ef4b9981d9f8df7aaf1, type: 3}
   _decisions:
   - _decisionDescription: "Decides tentar a tua sorte e ir falar com a matrafona
       J\xFAlia"

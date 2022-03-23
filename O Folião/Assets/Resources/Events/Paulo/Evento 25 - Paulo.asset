@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "Viste o Paulo a entrar no Alpha Bar pela entrada principal e a sair pelas
     traseiras de mota. De onde \xE9 que a mota apareceu\u2026"
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 534a5f541f0b3ca4399784a6b639150e, type: 3}
   _decisions:
   - _decisionDescription: "Perguntaste ao dono do bar como \xE9 que aquilo tinha
       acontecido."

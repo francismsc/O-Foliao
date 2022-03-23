@@ -80,5 +80,12 @@ public class Cheat : MonoBehaviour
             eventsUi.EventUi(cheatShowEventContinuity2);
         }
 
+        //Add x minutes
+        /*
+        if(Input.GetKeyDown(KeyCode.M))
+        {
+
+        }
+        */
     }
 }

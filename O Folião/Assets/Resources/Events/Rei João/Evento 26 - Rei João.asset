@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "Encontraste o Rei Jo\xE3o a pastar uma cabra no meio de uma rotunda e
     essa cabra, inacreditavelmente, est\xE1 vestida com o mesmo fato que tu."
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: aa5e378b447ec67429d40b70b9822077, type: 3}
   _decisions:
   - _decisionDescription: "Meteste-te de 4 e come\xE7aste a pastar com a cabra. "
     _minAlcool: 0

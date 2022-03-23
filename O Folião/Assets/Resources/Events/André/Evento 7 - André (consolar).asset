@@ -15,7 +15,7 @@ MonoBehaviour:
   _event: "Voltas a encontrar o Andr\xE9  e ele est\xE1 se a sentir mal ao p\xE9
     de ti. Que novidade\u2026 Ele declara-se a ti, a dizer que nunca o tinham tratado
     t\xE3o bem na vida\u2026 Est\xE1s feita\u2026"
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: bcb65d31aa4511b44abfb3ef588bb0aa, type: 3}
   _decisions:
   - _decisionDescription: "Ap\xF3s a declara\xE7\xE3o de amor, levar o Andr\xE9 ao
       posto m\xE9dico"
@@ -60,7 +60,7 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _moreDecisionsStages: []
-      _nextEventStoryLine: {fileID: 0}
+      _nextEventStoryLine: {fileID: 11400000, guid: 1db042fa0274a00409cd18db2b4fbc33, type: 2}
     _failedEvent: []
   alcool: 0
   energy: 0

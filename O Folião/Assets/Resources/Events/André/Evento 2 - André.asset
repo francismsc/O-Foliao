@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "Um rapaz chamado Andr\xE9 vem ter contigo a chorar. Ser\xE1 que te vai
     estragar j\xE1 a noite\u2026 "
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: d8ec064c7e8372344a90e4d8d029fa89, type: 3}
   _decisions:
   - _decisionDescription: Perguntas o que se passa ao rapaz
     _minAlcool: 0

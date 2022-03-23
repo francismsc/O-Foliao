@@ -17,7 +17,7 @@ MonoBehaviour:
     que por acaso era o irm\xE3o g\xEAmeo do L\xE9o, o T\xE9o. O T\xE9o desliga a
     m\xFAsica e pergunta em voz alta quem quer beber shots de gra\xE7a (que podem
     ser bons ou muito maus)."
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: f5a9349bdb8e0584d9b292eb3db51fc0, type: 3}
   _decisions:
   - _decisionDescription: "Tu aceitaste sem hesitar e fazes uma degusta\xE7\xE3o
       de shots"

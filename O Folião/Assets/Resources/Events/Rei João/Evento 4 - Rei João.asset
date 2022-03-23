@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "Encontras o Rei Jo\xE3o do carnaval, o mesmo encontra-se um bocadinho
     alcoolizado."
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 5c9152132914c1d4aaffc1398e67764b, type: 3}
   _decisions:
   - _decisionDescription: "Falar com ele, \xE9 a tua oportunidade de conhecer o Rei"
     _minAlcool: 40

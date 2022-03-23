@@ -50,7 +50,7 @@ public class BarsUI : MonoBehaviour
     }
 
     public void SetValueAllBars(int alcool = 0, int fun = 50, int social = 50, 
-                                int energy = 100, int money = 30)
+                                int energy = 100, int money = 100)
     {
         alcoolSlider.value = alcool;
         alcoolFill.color = alcoolGradient.Evaluate(alcoolSlider.value);
@@ -64,7 +64,7 @@ public class BarsUI : MonoBehaviour
         energySlider.value = energy;
         energyFill.color = energyGradient.Evaluate(energySlider.value);
 
-        text.text = money.ToString();
+        text.text = money.ToString() + "€";
     }
 
 

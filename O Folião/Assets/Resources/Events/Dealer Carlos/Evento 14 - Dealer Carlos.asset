@@ -15,7 +15,7 @@ MonoBehaviour:
   _event: "Est\xE1s sozinha a andar pela rua e \xE9s abordada por um grupo de pessoas
     com um ar duvidoso. Carlos, o dealer l\xE1 da zona, insiste para tu comprares
     erva, sentes-te obrigada a faz\xEA-lo e compras."
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: bb9055cc19d0c9d45ba222349c17f3a6, type: 3}
   _decisions:
   - _decisionDescription: "\u201CPorque n\xE3o fumar?\u201D"
     _minAlcool: 70

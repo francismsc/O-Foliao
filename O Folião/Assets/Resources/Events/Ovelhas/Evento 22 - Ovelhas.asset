@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "V\xEAs o \u201Crebanho de ovelhas\u201D, pedes para tirar uma fotografia
     com eles e mandas a mesma \xE0 tua av\xF3 Maria com a seguinte descri\xE7\xE3o. "
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: e3b736447ed84954d8e9045e3a38e17c, type: 3}
   _decisions:
   - _decisionDescription: "\u201CEncontrei o teu gado v\xF3, deixaste a cerca mais
       uma vez aberta.\u201D "
@@ -24,7 +24,7 @@ MonoBehaviour:
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-    - _description: 
+    - _description: "A tua av\xF3 responde: \u201COK\u201D"
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 5
@@ -42,7 +42,8 @@ MonoBehaviour:
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-    - _description: 
+    - _description: "A tua av\xF3 responde: \u201COh netinha, essas ovelhas parecem
+        mais comidas que as minhas\u2026\u201D"
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 5
@@ -60,7 +61,8 @@ MonoBehaviour:
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-    - _description: 
+    - _description: "A tua av\xF3 responde: \u201C\U0001F44DOlha-me as horas, acordei
+        o teu av\xF4 sem querer\u201D"
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 5

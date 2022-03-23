@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "Encontraste o Paulo com uma lagosta na m\xE3o. Marisco e pessoas ricas
     andam sempre de m\xE3o dada, neste caso literalmente "
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: bcb65d31aa4511b44abfb3ef588bb0aa, type: 3}
   _decisions:
   - _decisionDescription: "Perguntar onde \xE9 que a arranjou, ficaste mesmo estupefacta
       com aquilo"
@@ -47,7 +47,7 @@ MonoBehaviour:
       _energyPlus: 0
       _moreDecisionsStages: []
       _nextEventStoryLine: {fileID: 11400000, guid: 879454d033ed67b4e871c261a4d9b1cd, type: 2}
-  - _decisionDescription: Tirar uma foto com a sapateira.
+  - _decisionDescription: Tirar uma foto com a lagosta.
     _minAlcool: 40
     _minFun: 0
     _minSocial: 20

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "V\xEAs o \u201Crebanho de ovelhas\u201D e pedes para tirar uma fotografia
     com eles para mandares \xE0 tua av\xF3 Maria. "
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: e3b736447ed84954d8e9045e3a38e17c, type: 3}
   _decisions:
   - _decisionDescription: Pedir para tirar a foto
     _minAlcool: 0

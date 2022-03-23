@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "Est\xE1s na Pra\xE7a da Batata com o teu grupo de amigos e aparece-te
     a matrafona J\xFAlia \xE0 frente."
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 7b0c31989a839ef4b9981d9f8df7aaf1, type: 3}
   _decisions:
   - _decisionDescription: "Elogias a roupa da J\xFAlia, at\xE9 estava bonita para
       uma matrafona."

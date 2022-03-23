@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "V\xEAs a tua velha amiga de inf\xE2ncia Joana, que por acaso est\xE1 com
     o mesmo fato que tu e por isso reparam logo uma na outra."
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 1552c062dab471b4ea9ffb0b85e671cd, type: 3}
   _decisions:
   - _decisionDescription: 'Fazer ganda festa por terem um fato igual e pouco comum
       no carnaval '

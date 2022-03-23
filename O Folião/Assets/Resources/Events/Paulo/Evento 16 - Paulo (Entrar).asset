@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "Algu\xE9m pergunta se queres sentar-te no colo dele e reparas que \xE9
     o Paulo"
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: f5a9349bdb8e0584d9b292eb3db51fc0, type: 3}
   _decisions:
   - _decisionDescription: 'Aceitar e entrar '
     _minAlcool: 0

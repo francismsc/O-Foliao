@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _event: "Passaste por um carro com os vidros todos fechados, s\xF3 v\xEAs um nevoeiro
     l\xE1 dentro e pessoas a rirem. Eles abrem a porta e perguntam se te queres juntar. "
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: f5a9349bdb8e0584d9b292eb3db51fc0, type: 3}
   _decisions:
   - _decisionDescription: Entrar
     _minAlcool: 0

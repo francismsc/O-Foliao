@@ -1,13 +1,18 @@
 using UnityEngine;
 
+using UnityEngine.UI;
+
 public class Clock : MonoBehaviour
 {
 
     [SerializeField] private int hours = 22;
     [SerializeField] private int minutes = 0;
     [SerializeField] private int day = 1;
-    [SerializeField] private int minTimeBetweenEvents = 10;
+    [SerializeField] private int minTimeBetweenEvents = 120;
     [SerializeField] private int minuterPerHour = 60;
+    [SerializeField] private Image iconMorning;
+    [SerializeField] private Image iconAfternoon;
+    [SerializeField] private Image iconNight;
 
     public enum TimesOfDay
     {
@@ -79,28 +84,34 @@ public class Clock : MonoBehaviour
     }
 
     private void TimeOfDay()
-    {
+    { 
         int hours = GetHours();
         GetCurrentTimeOfDay();
         if (hours >= 6 && hours < 12)
         {
             currentTimeOfDay = TimesOfDay.Morning;
+
+            iconMorning.enabled = true;
+            iconAfternoon.enabled = false;
+            iconNight.enabled = false;
+
         }
         else if (hours >= 12 && hours < 20)
         {
             currentTimeOfDay = TimesOfDay.Afternoon;
+
+            iconMorning.enabled = false;
+            iconAfternoon.enabled = true;
+            iconNight.enabled = false;
         }
         else if (hours >= 20 || hours < 6)
         {
             currentTimeOfDay = TimesOfDay.Night;
+
+            iconMorning.enabled = false;
+            iconAfternoon.enabled = false;
+            iconNight.enabled = true;
         }
 
     }
-
-
-
-    
-
-
-
 }

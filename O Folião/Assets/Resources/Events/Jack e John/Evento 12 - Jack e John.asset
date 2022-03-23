@@ -15,7 +15,7 @@ MonoBehaviour:
   _event: "Est\xE1s sentada na berma da estrada, a beber com os teus amigos, e aparecem
     dois estrangeiros, o Jack e o John, a fazer conversa e o Jack est\xE1 meio a
     cair para cima de ti."
-  _background: {fileID: 0}
+  _background: {fileID: 21300000, guid: 3fbfbe9339a012b41907ea3eb952e7c6, type: 3}
   _decisions:
   - _decisionDescription: "Fazes conversa de volta, vamos ver o que eles querem\u2026"
     _minAlcool: 0
