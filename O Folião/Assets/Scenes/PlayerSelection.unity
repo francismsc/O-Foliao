@@ -630,7 +630,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Bem-vindo ao Carnaval de Torres Vedras! Nesta demo vais poder experienciar
     o carnaval durante os primeiros 2 dias. Vais ter a \xE1rea dos bares e da m\xFAsica
-    totalmente dispon\xEDvel para ti, aproveita ao m\xE1ximo! Boa sorte"
+    totalmente dispon\xEDvel para ti, aproveita ao m\xE1ximo! Boa sorte!"
 --- !u!222 &1341808444
 CanvasRenderer:
   m_ObjectHideFlags: 0

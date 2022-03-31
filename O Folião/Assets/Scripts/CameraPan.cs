@@ -2,11 +2,10 @@ using UnityEngine;
 
 /// <summary>
 /// Class responsible for the camera input.
-/// This class is used for camera panning and zoom funcionality.
+/// This class is used for camera panning funcionality.
 /// </summary>
 /// <remarks>
 /// @note In order to pan the camera the user must press the right mouse button.
-/// @note In order to zoom the camera the user must press the buttons in the top left corner.
 /// </remarks>
 public class CameraPan : MonoBehaviour
 {

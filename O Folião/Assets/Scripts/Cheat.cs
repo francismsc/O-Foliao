@@ -10,6 +10,8 @@ public class Cheat : MonoBehaviour
 
     [SerializeField] private Player player;
     [SerializeField] private EventsUi eventsUi;
+    [SerializeField] private Clock clock;
+    
 
 
 
@@ -65,7 +67,7 @@ public class Cheat : MonoBehaviour
             player.ChangeStats(player, 0, 0, 0, -10, 0);
         }
 
-        if(Input.GetKeyDown(KeyCode.Q))
+        /*if(Input.GetKeyDown(KeyCode.Q))
         {
             eventsUi.EventUi(cheatShowEvent);
         }
@@ -78,14 +80,15 @@ public class Cheat : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             eventsUi.EventUi(cheatShowEventContinuity2);
-        }
+        }*/
 
-        //Add x minutes
-        /*
+        //Add x minutes 
         if(Input.GetKeyDown(KeyCode.M))
         {
-
-        }
-        */
+            
+            eventsUi.TimeUi(clock.UpdateTime(60));
+            eventsUi.CalendarUi();
+            
+        }     
     }
 }
