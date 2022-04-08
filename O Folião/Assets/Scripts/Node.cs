@@ -14,13 +14,19 @@ public class Node : MonoBehaviour
     private Material highLight;
     public Node node;
 
+    [System.Serializable]
+    public struct TargetNode
+    {
+        public Node            target;
+        public List<Transform> waypoints;
+    }
 
     [SerializeField]
-    List<GameObject> options;
+    List<TargetNode> options;
 
-    public List<GameObject> GetOptions()
+    public List<TargetNode> GetOptions()
     {
-       return this.options;
+       return options;
     }
         
     public void HighLight()

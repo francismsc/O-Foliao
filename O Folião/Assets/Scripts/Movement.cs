@@ -10,8 +10,7 @@ public class Movement: MonoBehaviour
     private bool stillmoving = false;
     private bool moving = false;
 
-    private List<GameObject> list;
-    private GameObject child;
+    List<Transform> waypoints = new List<Transform>();
 
     public void Move(Player player,GameObject nextpoint)
     {
@@ -33,36 +32,50 @@ public class Movement: MonoBehaviour
     {
         if (timetomove)
         {
-            list = player.Position().GetComponent<Node>().GetOptions();
-            foreach (GameObject nodes in list)
+            var nodes = player.Position().GetComponent<Node>().GetOptions();
+            foreach (var node in nodes)
             {
-                nodes.GetComponent<Node>().HighLight();
+                if (node.target)
+                {
+                    node.target.HighLight();
+                }
             }
             if (Input.GetMouseButtonUp(0) && stillmoving == false)
             {
-
                 // Create a ray from the current mouse position
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
-                if (Physics.Raycast(ray, out hit))
-                {
+                if (Physics.Raycast(ray, out hit))                {
 
                     if (hit.transform.tag == "Point")
                     {
-                        foreach (GameObject nodes in list)
+                        foreach (var node in nodes)
                         {
-                            if (GameObject.ReferenceEquals(hit.transform.GetChild(0).gameObject, nodes))
+                            if (node.target)
                             {
-                                foreach (GameObject points in list)
+                                node.target.BacktoNormal();
+                            }
+                        }
+
+                        Node hitNode = hit.transform.GetComponentInChildren<Node>();
+                        foreach (var node in nodes)
+                        {
+                            if (node.target == hitNode)
+                            {
+                                waypoints.Clear();
+                                if (node.waypoints != null)
                                 {
-                                    points.GetComponent<Node>().BacktoNormal();
+                                    foreach (var w in node.waypoints)
+                                    {
+                                        waypoints.Add(w);
+                                    }
                                 }
-                                child = hit.transform.GetChild(0).gameObject;
-                                Move(player, child);
+                                waypoints.Add(node.target.transform);
+                                Move(player, waypoints[waypoints.Count - 1].gameObject);
                                 moving = true;
                                 choice = true;
-                                
-                                
+
+                                break;
                             }
                         }
 
@@ -71,30 +84,26 @@ public class Movement: MonoBehaviour
             }
 
 
-            if (moving == true && player.gameObject.transform.position != child.transform.position)
+            if ((moving) && (waypoints.Count  > 0))
             {
                 player.gameObject.transform.position = Vector3.MoveTowards(player.gameObject.transform.position,
-                                                        child.transform.position, 300 * Time.deltaTime);
+                                                                           waypoints[0].transform.position, 300 * Time.deltaTime);
                 stillmoving = true;
 
-            }
-            else if (child == null || (player.gameObject.transform.position == child.transform.position 
-                     && choice == false))
-            {
-                moving = false;
-            }
-            else if (player.gameObject.transform.position == child.transform.position 
-                     && choice == true)
-            {
-                choice = false;
-                moving = false;
-                timetomove = false;
-                stillmoving = false;
-            }
-            
+                if (player.transform.position == waypoints[0].position)
+                {
+                    waypoints.RemoveAt(0);
 
+                    if (waypoints.Count == 0)
+                    {
+                        choice = false;
+                        moving = false;
+                        timetomove = false;
+                        stillmoving = false;
+                    }
+                }
 
-
+            }            
 
 
         }

@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 3950661}
   - component: {fileID: 3950662}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_Batata_Esquerda
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,9 +171,12 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
   options:
-  - {fileID: 895441762}
-  - {fileID: 1657135960}
-  - {fileID: 195062983}
+  - target: {fileID: 195062984}
+    waypoints: []
+  - target: {fileID: 1657135961}
+    waypoints: []
+  - target: {fileID: 2125884204}
+    waypoints: []
 --- !u!1 &4472506
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,6 +492,10 @@ Transform:
   - {fileID: 1922573341}
   - {fileID: 1319043135}
   - {fileID: 1603378864}
+  - {fileID: 1199516919}
+  - {fileID: 1026345546}
+  - {fileID: 396382249}
+  - {fileID: 2129212807}
   m_Father: {fileID: 60811731}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -700,7 +707,7 @@ GameObject:
   - component: {fileID: 99934417}
   - component: {fileID: 99934418}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_Alpha
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -737,9 +744,12 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: b51264b80fc689045834669cd1431205, type: 2}
   node: {fileID: 0}
   options:
-  - {fileID: 699324352}
-  - {fileID: 911360576}
-  - {fileID: 1408764755}
+  - target: {fileID: 911360577}
+    waypoints: []
+  - target: {fileID: 699324354}
+    waypoints: []
+  - target: {fileID: 1408764757}
+    waypoints: []
 --- !u!1 &100980895
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,7 +945,7 @@ GameObject:
   - component: {fileID: 119468170}
   - component: {fileID: 119468171}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_Inicio
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -958,8 +968,11 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: b51264b80fc689045834669cd1431205, type: 2}
   node: {fileID: 119468170}
   options:
-  - {fileID: 911360576}
-  - {fileID: 290813222}
+  - target: {fileID: 911360577}
+    waypoints: []
+  - target: {fileID: 290813224}
+    waypoints:
+    - {fileID: 1199516919}
 --- !u!222 &119468171
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1000,7 +1013,7 @@ GameObject:
   - component: {fileID: 132996303}
   - component: {fileID: 132996302}
   m_Layer: 0
-  m_Name: Cylinder (12)
+  m_Name: Cebola_Baixo
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1174,7 +1187,7 @@ GameObject:
   - component: {fileID: 163255555}
   - component: {fileID: 163255554}
   m_Layer: 0
-  m_Name: Cylinder (11)
+  m_Name: Cebola_Direita
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1271,7 +1284,7 @@ GameObject:
   - component: {fileID: 195062985}
   - component: {fileID: 195062984}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_Batata_Cima
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1294,9 +1307,12 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
   options:
-  - {fileID: 2125884202}
-  - {fileID: 1657135960}
-  - {fileID: 3950660}
+  - target: {fileID: 3950662}
+    waypoints: []
+  - target: {fileID: 2125884204}
+    waypoints: []
+  - target: {fileID: 1657135961}
+    waypoints: []
 --- !u!4 &195062985
 Transform:
   m_ObjectHideFlags: 0
@@ -1484,7 +1500,7 @@ GameObject:
   - component: {fileID: 239217041}
   - component: {fileID: 239217042}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_Confraria
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1521,7 +1537,8 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: b51264b80fc689045834669cd1431205, type: 2}
   node: {fileID: 239217042}
   options:
-  - {fileID: 1946886341}
+  - target: {fileID: 1946886343}
+    waypoints: []
 --- !u!1 &244730962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1914,7 +1931,7 @@ GameObject:
   - component: {fileID: 290813223}
   - component: {fileID: 290813224}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_Cebola_Cima
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1951,10 +1968,15 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
   options:
-  - {fileID: 1342336682}
-  - {fileID: 1671169446}
-  - {fileID: 500871885}
-  - {fileID: 119468169}
+  - target: {fileID: 119468170}
+    waypoints:
+    - {fileID: 1199516919}
+  - target: {fileID: 1342336684}
+    waypoints: []
+  - target: {fileID: 1671169448}
+    waypoints: []
+  - target: {fileID: 500871887}
+    waypoints: []
 --- !u!1 &304478344
 GameObject:
   m_ObjectHideFlags: 0
@@ -1968,7 +1990,7 @@ GameObject:
   - component: {fileID: 304478347}
   - component: {fileID: 304478346}
   m_Layer: 0
-  m_Name: Cylinder (9)
+  m_Name: Hotel
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2660,6 +2682,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371231865}
   m_CullTransparentMesh: 1
+--- !u!1 &396382248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 396382249}
+  m_Layer: 0
+  m_Name: Waypoint1 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &396382249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396382248}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 325.4, y: -123.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61069693}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &424602508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2920,7 +2972,7 @@ GameObject:
   - component: {fileID: 500871886}
   - component: {fileID: 500871887}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_Cebola_Direita
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2957,9 +3009,12 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
   options:
-  - {fileID: 1671169446}
-  - {fileID: 290813222}
-  - {fileID: 845040697}
+  - target: {fileID: 845040698}
+    waypoints: []
+  - target: {fileID: 290813224}
+    waypoints: []
+  - target: {fileID: 1671169448}
+    waypoints: []
 --- !u!1 &549545084
 GameObject:
   m_ObjectHideFlags: 0
@@ -3395,7 +3450,7 @@ GameObject:
   - component: {fileID: 699324353}
   - component: {fileID: 699324354}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_Celeiro
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3432,8 +3487,10 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: b51264b80fc689045834669cd1431205, type: 2}
   node: {fileID: 0}
   options:
-  - {fileID: 1342336682}
-  - {fileID: 99934416}
+  - target: {fileID: 1342336684}
+    waypoints: []
+  - target: {fileID: 99934418}
+    waypoints: []
 --- !u!1 &701223692
 GameObject:
   m_ObjectHideFlags: 0
@@ -4017,7 +4074,7 @@ GameObject:
   - component: {fileID: 806106918}
   - component: {fileID: 806106917}
   m_Layer: 0
-  m_Name: Cylinder (6)
+  m_Name: Doc
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4309,7 +4366,7 @@ GameObject:
   - component: {fileID: 824641466}
   - component: {fileID: 824641465}
   m_Layer: 0
-  m_Name: Cylinder (2)
+  m_Name: Kenia
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4570,7 +4627,7 @@ GameObject:
   - component: {fileID: 845040699}
   - component: {fileID: 845040698}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_Cebola_Baixo
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4593,9 +4650,12 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
   options:
-  - {fileID: 500871885}
-  - {fileID: 1671169446}
-  - {fileID: 895441762}
+  - target: {fileID: 290813224}
+    waypoints: []
+  - target: {fileID: 500871887}
+    waypoints: []
+  - target: {fileID: 1671169448}
+    waypoints: []
 --- !u!4 &845040699
 Transform:
   m_ObjectHideFlags: 0
@@ -4623,7 +4683,7 @@ GameObject:
   - component: {fileID: 854474985}
   - component: {fileID: 854474984}
   m_Layer: 0
-  m_Name: Cylinder (14)
+  m_Name: Batata_Esquerda
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4722,7 +4782,7 @@ GameObject:
   - component: {fileID: 857574058}
   - component: {fileID: 857574057}
   m_Layer: 0
-  m_Name: Cylinder (8)
+  m_Name: Alpha
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5062,7 +5122,7 @@ GameObject:
   - component: {fileID: 895441764}
   - component: {fileID: 895441763}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_EntrePalcos
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5085,8 +5145,14 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
   options:
-  - {fileID: 845040697}
-  - {fileID: 3950660}
+  - target: {fileID: 845040698}
+    waypoints: []
+  - target: {fileID: 3950662}
+    waypoints: []
+  - target: {fileID: 195062984}
+    waypoints: []
+  - target: {fileID: 1671169448}
+    waypoints: []
 --- !u!4 &895441764
 Transform:
   m_ObjectHideFlags: 0
@@ -5112,7 +5178,7 @@ GameObject:
   - component: {fileID: 911360578}
   - component: {fileID: 911360577}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_AvoGama
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5135,9 +5201,12 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: b51264b80fc689045834669cd1431205, type: 2}
   node: {fileID: 911360577}
   options:
-  - {fileID: 2041921415}
-  - {fileID: 99934416}
-  - {fileID: 119468169}
+  - target: {fileID: 119468170}
+    waypoints: []
+  - target: {fileID: 99934418}
+    waypoints: []
+  - target: {fileID: 2041921417}
+    waypoints: []
 --- !u!4 &911360578
 Transform:
   m_ObjectHideFlags: 0
@@ -5728,6 +5797,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018432739}
   m_CullTransparentMesh: 1
+--- !u!1 &1026345545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1026345546}
+  m_Layer: 0
+  m_Name: Waypoint1 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1026345546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026345545}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 301.7, y: -66.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61069693}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1035365288
 GameObject:
   m_ObjectHideFlags: 0
@@ -5899,7 +5998,7 @@ GameObject:
   - component: {fileID: 1066121839}
   - component: {fileID: 1066121838}
   m_Layer: 0
-  m_Name: Cylinder (10)
+  m_Name: Cebola_Esquerda
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6583,7 +6682,7 @@ GameObject:
   - component: {fileID: 1177945386}
   - component: {fileID: 1177945385}
   m_Layer: 0
-  m_Name: Cylinder (1)
+  m_Name: AvoGama
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6802,6 +6901,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185391555}
   m_CullTransparentMesh: 1
+--- !u!1 &1199516918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1199516919}
+  m_Layer: 0
+  m_Name: Waypoint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1199516919
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199516918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 805, y: 1018, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61069693}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1226713688
 GameObject:
   m_ObjectHideFlags: 0
@@ -7628,7 +7757,7 @@ GameObject:
   - component: {fileID: 1319043137}
   - component: {fileID: 1319043136}
   m_Layer: 0
-  m_Name: Cylinder (16)
+  m_Name: Batata_Direita
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7725,7 +7854,7 @@ GameObject:
   - component: {fileID: 1342336683}
   - component: {fileID: 1342336684}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_Doc
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7762,8 +7891,10 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: b51264b80fc689045834669cd1431205, type: 2}
   node: {fileID: 0}
   options:
-  - {fileID: 290813222}
-  - {fileID: 699324352}
+  - target: {fileID: 290813224}
+    waypoints: []
+  - target: {fileID: 699324354}
+    waypoints: []
 --- !u!1 &1360569925
 GameObject:
   m_ObjectHideFlags: 0
@@ -8083,7 +8214,7 @@ GameObject:
   - component: {fileID: 1408764756}
   - component: {fileID: 1408764757}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_Hotel
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8120,7 +8251,8 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: de3029a32e595494dbe844f2689a5423, type: 2}
   node: {fileID: 0}
   options:
-  - {fileID: 99934416}
+  - target: {fileID: 99934418}
+    waypoints: []
 --- !u!1 &1455655490
 GameObject:
   m_ObjectHideFlags: 0
@@ -8524,7 +8656,7 @@ GameObject:
   - component: {fileID: 1603378866}
   - component: {fileID: 1603378865}
   m_Layer: 0
-  m_Name: Cylinder (17)
+  m_Name: Batata_Cima
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8957,7 +9089,7 @@ GameObject:
   - component: {fileID: 1657135962}
   - component: {fileID: 1657135961}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_Batata_Baixo
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8980,9 +9112,12 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
   options:
-  - {fileID: 3950660}
-  - {fileID: 2125884202}
-  - {fileID: 195062983}
+  - target: {fileID: 3950662}
+    waypoints: []
+  - target: {fileID: 2125884204}
+    waypoints: []
+  - target: {fileID: 195062984}
+    waypoints: []
 --- !u!4 &1657135962
 Transform:
   m_ObjectHideFlags: 0
@@ -9008,7 +9143,7 @@ GameObject:
   - component: {fileID: 1671169447}
   - component: {fileID: 1671169448}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_Cebola_Esquerda
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9045,9 +9180,12 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
   options:
-  - {fileID: 500871885}
-  - {fileID: 845040697}
-  - {fileID: 290813222}
+  - target: {fileID: 290813224}
+    waypoints: []
+  - target: {fileID: 845040698}
+    waypoints: []
+  - target: {fileID: 500871887}
+    waypoints: []
 --- !u!1 &1687220586
 GameObject:
   m_ObjectHideFlags: 0
@@ -9430,7 +9568,7 @@ GameObject:
   - component: {fileID: 1757844435}
   - component: {fileID: 1757844434}
   m_Layer: 0
-  m_Name: Cylinder (13)
+  m_Name: EntrePalcos
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9604,7 +9742,7 @@ GameObject:
   - component: {fileID: 1801720284}
   - component: {fileID: 1801720283}
   m_Layer: 0
-  m_Name: Cylinder (3)
+  m_Name: Skadi
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10101,7 +10239,7 @@ GameObject:
   - component: {fileID: 1846024371}
   - component: {fileID: 1846024374}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Inicio
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10479,7 +10617,7 @@ GameObject:
   - component: {fileID: 1862863661}
   - component: {fileID: 1862863660}
   m_Layer: 0
-  m_Name: Cylinder (5)
+  m_Name: Cebola_Cima
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10811,7 +10949,7 @@ GameObject:
   - component: {fileID: 1922573343}
   - component: {fileID: 1922573342}
   m_Layer: 0
-  m_Name: Cylinder (15)
+  m_Name: Batata_Baixo
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10908,7 +11046,7 @@ GameObject:
   - component: {fileID: 1946886342}
   - component: {fileID: 1946886343}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_Skadi
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10945,8 +11083,10 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: b51264b80fc689045834669cd1431205, type: 2}
   node: {fileID: 0}
   options:
-  - {fileID: 239217040}
-  - {fileID: 2041921415}
+  - target: {fileID: 1946886343}
+    waypoints: []
+  - target: {fileID: 239217042}
+    waypoints: []
 --- !u!1 &1953889450
 GameObject:
   m_ObjectHideFlags: 0
@@ -11430,7 +11570,7 @@ GameObject:
   - component: {fileID: 1995068589}
   - component: {fileID: 1995068588}
   m_Layer: 0
-  m_Name: Cylinder (7)
+  m_Name: Celeiro
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11776,7 +11916,7 @@ GameObject:
   - component: {fileID: 2041921416}
   - component: {fileID: 2041921417}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_Kenia
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11813,8 +11953,10 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: b51264b80fc689045834669cd1431205, type: 2}
   node: {fileID: 2041921417}
   options:
-  - {fileID: 1946886341}
-  - {fileID: 911360576}
+  - target: {fileID: 911360577}
+    waypoints: []
+  - target: {fileID: 1946886343}
+    waypoints: []
 --- !u!1 &2045546134
 GameObject:
   m_ObjectHideFlags: 0
@@ -11934,7 +12076,7 @@ GameObject:
   - component: {fileID: 2067610776}
   - component: {fileID: 2067610775}
   m_Layer: 0
-  m_Name: Cylinder (4)
+  m_Name: Confraria
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12031,7 +12173,7 @@ GameObject:
   - component: {fileID: 2125884203}
   - component: {fileID: 2125884204}
   m_Layer: 0
-  m_Name: Node
+  m_Name: Node_Batata_Direita
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12068,9 +12210,42 @@ MonoBehaviour:
   highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
   node: {fileID: 0}
   options:
-  - {fileID: 1657135960}
-  - {fileID: 3950660}
-  - {fileID: 195062983}
+  - target: {fileID: 1657135961}
+    waypoints: []
+  - target: {fileID: 195062984}
+    waypoints: []
+  - target: {fileID: 3950662}
+    waypoints: []
+--- !u!1 &2129212806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2129212807}
+  m_Layer: 0
+  m_Name: Waypoint1 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2129212807
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129212806}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 484, y: 1532, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61069693}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2141552220
 GameObject:
   m_ObjectHideFlags: 0
